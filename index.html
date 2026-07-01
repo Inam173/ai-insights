@@ -1,0 +1,288 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>AI技术洞察平台</title><style>
+*{box-sizing:border-box}body{background:#0a0a0f;color:#e2e8f0;font-family:"Segoe UI","Microsoft YaHei",sans-serif;min-height:100vh;margin:0}
+::-webkit-scrollbar{width:6px}::-webkit-scrollbar-track{background:#1a1a2e}::-webkit-scrollbar-thumb{background:#3b3b5c;border-radius:3px}
+.sticky-top{position:sticky;top:0;z-index:50;background:rgba(10,10,15,0.95);backdrop-filter:blur(8px)}
+.header{border-bottom:1px solid rgba(45,45,80,0.5);padding:16px 24px}
+.header-inner{max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.logo{display:flex;align-items:center;gap:12px}
+.logo-icon{width:40px;height:40px;border-radius:12px;background:linear-gradient(135deg,#6366f1,#a855f7);display:flex;align-items:center;justify-content:center;font-size:20px}
+.logo-text{font-size:20px;font-weight:700;margin:0;background:linear-gradient(135deg,#818cf8,#c084fc,#38bdf8);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.logo-sub{font-size:12px;color:#6b7280;margin:2px 0 0 0}
+.stats{display:flex;align-items:center;gap:16px}
+.stat-item{text-align:center;font-size:12px}.stat-num{font-size:18px;font-weight:700}.stat-num.blue{color:#818cf8}.stat-num.purple{color:#a78bfa}.stat-label{color:#6b7280}
+.pulse{width:8px;height:8px;background:#10b981;border-radius:50%;display:inline-block;animation:pulse 2s infinite}@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(1.5)}}
+.nav{border-bottom:1px solid rgba(45,45,80,0.3)}.nav-inner{max-width:1280px;margin:0 auto;padding:0 24px;display:flex;gap:4px}
+.tab-btn{padding:12px 20px;font-size:14px;font-weight:500;background:none;border:none;cursor:pointer;border-radius:8px 8px 0 0;color:#9ca3af;transition:all .2s}
+.tab-btn.active{background:rgba(99,102,241,0.15);color:#a5b4fc;border-bottom:2px solid #818cf8}
+.main{max-width:1280px;margin:0 auto;padding:24px}
+.section{display:block}.section.hidden{display:none}
+.filters{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:24px}.filter-label{font-size:12px;color:#6b7280;margin-right:8px}
+.filter-btn{padding:6px 12px;font-size:12px;border-radius:999px;border:1px solid #2d2d50;background:#1a1a2e;color:#9ca3af;cursor:pointer}.filter-btn.active{background:rgba(99,102,241,0.2);color:#a5b4fc;border-color:rgba(99,102,241,0.3)}
+.filter-select{background:#1a1a2e;border:1px solid #2d2d50;color:#d1d5db;font-size:12px;border-radius:8px;padding:6px 12px;outline:none}
+.news-list{border-left:2px solid rgba(99,102,241,0.2);padding-left:28px;display:flex;flex-direction:column;gap:16px}
+.news-card{position:relative;background:rgba(18,18,26,0.4);border:1px solid rgba(99,102,241,0.15);border-radius:12px;padding:16px 20px;cursor:pointer;transition:all .2s}
+.news-card:hover{border-color:rgba(99,102,241,0.4);box-shadow:0 0 20px rgba(99,102,241,0.08);transform:translateY(-2px)}
+.news-card::before{content:"";position:absolute;left:-34px;top:24px;width:8px;height:8px;background:#6366f1;border-radius:50%;border:2px solid #1e1b4b}
+.news-header{display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:8px}
+.news-tags{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.tag{font-size:11px;padding:2px 8px;border-radius:999px;white-space:nowrap}
+.tag-mb{background:rgba(59,130,246,0.15);color:#60a5fa;border:1px solid rgba(59,130,246,0.3)}
+.tag-ap{background:rgba(16,185,129,0.15);color:#34d399;border:1px solid rgba(16,185,129,0.3)}
+.tag-pt{background:rgba(139,92,246,0.15);color:#a78bfa;border:1px solid rgba(139,92,246,0.3)}
+.tag-au{background:rgba(245,158,11,0.15);color:#fbbf24;border:1px solid rgba(245,158,11,0.3)}
+.tag-ec{background:rgba(236,72,153,0.15);color:#f472b6;border:1px solid rgba(236,72,153,0.3)}
+.tag-cp{background:rgba(20,184,166,0.15);color:#2dd4bf;border:1px solid rgba(20,184,166,0.3)}
+.company-tag{display:inline-flex;align-items:center;gap:4px;padding:2px 8px;border-radius:4px;font-size:12px;background:rgba(26,26,46,0.7);color:#9ca3af}
+.news-date{font-size:12px;color:#4b5563;white-space:nowrap}
+.news-title{font-size:14px;font-weight:600;color:#f3f4f6;margin:0 0 8px 0;line-height:1.4}
+.news-summary{font-size:12px;color:#9ca3af;line-height:1.6;margin:0;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.news-source-link{font-size:12px;color:#818cf8;margin-top:12px}
+.empty-state{text-align:center;padding:80px 0;color:#6b7280}.empty-state.hidden{display:none}
+.section-title{font-size:18px;font-weight:600;color:#e5e7eb;margin:0 0 12px 0}
+.card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;margin-bottom:32px}
+.card-grid.wide{grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+.co-card{background:rgba(18,18,26,0.4);border:1px solid rgba(99,102,241,0.15);border-radius:12px;padding:16px;transition:all .2s}
+.co-card:hover{border-color:rgba(99,102,241,0.4);box-shadow:0 0 20px rgba(99,102,241,0.08);transform:translateY(-2px)}
+.co-card-head{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:12px}
+.co-card-logo{display:flex;align-items:center;gap:8px}.co-card-icon{font-size:24px}
+.co-card-name{font-size:14px;font-weight:600;color:#f3f4f6;margin:0}.co-card-en{font-size:12px;color:#6b7280;margin:0}
+.co-card-loc{font-size:12px;color:#6b7280}.co-card-hl{font-size:12px;color:#9ca3af;line-height:1.6;margin-bottom:12px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.model-tag{display:inline-block;padding:2px 8px;border-radius:4px;font-size:12px;background:rgba(26,26,46,0.7);color:#9ca3af;margin:2px}
+.strength-tag{display:inline-block;padding:2px 6px;border-radius:4px;font-size:11px;background:rgba(26,26,46,0.5);color:#6b7280;margin:2px}
+.co-card-metrics{margin-top:8px;padding-top:8px;border-top:1px solid rgba(45,45,80,0.5)}
+.metric-row{display:flex;justify-content:space-between;font-size:12px;margin:4px 0}.metric-label{color:#6b7280}.metric-value{color:#d1d5db;font-weight:500}
+.co-card-link{display:inline-flex;align-items:center;gap:4px;margin-top:12px;font-size:12px;color:#818cf8;text-decoration:none}
+.rank-btns{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-bottom:24px}.rank-label{font-size:14px;color:#9ca3af}
+.rank-btn{padding:6px 16px;font-size:12px;border-radius:999px;border:1px solid #2d2d50;background:#1a1a2e;color:#9ca3af;cursor:pointer}
+.rank-btn.active{background:rgba(99,102,241,0.2);color:#a5b4fc;border-color:rgba(99,102,241,0.3)}
+.panel{background:rgba(18,18,26,0.5);border:1px solid rgba(99,102,241,0.15);border-radius:16px;padding:24px;margin-bottom:16px}
+.panel-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
+.panel-title{font-size:18px;font-weight:600;color:#e5e7eb;margin:0}.panel-date{font-size:12px;color:#6b7280}
+/* Pure CSS bar chart */
+.bar-row{display:flex;align-items:center;gap:12px;margin-bottom:10px}
+.bar-label{width:140px;text-align:right;font-size:12px;color:#e2e8f0;flex-shrink:0}
+.bar-track{flex:1;height:28px;background:rgba(26,26,46,0.5);border-radius:4px;overflow:hidden;position:relative}
+.bar-fill{height:100%;border-radius:4px;transition:width 0.5s ease;display:flex;align-items:center;justify-content:flex-end;padding-right:8px}
+.bar-score{font-size:11px;font-weight:700;color:#fff;text-shadow:0 1px 2px rgba(0,0,0,0.5)}
+.bar-fill.gold{background:linear-gradient(90deg,#b45309,#f59e0b)}
+.bar-fill.silver{background:linear-gradient(90deg,#64748b,#94a3b8)}
+.bar-fill.bronze{background:linear-gradient(90deg,#92400e,#d97706)}
+.bar-fill.normal{background:linear-gradient(90deg,#4338ca,#6366f1)}
+.method-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;font-size:12px;color:#6b7280}
+.method-item{background:rgba(26,26,46,0.5);border-radius:8px;padding:12px}.method-title{font-weight:500;margin-bottom:4px}
+.modal-overlay{position:fixed;inset:0;z-index:100;display:none;align-items:center;justify-content:center;padding:16px;background:rgba(0,0,0,0.7);backdrop-filter:blur(4px)}
+.modal-overlay.show{display:flex}
+.modal-box{background:#12121a;border:1px solid #2d2d50;border-radius:16px;box-shadow:0 25px 50px rgba(0,0,0,0.5);width:100%;max-width:448px}
+.modal-head{padding:20px;border-bottom:1px solid #252540;display:flex;align-items:center;justify-content:space-between}
+.modal-title{font-size:16px;font-weight:600;color:#f3f4f6;margin:0}.modal-sub{font-size:12px;color:#6b7280;margin:2px 0 0 0}
+.modal-close{color:#6b7280;background:none;border:none;font-size:24px;cursor:pointer}
+.modal-list{padding:12px;display:flex;flex-direction:column;gap:8px;max-height:320px;overflow-y:auto}
+.modal-link{display:flex;align-items:center;gap:12px;padding:12px;border-radius:8px;background:rgba(26,26,46,0.5);border:1px solid rgba(45,45,80,0.5);text-decoration:none;transition:all .2s}
+.modal-link:hover{background:rgba(26,26,46,0.8);border-color:rgba(99,102,241,0.3)}
+.modal-link-num{width:32px;height:32px;border-radius:8px;background:rgba(99,102,241,0.1);display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0;color:#a5b4fc}
+.modal-link-info{flex:1;min-width:0}.modal-link-name{font-size:14px;color:#e5e7eb}.modal-link-url{font-size:12px;color:#6b7280;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.modal-link-arrow{color:#6b7280;flex-shrink:0}
+.modal-foot{padding:12px;border-top:1px solid #252540}.modal-close-btn{width:100%;padding:8px;font-size:14px;color:#9ca3af;background:#1a1a2e;border:none;border-radius:8px;cursor:pointer}
+.footer{border-top:1px solid rgba(45,45,80,0.3);margin-top:48px;padding:24px;text-align:center;font-size:12px;color:#4b5563}
+.footer p{margin:0}.footer p+p{margin-top:4px}
+.hide-mobile{display:none}@media(min-width:640px){.hide-mobile{display:block}}
+</style></head><body>
+<div class="sticky-top header"><div class="header-inner">
+<div class="logo"><div class="logo-icon">🧿</div><div><h1 class="logo-text">AI技术洞察平台</h1><p class="logo-sub">聚焦大模型前沿动态 · 服务技术路标制定</p></div></div>
+<div class="stats">
+<div style="display:flex;align-items:center;gap:6px;font-size:12px;color:#9ca3af"><span class="pulse"></span>实时追踪</div>
+<div style="font-size:12px;color:#6b7280">更新于 <span id="updateTime" style="color:#9ca3af">--</span></div>
+<div class="stat-item"><div class="stat-num blue" id="newsCount">0</div><div class="stat-label">条资讯</div></div>
+<div class="stat-item"><div class="stat-num purple" id="companyCount">0</div><div class="stat-label">家厂商</div></div>
+</div></div></div>
+
+<div class="sticky-top nav"><div class="nav-inner">
+<button class="tab-btn active" id="tab-news" onclick="switchTab('news')">📰 资讯流</button>
+<button class="tab-btn" id="tab-companies" onclick="switchTab('companies')">🏢 厂商卡片</button>
+<button class="tab-btn" id="tab-ranking" onclick="switchTab('ranking')">🏆 天梯图</button>
+</div></div>
+
+<div class="main">
+
+<div class="section" id="section-news">
+<div class="filters">
+<span class="filter-label">筛选：</span>
+<button class="filter-btn active" id="filter-all" onclick="filterNews('all')">全部</button>
+<div id="catFilters" style="display:flex;flex-wrap:wrap;gap:8px"></div>
+<div class="hide-mobile" style="width:1px;height:20px;background:#2d2d50;margin:0 4px"></div>
+<select class="filter-select" id="companyFilter" onchange="filterNewsByCo(this.value)"><option value="all">所有厂商</option></select>
+</div>
+<div class="news-list" id="newsList"></div>
+<div class="empty-state hidden" id="newsEmpty"><div style="font-size:40px;margin-bottom:12px">🔍</div><p>没有匹配的资讯</p></div>
+</div>
+
+<div class="section hidden" id="section-companies">
+<h2 class="section-title">🇨🇳 国内厂商</h2><div class="card-grid" id="domesticCards"></div>
+<h2 class="section-title" style="margin-top:32px">🌍 海外厂商</h2><div class="card-grid wide" id="internationalCards"></div>
+</div>
+
+<div class="section hidden" id="section-ranking"><div class="rank-btns"><span class="rank-label">评测源：</span><button class="rank-btn active" id="rank-arena" onclick="switchRanking('arena')">🎯 Chatbot Arena</button><button class="rank-btn" id="rank-artificial" onclick="switchRanking('artificial')">📊 Artificial Analysis</button><button class="rank-btn" id="rank-livebench" onclick="switchRanking('livebench')">🧪 LiveBench</button><button class="rank-btn" id="rank-swebench" onclick="switchRanking('swebench')">💻 SWE-bench</button></div><div class="panel"><div class="panel-head"><h3 class="panel-title" id="rankingTitle">🎯 Chatbot Arena 排名</h3><span class="panel-date" id="rankingSource">来源: lmarena.ai</span></div><div id="rankingBars" style="padding:8px 0"></div></div><div class="panel"><h3 style="font-size:14px;font-weight:500;color:#9ca3af;margin:0 0 12px 0">📊 评测说明</h3><div id="rankingDesc" style="font-size:12px;color:#6b7280;line-height:1.8"></div></div></div>
+<div class="panel"><h3 style="font-size:14px;font-weight:500;color:#9ca3af;margin:0 0 12px 0">📊 排名说明</h3>
+<div class="method-grid">
+<div class="method-item"><div class="method-title" style="color:#818cf8">MMLU-Pro</div><div>大规模多任务语言理解评测</div></div>
+<div class="method-item"><div class="method-title" style="color:#34d399">MATH-500</div><div>数学推理能力评测</div></div>
+<div class="method-item"><div class="method-title" style="color:#fbbf24">HumanEval</div><div>代码生成能力评测</div></div>
+<div class="method-item"><div class="method-title" style="color:#f472b6">SWE-bench</div><div>软件工程任务评测</div></div>
+</div><p style="font-size:12px;color:#6b7280;margin:12px 0 0 0">排名依据各厂商大模型在上述公开基准测试中的综合表现，数据来源于各厂商官方公布结果及第三方评测机构。</p></div>
+</div></div>
+
+<div class="modal-overlay" id="sourceModal" onclick="closeModal(event)">
+<div class="modal-box" onclick="event.stopPropagation()">
+<div class="modal-head"><div><h3 class="modal-title">📎 信息来源</h3><p class="modal-sub" id="modalNewsTitle"></p></div>
+<button class="modal-close" onclick="closeModalDirect()">&times;</button></div>
+<div class="modal-list" id="modalSourceList"></div>
+<div class="modal-foot"><button class="modal-close-btn" onclick="closeModalDirect()">关闭</button></div>
+</div></div>
+
+<div class="footer"><p>AI技术洞察平台 · 数据来源于公开权威信息源 · 仅供技术路标参考</p><p>资讯内容不代表本平台立场 · 请以原始来源为准</p></div>
+<script>window.__EMBEDDED_DATA__ = {"lastUpdated":"2026-06-30T08:00:00Z","platform":{"name":"AI技术洞察平台","subtitle":"聚焦大模型前沿动态 · 服务技术路标制定","description":"追踪国内外主流大模型厂商的最新技术突破、应用案例与产业合作，为供应链技术规划提供决策参考"},"categories":[{"id":"model-breakthrough","name":"模型突破","icon":"🚀","color":"#3B82F6"},{"id":"application","name":"应用案例","icon":"💡","color":"#10B981"},{"id":"partnership","name":"政企合作","icon":"🤝","color":"#8B5CF6"},{"id":"advanced-usage","name":"进阶用法","icon":"⚡","color":"#F59E0B"},{"id":"ecosystem","name":"生态建设","icon":"🌐","color":"#EC4899"},{"id":"capital","name":"资本动态","icon":"💰","color":"#14B8A6"}],"companies":{"domestic":[{"id":"deepseek","name":"深度求索","nameEn":"DeepSeek","logo":"🔍","country":"中国","founded":"2023","headquarters":"杭州","website":"https://www.deepseek.com","coreModels":["DeepSeek-V4","DeepSeek-R1","DeepSeek-V3.2"],"latestHighlight":"首轮外部融资510亿元落地，投后估值近4000亿元；V4模型开创CSA+HCA混合注意力架构","strengths":["开源领先","推理能力强","成本效益极高","国产芯片适配"],"keyMetrics":{"月活用户":"1.27亿","融资总额":"超510亿元","投后估值":"近4000亿元"}},{"id":"bytedance","name":"字节跳动","nameEn":"ByteDance (豆包)","logo":"🫘","country":"中国","founded":"2012","headquarters":"北京","website":"https://www.volcengine.com","coreModels":["豆包2.1 Pro","豆包2.0","Seedance"],"latestHighlight":"豆包2.1 Pro发布，Coding/Agent/VLM多项评测超越Claude Opus 4.6；日均Token调用量突破180万亿","strengths":["市场份额第一","Agent能力强","火山引擎生态","C端用户规模庞大"],"keyMetrics":{"月活用户":"3.45亿","日均Token调用":"180万亿","MaaS市场份额":"49.5%"}},{"id":"alibaba","name":"阿里巴巴","nameEn":"Alibaba (通义千问)","logo":"☁️","country":"中国","founded":"1999","headquarters":"杭州","website":"https://tongyi.aliyun.com","coreModels":["Qwen3.7-Plus","Qwen-Robot","Qwen2.5"],"latestHighlight":"Qwen3.7-Plus多模态智能体发布；Qwen-Robot具身智能系列发布，覆盖VLA/VLN/世界模型","strengths":["多模态融合","开源生态丰富","云计算底座","具身智能布局"],"keyMetrics":{"月活用户":"1.66亿","模型系列":"Qwen系列","云市场份额":"国内第一"}},{"id":"tencent","name":"腾讯","nameEn":"Tencent (混元)","logo":"🐧","country":"中国","founded":"1998","headquarters":"深圳","website":"https://hunyuan.tencent.com","coreModels":["混元3.0","Hy-Memory"],"latestHighlight":"上线Hy-Memory长期记忆增强技术；参投DeepSeek 100亿元；混元3正式版即将上线","strengths":["社交生态整合","长期记忆技术","资本布局广泛","游戏+AI融合"],"keyMetrics":{"月活用户":"5735万","投资DeepSeek":"100亿元","记忆容量":"百万级Token"}},{"id":"zhipu","name":"智谱AI","nameEn":"Zhipu AI","logo":"🧠","country":"中国","founded":"2019","headquarters":"北京","website":"https://www.zhipuai.cn","coreModels":["GLM-5.2","ChatGLM"],"latestHighlight":"GLM-5.2实现稳定100万Token超长上下文；拟A股科创板募资150亿元，成首家A+H大模型企业","strengths":["超长上下文","国产芯片适配","学术背景深厚","政企合作紧密"],"keyMetrics":{"上下文长度":"100万Token","拟募资":"150亿元","代码榜排名":"全球第二"}},{"id":"huawei","name":"华为","nameEn":"Huawei (盘古)","logo":"🔮","country":"中国","founded":"1987","headquarters":"深圳","website":"https://www.huaweicloud.com/product/pangu.html","coreModels":["盘古大模型","昇腾950PR"],"latestHighlight":"DeepSeek-V4完全运行在昇腾950PR上；阿里/字节/腾讯下达数十万片芯片批量订单","strengths":["国产算力底座","全栈自主可控","政企市场主导","芯片+模型协同"],"keyMetrics":{"研发投入":"1923亿元/年","科技50强排名":"第1","芯片框架":"CANN Next"}},{"id":"moonshot","name":"月之暗面","nameEn":"Moonshot AI (Kimi)","logo":"🌙","country":"中国","founded":"2023","headquarters":"北京","website":"https://www.moonshot.cn","coreModels":["Kimi"],"latestHighlight":"持续迭代长文本处理能力，在C端智能助手赛道保持领先","strengths":["超长文本处理","C端产品体验","增长迅速"],"keyMetrics":{"月活用户":"超2000万","融资轮次":"B轮","核心能力":"长文本"}},{"id":"baidu","name":"百度","nameEn":"Baidu (文心一言)","logo":"🐻","country":"中国","founded":"2000","headquarters":"北京","website":"https://yiyan.baidu.com","coreModels":["文心一言4.0","ERNIE系列"],"latestHighlight":"文心大模型持续迭代，搜索+AI融合加深，自动驾驶Apollo与AI协同发展","strengths":["搜索生态融合","自动驾驶协同","知识增强","全栈AI布局"],"keyMetrics":{"搜索市场份额":"国内第一","AI专利数":"国内领先","自动驾驶":"Apollo生态"}},{"id":"minimax","name":"MiniMax","nameEn":"MiniMax","logo":"⭐","country":"中国","founded":"2021","headquarters":"上海","website":"https://www.minimaxi.com","coreModels":["MiniMax-Text-01","MiniMax-VL-01"],"latestHighlight":"冲刺A股IPO，多模态能力持续增强，在AI陪伴和内容生成赛道表现突出","strengths":["多模态生成","AI陪伴","内容创作"],"keyMetrics":{"IPO状态":"冲刺A股","核心赛道":"多模态+社交"}},{"id":"01ai","name":"零一万物","nameEn":"01.AI","logo":"🌱","country":"中国","founded":"2023","headquarters":"北京","website":"https://www.01.ai","coreModels":["Yi系列"],"latestHighlight":"持续深耕开源大模型，Yi系列在中文理解和推理方面表现优异","strengths":["开源贡献","中文理解","性价比"],"keyMetrics":{"创始人":"李开复","定位":"全球化开源AI"}}],"international":[{"id":"openai","name":"OpenAI","nameEn":"OpenAI","logo":"🌀","country":"美国","founded":"2015","headquarters":"旧金山","website":"https://www.openai.com","coreModels":["GPT-5.6 Sol","GPT-5.6 Terra","GPT-5.6 Luna"],"latestHighlight":"发布GPT-5.6 Sol三档模型家族；与Broadcom联合推出首款自研AI推理芯片Jalapeño；微软累计投入超1000亿美元","strengths":["综合能力最强","生态最完善","芯片自研","安全红队领先"],"keyMetrics":{"微软总投资":"超1000亿美元","红队算力":"70万+ GPU小时","芯片设计":"9个月到流片"}},{"id":"anthropic","name":"Anthropic","nameEn":"Anthropic","logo":"🎭","country":"美国","founded":"2021","headquarters":"旧金山","website":"https://www.anthropic.com","coreModels":["Claude Opus 4.8","Claude Fable 5","Claude Sonnet 4.6"],"latestHighlight":"发布Opus 4.8，距4.7仅41天；推出Dynamic Workflows功能；H轮融资650亿美元，估值9650亿美元；已秘密提交IPO","strengths":["安全性领先","编程能力顶级","长时间Agent","诚实性设计"],"keyMetrics":{"估值":"9650亿美元","年收入":"超300亿美元","SWE-bench":"69.2%"}},{"id":"google","name":"Google DeepMind","nameEn":"Google DeepMind","logo":"🔺","country":"美国","founded":"2010/2023合并","headquarters":"山景城","website":"https://deepmind.google","coreModels":["Gemini 2.5 Pro","DiffusionGemma","Gemini 3.5 Flash"],"latestHighlight":"发布DiffusionGemma扩散语言模型，4倍推理加速；Gemini 2.5 Pro支持百万级上下文；Veo 3视频生成","strengths":["多模态最强","超长上下文","搜索生态","开源Gemma系列"],"keyMetrics":{"上下文窗口":"100万Token","Diffusion推理":"4倍加速","开源许可":"Apache 2.0"}},{"id":"meta","name":"Meta","nameEn":"Meta","logo":"♾️","country":"美国","founded":"2004","headquarters":"门洛帕克","website":"https://ai.meta.com","coreModels":["Llama 4 Scout","Llama 4 Maverick","Llama 4 Behemoth"],"latestHighlight":"Llama 4系列开源，Behemoth 2万亿参数训练中；多模态+多语言12+语言支持","strengths":["开源生态最大","多语言支持","社区活跃","研究开放"],"keyMetrics":{"最大模型参数":"2万亿","语言支持":"12+","开源协议":"开放"}},{"id":"microsoft","name":"Microsoft","nameEn":"Microsoft","logo":"🪟","country":"美国","founded":"1975","headquarters":"雷德蒙德","website":"https://www.microsoft.com/ai","coreModels":["Mai-Thinking-1","MAI-Code-1-Flash"],"latestHighlight":"Build大会发布Mai系列推理模型和代码模型；与英伟达推出统一Agentic AI技术栈","strengths":["企业生态","Azure云服务","多模型平台","开发工具链"],"keyMetrics":{"对OpenAI投资":"超千亿美元","模型系列":"Mai系列","合作":"英伟达"}},{"id":"xai","name":"xAI","nameEn":"xAI (Grok)","logo":"⚡","country":"美国","founded":"2023","headquarters":"旧金山","website":"https://x.ai","coreModels":["Grok 4","Grok 4 Heavy"],"latestHighlight":"Grok 4在ARC-AGI-2视觉推理领先；获美国国防部政府合同；SuperGrok订阅$300/月","strengths":["实时数据","特斯拉整合","政府合作","多智能体"],"keyMetrics":{"订阅价格":"$300/月","政府合同":"美国防部","特色":"X平台实时数据"}},{"id":"mistral","name":"Mistral AI","nameEn":"Mistral AI","logo":"🌪️","country":"法国","founded":"2023","headquarters":"巴黎","website":"https://mistral.ai","coreModels":["Mistral Large","Mistral Small","Codestral"],"latestHighlight":"欧洲AI领军者，持续深耕开源和高性能小模型；在代码生成和数学推理方面保持竞争力","strengths":["欧洲AI旗帜","高效小模型","开源友好","企业部署灵活"],"keyMetrics":{"定位":"欧洲AI旗舰","特色":"高效推理","市场":"欧洲+全球"}},{"id":"cohere","name":"Cohere","nameEn":"Cohere","logo":"🤖","country":"加拿大","founded":"2019","headquarters":"多伦多","website":"https://cohere.com","coreModels":["Command R+","Aya多语言系列"],"latestHighlight":"专注企业级AI解决方案，Aya多语言模型覆盖100+语言，在企业搜索和RAG领域领先","strengths":["企业级RAG","多语言覆盖","数据安全","定制化部署"],"keyMetrics":{"企业客户":"全球数千家","语言覆盖":"100+","特色":"企业搜索"}}]},"news":[{"id":"news-001","title":"OpenAI发布GPT-5.6三档模型家族，旗舰Sol专注网络安全","summary":"OpenAI于6月29日发布GPT-5.6系列：Sol（网络安全旗舰）、Terra（日常经济型）、Luna（最快最便宜）。Sol在ExploitBench上匹配Anthropic Mythos Preview水平，但仅用约1/3输出Token。投入超70万A100等效GPU小时进行自动化红队测试。","category":"model-breakthrough","date":"2026-06-29","companies":["openai"],"tags":["GPT-5.6","网络安全","模型发布"],"sources":[{"name":"SecurityWeek","url":"https://www.securityweek.com/openai-unveils-gpt-5-6-sol-as-its-most-advanced-cybersecurity-ai/"},{"name":"Digital Watch Observatory","url":"https://dig.watch/updates/openai-gpt-5-6-sol-preview"},{"name":"DigitalToday (韩)","url":"https://www.digitaltoday.co.kr/en/view/76305/openai-limited-release-of-three-gpt-56-models-top-model-focused-on-cybersecurity"}]},{"id":"news-002","title":"OpenAI与Broadcom联合推出首款自研AI推理芯片Jalapeño","summary":"6月24日，OpenAI与Broadcom发布Jalapeño——OpenAI首款专门为LLM推理设计的定制芯片。从设计到流片仅用9个月，创先进半导体最快ASIC周期。已在实验室运行GPT-5.3-Codex-Spark工作负载，预计大幅降低推理成本。","category":"model-breakthrough","date":"2026-06-25","companies":["openai"],"tags":["AI芯片","Broadcom","推理加速","自研硬件"],"sources":[{"name":"IT Brief India","url":"https://itbrief.in/story/openai-broadcom-unveil-jalapeno-ai-inference-chip"},{"name":"Anadolu Agency","url":"https://www.aa.com.tr/en/americas/openai-launches-first-in-house-ai-chip-in-partnership-with-broadcom/3976867"}]},{"id":"news-003","title":"Anthropic发布Claude Opus 4.8，距上一代仅41天","summary":"6月初，Anthropic发布Claude Opus 4.8，在SWE-bench Pro上达到69.2%（4.7为64.3%），Online-Mind2Web浏览器Agent任务达84%。采用Adaptive Thinking技术，模型自主判断任务复杂度并调整认知投入。新增Dynamic Workflows功能，支持数百并行子Agent。H轮融资650亿美元，估值9650亿美元。","category":"model-breakthrough","date":"2026-06-01","companies":["anthropic"],"tags":["Claude Opus","SWE-bench","Agent","Dynamic Workflows"],"sources":[{"name":"Dig Watch","url":"https://dig.watch/updates/anthropic-launches-claude-opus-4-8"},{"name":"Anthropic Blog","url":"https://www.anthropic.com/webinars/building-agents-on-claude-opus-4-8-live-demos-with-letta-and-browserbase"},{"name":"Appwrite Arena","url":"https://appwrite.io/blog/post/arena-june-2026-update"}]},{"id":"news-004","title":"Google发布DiffusionGemma：扩散模型颠覆自回归文本生成","summary":"6月12日，Google发布DiffusionGemma——一个26B MoE扩散语言模型，从随机占位Token开始同时精炼256个Token块。4倍推理加速，仅3.8B参数激活，可在RTX 5090消费级GPU运行。采用Apache 2.0开源许可，标志着文本生成从自回归向扩散方法的重大范式转变。","category":"model-breakthrough","date":"2026-06-12","companies":["google"],"tags":["扩散模型","Gemma","开源","推理加速"],"sources":[{"name":"InfoWorld","url":"https://www.infoworld.com/article/4184668/google-unveils-diffusiongemma-an-ai-model-that-breaks-free-of-left-to-right-processing.html"}]},{"id":"news-005","title":"字节跳动发布豆包2.1 Pro，Agent能力跨越“生产级质变点”","summary":"6月23日，字节跳动发布豆包2.1 Pro大模型。Coding、Agent、VLM三大方向多项评测超越Claude Opus 4.6。实战中实现芯片设计RTL连续18小时9轮迭代测试，500个智能Agent同步协作生成3D虚拟城市。日均Token调用量突破180万亿，年增长超10倍。火山引擎以49.5%份额位居中国MaaS市场第一。","category":"model-breakthrough","date":"2026-06-23","companies":["bytedance"],"tags":["豆包","Agent","火山引擎","MaaS"],"sources":[{"name":"新华网","url":"http://www3.xinhuanet.com/tech/20260623/acd6f2f27fc34459a7d1684c03278431/c.html"},{"name":"中证网","url":"https://www.cnstock.com/commonDetail/732838"},{"name":"ZOL","url":"https://ai.zol.com.cn/1204/12041523.html"}]},{"id":"news-006","title":"智谱发布GLM-5.2：稳定100万Token超长上下文，全球代码榜第二","summary":"6月16日，智谱AI发布GLM-5.2，依托IndexShare稀疏注意力架构实现稳定100万Token超长上下文。在长周期任务评测中仅次于Claude Opus 4.8，领先GPT-5.5；WebDev代码榜全球第二。上线首日即完成寒武纪等多家国产芯片的Day0同步适配。","category":"model-breakthrough","date":"2026-06-16","companies":["zhipu"],"tags":["GLM","超长上下文","国产芯片","代码生成"],"sources":[{"name":"智谱官方","url":"https://www.zhipuai.cn"},{"name":"AI大模型周报","url":"http://www.iheima.com/article-398475.html"}]},{"id":"news-007","title":"DeepSeek完成首轮510亿元外部融资，投后估值近4000亿元","summary":"6月16日，DeepSeek完成中国AI初创史上最大规模单轮融资。梁文锋个人出资200亿元（最大单一出资方），腾讯出资约100亿元，宁德时代体系出资约50亿元。阿里巴巴因要求股权比例+董事会决策权而谈崩缺席。梁文锋设五年锁定期。DeepSeek同时宣布所有部门至少扩编一倍。","category":"capital","date":"2026-06-16","companies":["deepseek","tencent"],"tags":["融资","DeepSeek","腾讯","估值"],"sources":[{"name":"金融界","url":"https://finance.jrj.com.cn/2026/06/16201357493219.shtml"},{"name":"PConline","url":"https://g.pconline.com.cn/x/2175/21758103.html"},{"name":"钛媒体","url":"https://www.tmtpost.com/8035376.html"}]},{"id":"news-008","title":"阿里巴巴发布Qwen3.7-Plus多模态智能体和Qwen-Robot具身智能系列","summary":"6月，阿里密集发布：Qwen3.7-Plus多模态智能体模型（可看懂界面、操作应用、生成代码），演示11小时自主完成英语学习APP开发；Qwen-Robot具身大模型系列（含VLA操作、VLN移动和世界模型）。全面开放第三方Agent和Skill接入，瑞幸、肯德基、东方航空等首批品牌已加入。","category":"model-breakthrough","date":"2026-06-16","companies":["alibaba"],"tags":["Qwen","智能体","具身智能","多模态"],"sources":[{"name":"i黑马","url":"http://www.iheima.com/article-398475.html"}]},{"id":"news-009","title":"微软Build大会发布Mai系列模型，与英伟达达成深度合作","summary":"6月2日微软Build大会：发布首个AI推理模型Mai-Thinking-1（350亿活跃参数）和首款代码模型MAI-Code-1-Flash；与英伟达联合推出统一技术栈覆盖从Windows设备到云端的全场景Agentic AI部署。微软透露对OpenAI累计投入已超1000亿美元。","category":"model-breakthrough","date":"2026-06-02","companies":["microsoft"],"tags":["微软","英伟达","Build大会","Agentic AI"],"sources":[{"name":"搜狐","url":"https://www.sohu.com/a/1031429608_313745"}]},{"id":"news-010","title":"腾讯上线Hy-Memory长期记忆技术，参投DeepSeek 100亿元","summary":"6月3日，腾讯上线Hy-Memory长期记忆增强技术，采用三级分层记忆架构，支持百万级Token容量，检索准确率超95%。同时宣布对DeepSeek-V4系列模型调用价格最高降97.5%，持平官方售价。","category":"advanced-usage","date":"2026-06-03","companies":["tencent","deepseek"],"tags":["长期记忆","降价","Agent"],"sources":[{"name":"i黑马","url":"http://www.iheima.com/article-398475.html"}]},{"id":"news-011","title":"华为昇腾950PR全量运行DeepSeek-V4，国产算力闭环形成","summary":"DeepSeek-V4完全运行在华为昇腾950PR推理芯片上，底层代码从CUDA全面转向华为CANN Next框架。阿里、字节跳动、腾讯已向华为下达数十万片芯片批量订单。华为在《财富》2026年中国科技50强中排名第一，年研发投入1923亿元。","category":"ecosystem","date":"2026-06-20","companies":["huawei","deepseek"],"tags":["国产芯片","昇腾","CANN","自主可控"],"sources":[{"name":"AAStocks","url":"http://wdatacn.aastocks.com/sc/(Z(@@78XMF=@@sPxRU%7B%7B%7Bthis%7D%7D%7Dxca))/stocks/news/aafn-con/NOW.1516089/latest-news/AAFN"},{"name":"凤凰科技","url":"https://tech.ifeng.com/c/8uFFVTMgtnY"}]},{"id":"news-012","title":"智源研究院发布全球首个通用世界基座模型“悟界·Physis-v0.1”","summary":"6月12日第八届北京智源大会：发布全球首个通用世界基座模型，标志AI范式从“预测下一个词元”向“预测下一个物理状态”跃迁。具备物理一致性、动作因果性、长程可推演性，可应用于具身智能、工业制造、科学研究等领域。","category":"model-breakthrough","date":"2026-06-12","companies":[],"tags":["世界模型","智源","物理AI","基座模型"],"sources":[{"name":"北京日报","url":"https://xinwen.bjd.com.cn/content/s6a2c1505e4b0e45f3fd2fd61.html"},{"name":"新浪科技","url":"https://k.sina.cn/article_1708265521_65d21031019023uay.html"}]},{"id":"news-013","title":"Odyssey ML获3.1亿美元融资，亚马逊等押注世界模型赛道","summary":"6月17日，世界模型公司Odyssey ML完成3.1亿美元融资，投后估值14.5亿美元。投资方包括亚马逊、AMD Ventures、Google DeepMind首席科学家Jeff Dean等。AWS成为首选云服务商，Odyssey将针对AWS Trainium芯片优化模型。","category":"capital","date":"2026-06-17","companies":[],"tags":["世界模型","融资","亚马逊"],"sources":[{"name":"i黑马","url":"http://www.iheima.com/article-398475.html"}]},{"id":"news-014","title":"JetSpec实现9.64倍LLM推理加速（UCSD郝AI实验室）","summary":"6月26日，UC San Diego郝AI实验室发布JetSpec推测解码方法。MATH-500上实现9.64倍加速，GSM8K上7.82倍，峰值约1,456 Token/秒。采用因果并行草稿头技术，一次前向传播生成整棵评分候选Token树。已在GitHub和HuggingFace开源。","category":"advanced-usage","date":"2026-06-26","companies":[],"tags":["推理加速","推测解码","开源","学术突破"],"sources":[{"name":"NYU Shanghai RITS","url":"http://rits.shanghai.nyu.edu/ai/jetspec-causal-parallel-tree-drafting-hits-9-64x-faster-llm-inference/"}]},{"id":"news-015","title":"EPFL发布MiCRo脑启发式可解释LLM架构（ICLR 2026）","summary":"6月27日，瑞士EPFL在ICLR 2026发表MiCRo（Mixture of Cognitive Reasoners），模仿人脑结构设置语言、逻辑、社交推理、世界知识四个专家模块。每个词可被路由到最合适的专家模块，推理过程完全可见和可调控。代表可解释AI（XAI）的重大进展。","category":"advanced-usage","date":"2026-06-27","companies":[],"tags":["可解释AI","ICLR","脑启发","学术突破"],"sources":[{"name":"AI Times (韩)","url":"https://www.aitimes.kr/news/articleView.html?idxno=40717"}]},{"id":"news-016","title":"Anthropic CEO透露已秘密提交IPO申请，Notion争议引发“模型降智”讨论","summary":"6月7日，Notion状态页误报Anthropic模型“性能退化”引发全网关于“模型降智”的热议。12小时后双方澄清为基础设施短暂故障。同期微软证实Anthropic已秘密提交IPO申请；Anthropic年化收入超300亿美元。","category":"ecosystem","date":"2026-06-07","companies":["anthropic"],"tags":["IPO","Notion","模型降智"],"sources":[{"name":"36氪","url":"https://www.36kr.com/p/3844094734174467"},{"name":"NY Post","url":"https://nypost.com/2026/06/09/business/anthropic-which-claimed-ai-model-was-too-risky-for-public-to-use-releases-safe-version/"}]},{"id":"news-017","title":"Anthropic Dynamic Workflows：数百并行子Agent协同实现大规模代码迁移","summary":"Anthropic同步Opus 4.8发布Dynamic Workflows功能（Claude Code研究预览版），支持数百个并行子Agent处理大规模任务，如数十万行代码库迁移。配合Adaptive Thinking，模型自主评估复杂度并调整认知投入。","category":"advanced-usage","date":"2026-06-01","companies":["anthropic"],"tags":["Workflow","Agent","并行","代码迁移"],"sources":[{"name":"Computer News","url":"https://www.racunalniske-novice.com/en/anthropic-introduces-opus-4-8-and-new-dynamic-workflows-tool/"},{"name":"Anthropic Webinar","url":"https://www.anthropic.com/webinars/building-agents-on-claude-opus-4-8-live-demos-with-letta-and-browserbase"}]},{"id":"news-018","title":"英特尔与火山引擎联手推动Agentic AI落地","summary":"英特尔与火山引擎联合推出至强6智能体部署优化方案，单颗处理器支持超1000个智能体稳定运行。结合英特尔TDX与火山引擎，打造可信智能体端到端数据保护方案，从芯片级硬件安全到云平台数据加密全覆盖。","category":"partnership","date":"2026-06-18","companies":["bytedance"],"tags":["英特尔","火山引擎","智能体","安全"],"sources":[{"name":"PCPOP","url":"https://www.pcpop.com/article/6937333.shtml"}]},{"id":"news-019","title":"豆包开启付费订阅模式，AI商业化路径现两极分化","summary":"6月下旬，豆包上线付费订阅（68-500元/月），Seedance毛利率达70%。与此同时，腾讯、小米等对模型调用价格最高降97%。中国大模型行业出现“高端付费+低价走量”的二元商业化格局。","category":"ecosystem","date":"2026-06-25","companies":["bytedance","tencent"],"tags":["商业化","付费订阅","价格战"],"sources":[{"name":"i黑马","url":"http://www.iheima.com/article-398475.html"},{"name":"新华网","url":"http://www3.xinhuanet.com/tech/20260623/acd6f2f27fc34459a7d1684c03278431/c.html"}]},{"id":"news-020","title":"Claude Opus 4.8在Microsoft Foundry正式全面上线","summary":"Anthropic模型在Microsoft Foundry on Azure上正式全面可用（GA），企业客户可直接在Azure平台上使用Claude Opus 4.8。加上Amazon Bedrock和Google Cloud Vertex AI，Claude已覆盖三大云平台。","category":"ecosystem","date":"2026-06-15","companies":["anthropic","microsoft"],"tags":["Azure","Foundry","多云部署"],"sources":[{"name":"Anthropic Blog","url":"https://claude.com/blog/claude-in-microsoft-foundry"}]},{"id":"news-021","title":"Amalgam Rx医疗大模型Chiron获2026 AI突破奖“年度LLM”","summary":"6月29日，Amalgam Rx的Chiron医疗基础模型获2026 AI Breakthrough Awards“年度最佳大语言模型”。该模型基于数百万纵向患者记录训练，将睡眠呼吸暂停诊断效率提升2倍，不必要随访减少近一半。标志着垂直领域大模型走向成熟。","category":"application","date":"2026-06-29","companies":[],"tags":["医疗AI","垂直应用","AI Breakthrough"],"sources":[{"name":"BusinessWire","url":"https://www.businesswire.com/news/home/20260629335085/en/Amalgam-Rx-Wins-Overall-Large-Language-Model-of-the-Year"}]},{"id":"news-022","title":"腾讯云对DeepSeek-V4系列模型降价最高97.5%","summary":"6月3日起，腾讯云对DeepSeek-V4系列模型调用价格大幅下调，最高降幅达97.5%，调整后价格全面持平DeepSeek官方售价。这标志着中国大模型API市场进入“价格战”阶段，对中小企业AI应用部署形成利好。","category":"ecosystem","date":"2026-06-03","companies":["tencent","deepseek"],"tags":["腾讯云","降价","API"],"sources":[{"name":"i黑马","url":"http://www.iheima.com/article-398475.html"}]}],"rankings":{"updateDate":"2026-06-30","methodology":"综合排名基于四大维度加权评分：基准测试得分(40%)、实际应用表现(25%)、生态成熟度(20%)、行业影响力(15%)。数据来源包括公开基准测试、lmarena竞技场、SWE-bench、企业调研和行业报告。","dimensions":[{"key":"benchmark","name":"基准测试","weight":0.4,"description":"MMLU-Pro, MATH-500, HumanEval, SWE-bench等综合评测得分"},{"key":"application","name":"实际应用","weight":0.25,"description":"企业级可用性、Agent执行能力、生产环境表现"},{"key":"ecosystem","name":"生态成熟度","weight":0.2,"description":"开发者工具链、API稳定性、第三方集成、社区活跃度"},{"key":"influence","name":"行业影响力","weight":0.15,"description":"市场份额、融资规模、政企合作广度、技术引领力"}],"global":[{"rank":1,"companyId":"anthropic","model":"Claude Opus 4.8","scores":{"benchmark":96,"application":94,"ecosystem":88,"influence":90},"total":92.6},{"rank":2,"companyId":"openai","model":"GPT-5.6 Sol","scores":{"benchmark":95,"application":92,"ecosystem":93,"influence":96},"total":94.2},{"rank":3,"companyId":"google","model":"Gemini 2.5 Pro","scores":{"benchmark":93,"application":90,"ecosystem":95,"influence":93},"total":92.6},{"rank":4,"companyId":"bytedance","model":"豆包2.1 Pro","scores":{"benchmark":90,"application":91,"ecosystem":85,"influence":88},"total":88.9},{"rank":5,"companyId":"deepseek","model":"DeepSeek-V4","scores":{"benchmark":91,"application":88,"ecosystem":82,"influence":90},"total":88.2},{"rank":6,"companyId":"zhipu","model":"GLM-5.2","scores":{"benchmark":89,"application":86,"ecosystem":78,"influence":82},"total":84.8},{"rank":7,"companyId":"alibaba","model":"Qwen3.7-Plus","scores":{"benchmark":87,"application":85,"ecosystem":90,"influence":86},"total":86.9},{"rank":8,"companyId":"microsoft","model":"Mai-Thinking-1","scores":{"benchmark":85,"application":87,"ecosystem":92,"influence":95},"total":89.1},{"rank":9,"companyId":"meta","model":"Llama 4 Maverick","scores":{"benchmark":84,"application":82,"ecosystem":88,"influence":87},"total":84.8},{"rank":10,"companyId":"xai","model":"Grok 4 Heavy","scores":{"benchmark":86,"application":80,"ecosystem":75,"influence":83},"total":81.9}],"domestic":[{"rank":1,"companyId":"bytedance","model":"豆包2.1 Pro","scores":{"benchmark":90,"application":91,"ecosystem":85,"influence":88},"total":88.9},{"rank":2,"companyId":"deepseek","model":"DeepSeek-V4","scores":{"benchmark":91,"application":88,"ecosystem":82,"influence":90},"total":88.2},{"rank":3,"companyId":"alibaba","model":"Qwen3.7-Plus","scores":{"benchmark":87,"application":85,"ecosystem":90,"influence":86},"total":86.9},{"rank":4,"companyId":"zhipu","model":"GLM-5.2","scores":{"benchmark":89,"application":86,"ecosystem":78,"influence":82},"total":84.8},{"rank":5,"companyId":"tencent","model":"混元3.0","scores":{"benchmark":83,"application":84,"ecosystem":82,"influence":85},"total":83.4},{"rank":6,"companyId":"huawei","model":"盘古大模型","scores":{"benchmark":80,"application":82,"ecosystem":88,"influence":92},"total":84.5},{"rank":7,"companyId":"baidu","model":"文心一言4.0","scores":{"benchmark":82,"application":80,"ecosystem":86,"influence":88},"total":83.2},{"rank":8,"companyId":"moonshot","model":"Kimi","scores":{"benchmark":79,"application":82,"ecosystem":75,"influence":78},"total":78.9},{"rank":9,"companyId":"minimax","model":"MiniMax-Text-01","scores":{"benchmark":76,"application":78,"ecosystem":72,"influence":75},"total":75.6},{"rank":10,"companyId":"01ai","model":"Yi系列","scores":{"benchmark":74,"application":76,"ecosystem":70,"influence":72},"total":73.4}],"international":[{"rank":1,"companyId":"openai","model":"GPT-5.6 Sol","scores":{"benchmark":95,"application":92,"ecosystem":93,"influence":96},"total":94.2},{"rank":2,"companyId":"anthropic","model":"Claude Opus 4.8","scores":{"benchmark":96,"application":94,"ecosystem":88,"influence":90},"total":92.6},{"rank":3,"companyId":"google","model":"Gemini 2.5 Pro","scores":{"benchmark":93,"application":90,"ecosystem":95,"influence":93},"total":92.6},{"rank":4,"companyId":"microsoft","model":"Mai-Thinking-1","scores":{"benchmark":85,"application":87,"ecosystem":92,"influence":95},"total":89.1},{"rank":5,"companyId":"meta","model":"Llama 4 Maverick","scores":{"benchmark":84,"application":82,"ecosystem":88,"influence":87},"total":84.8},{"rank":6,"companyId":"xai","model":"Grok 4 Heavy","scores":{"benchmark":86,"application":80,"ecosystem":75,"influence":83},"total":81.9},{"rank":7,"companyId":"mistral","model":"Mistral Large","scores":{"benchmark":81,"application":78,"ecosystem":76,"influence":75},"total":78.1},{"rank":8,"companyId":"cohere","model":"Command R+","scores":{"benchmark":77,"application":80,"ecosystem":78,"influence":73},"total":77.2}]},"benchmarks":{"arena":{"name":"Chatbot Arena","icon":"🎯","desc":"LMSYS Chatbot Arena — 全球最大规模真人盲评投票，Elo评分体系","source":"lmarena.ai","models":[{"rank":1,"name":"GPT-5.5 (xHigh)","company":"OpenAI","logo":"🌀","score":1530},{"rank":2,"name":"Claude Opus 4.8","company":"Anthropic","logo":"🎭","score":1520},{"rank":3,"name":"Gemini 3.1 Pro Preview","company":"Google","logo":"🔺","score":1508},{"rank":4,"name":"Claude Fable 5","company":"Anthropic","logo":"🎭","score":1495},{"rank":5,"name":"Claude Opus 4.7","company":"Anthropic","logo":"🎭","score":1480},{"rank":6,"name":"GPT-5.4 (xHigh)","company":"OpenAI","logo":"🌀","score":1472},{"rank":7,"name":"Grok 4 Heavy","company":"xAI","logo":"⚡","score":1460},{"rank":8,"name":"Gemini 2.5 Pro","company":"Google","logo":"🔺","score":1455},{"rank":9,"name":"Claude Sonnet 4.6","company":"Anthropic","logo":"🎭","score":1440},{"rank":10,"name":"GPT-5 Codex (xHigh)","company":"OpenAI","logo":"🌀","score":1435},{"rank":11,"name":"DeepSeek V4 Pro","company":"深度求索","logo":"🔍","score":1428},{"rank":12,"name":"豆包 2.1 Pro","company":"字节跳动","logo":"🫘","score":1420},{"rank":13,"name":"GLM-5.2","company":"智谱AI","logo":"🧠","score":1415},{"rank":14,"name":"Qwen3.7-Plus","company":"阿里巴巴","logo":"☁️","score":1410},{"rank":15,"name":"Kimi K2 Thinking","company":"月之暗面","logo":"🌙","score":1405},{"rank":16,"name":"Claude Opus 4.6","company":"Anthropic","logo":"🎭","score":1400},{"rank":17,"name":"Mai-Thinking-1","company":"Microsoft","logo":"🪟","score":1390},{"rank":18,"name":"Llama 4 Maverick","company":"Meta","logo":"♾️","score":1385},{"rank":19,"name":"混元 3.0","company":"腾讯","logo":"🐧","score":1380},{"rank":20,"name":"Mistral Large 3","company":"Mistral","logo":"🌪️","score":1370},{"rank":21,"name":"文心一言 4.0","company":"百度","logo":"🐻","score":1365},{"rank":22,"name":"GPT-5.6 Sol","company":"OpenAI","logo":"🌀","score":1360},{"rank":23,"name":"Command R+","company":"Cohere","logo":"🤖","score":1350},{"rank":24,"name":"MiniMax-01","company":"MiniMax","logo":"⭐","score":1340},{"rank":25,"name":"盘古 5.0","company":"华为","logo":"🔮","score":1330}]},"artificial":{"name":"Artificial Analysis","icon":"📊","desc":"独立评测机构，10项基准综合智力指数（v4.0），侧重真实商业场景","source":"artificialanalysis.ai","models":[{"rank":1,"name":"GPT-5.2 (xHigh Reasoning)","company":"OpenAI","logo":"🌀","score":51},{"rank":2,"name":"Claude Opus 4.5 (Reasoning)","company":"Anthropic","logo":"🎭","score":49},{"rank":3,"name":"Gemini 3 Pro Preview (High)","company":"Google","logo":"🔺","score":48},{"rank":4,"name":"GLM-4.7","company":"智谱AI","logo":"🧠","score":42},{"rank":5,"name":"Kimi K2 Thinking","company":"月之暗面","logo":"🌙","score":41},{"rank":6,"name":"GPT-5 (High)","company":"OpenAI","logo":"🌀","score":40},{"rank":7,"name":"DeepSeek R1 0528","company":"深度求索","logo":"🔍","score":39},{"rank":8,"name":"Grok 4","company":"xAI","logo":"⚡","score":38},{"rank":9,"name":"Claude Sonnet 4.5","company":"Anthropic","logo":"🎭","score":37},{"rank":10,"name":"Claude Opus 4","company":"Anthropic","logo":"🎭","score":36},{"rank":11,"name":"Gemini 2.5 Pro","company":"Google","logo":"🔺","score":35},{"rank":12,"name":"Llama 4 Maverick","company":"Meta","logo":"♾️","score":34},{"rank":13,"name":"Qwen2.5-Max","company":"阿里巴巴","logo":"☁️","score":33},{"rank":14,"name":"豆包 2.0 Pro","company":"字节跳动","logo":"🫘","score":32},{"rank":15,"name":"Mistral Large 2","company":"Mistral","logo":"🌪️","score":31},{"rank":16,"name":"混元 Turbo","company":"腾讯","logo":"🐧","score":30},{"rank":17,"name":"Command R+","company":"Cohere","logo":"🤖","score":29},{"rank":18,"name":"文心一言 4.0","company":"百度","logo":"🐻","score":28},{"rank":19,"name":"Yi-Lightning","company":"零一万物","logo":"🌱","score":27},{"rank":20,"name":"Mai-1","company":"Microsoft","logo":"🪟","score":26}]},"livebench":{"name":"LiveBench","icon":"🧪","desc":"动态防污染评测，每6月更新题库，ICLR 2025 Spotlight，8维度综合","source":"livebench.ai","models":[{"rank":1,"name":"GPT-5.5 Thinking (xHigh)","company":"OpenAI","logo":"🌀","score":80.7},{"rank":2,"name":"GPT-5.4 Thinking (xHigh)","company":"OpenAI","logo":"🌀","score":80.3},{"rank":3,"name":"Gemini 3.1 Pro Preview (High)","company":"Google","logo":"🔺","score":79.9},{"rank":4,"name":"Claude Opus 4.8 Thinking (xHigh)","company":"Anthropic","logo":"🎭","score":78.8},{"rank":5,"name":"Claude Fable 5 Thinking (xHigh)","company":"Anthropic","logo":"🎭","score":78.3},{"rank":6,"name":"Claude Opus 4.7 Thinking (xHigh)","company":"Anthropic","logo":"🎭","score":76.9},{"rank":7,"name":"Claude Opus 4.6 Thinking (High)","company":"Anthropic","logo":"🎭","score":76.3},{"rank":8,"name":"GLM-5.2","company":"智谱AI","logo":"🧠","score":76.2},{"rank":9,"name":"Claude Opus 4.5 Thinking (High)","company":"Anthropic","logo":"🎭","score":76},{"rank":10,"name":"Claude Sonnet 4.6 Thinking (Medium)","company":"Anthropic","logo":"🎭","score":75.5},{"rank":11,"name":"GPT-5 Codex (xHigh)","company":"OpenAI","logo":"🌀","score":74.8},{"rank":12,"name":"DeepSeek V4 Pro","company":"深度求索","logo":"🔍","score":74.2},{"rank":13,"name":"豆包 2.1 Pro","company":"字节跳动","logo":"🫘","score":73.8},{"rank":14,"name":"Qwen3.7-Plus","company":"阿里巴巴","logo":"☁️","score":73.2},{"rank":15,"name":"Kimi K2 Thinking","company":"月之暗面","logo":"🌙","score":72.5},{"rank":16,"name":"Grok 4 Heavy","company":"xAI","logo":"⚡","score":72},{"rank":17,"name":"Gemini 2.5 Pro (High)","company":"Google","logo":"🔺","score":71.5},{"rank":18,"name":"Mai-Thinking-1","company":"Microsoft","logo":"🪟","score":70.8},{"rank":19,"name":"Llama 4 Maverick","company":"Meta","logo":"♾️","score":70.2},{"rank":20,"name":"混元 3.0","company":"腾讯","logo":"🐧","score":69.5},{"rank":21,"name":"Mistral Large 3","company":"Mistral","logo":"🌪️","score":68.8},{"rank":22,"name":"文心一言 4.0","company":"百度","logo":"🐻","score":68},{"rank":23,"name":"Qwen3-Coder","company":"阿里巴巴","logo":"☁️","score":67.2},{"rank":24,"name":"Command R+","company":"Cohere","logo":"🤖","score":66.5},{"rank":25,"name":"DeepSeek R1 0528","company":"深度求索","logo":"🔍","score":65.8}]},"swebench":{"name":"SWE-bench","icon":"💻","desc":"真实GitHub Issue软件工程评测（Verified 500题），业界代码能力黄金标准","source":"swebench.com","models":[{"rank":1,"name":"Claude Sonnet 4.5","company":"Anthropic","logo":"🎭","score":77.2},{"rank":2,"name":"Gemini 3 Pro","company":"Google","logo":"🔺","score":76.2},{"rank":3,"name":"Trae Agent (Claude 4 Sonnet)","company":"字节跳动","logo":"🫘","score":75.2},{"rank":4,"name":"Claude Opus 4.5 (Medium)","company":"Anthropic","logo":"🎭","score":74.4},{"rank":5,"name":"KAT-Coder","company":"Kwaipilot","logo":"🤖","score":73.4},{"rank":6,"name":"Claude Sonnet 4.6","company":"Anthropic","logo":"🎭","score":70.6},{"rank":7,"name":"Claude Opus 4","company":"Anthropic","logo":"🎭","score":67.6},{"rank":8,"name":"GPT-5 (Medium Reasoning)","company":"OpenAI","logo":"🌀","score":65},{"rank":9,"name":"W&B Programmer O1","company":"Weights & Biases","logo":"🤖","score":64.6},{"rank":10,"name":"Gemini 2.5 Pro","company":"Google","logo":"🔺","score":63.8},{"rank":11,"name":"Blackbox AI Agent","company":"Blackbox","logo":"🤖","score":62.8},{"rank":12,"name":"KAT-Dev-32B","company":"Kwaipilot","logo":"🤖","score":62.4},{"rank":13,"name":"CodeStory Midwit","company":"CodeStory","logo":"🤖","score":62.2},{"rank":14,"name":"DeepSeek V4 Pro (Agent)","company":"深度求索","logo":"🔍","score":61},{"rank":15,"name":"Learn-by-interact","company":"Academic","logo":"🎓","score":60.2},{"rank":16,"name":"Qwen3-Coder","company":"阿里巴巴","logo":"☁️","score":59.5},{"rank":17,"name":"豆包 2.1 Pro (Agent)","company":"字节跳动","logo":"🫘","score":58.8},{"rank":18,"name":"devlo","company":"devlo","logo":"🤖","score":58.2},{"rank":19,"name":"GLM-5.2 (Agent)","company":"智谱AI","logo":"🧠","score":57},{"rank":20,"name":"GPT-5 Codex","company":"OpenAI","logo":"🌀","score":56.5},{"rank":21,"name":"Claude Opus 4.8","company":"Anthropic","logo":"🎭","score":55.8},{"rank":22,"name":"Kimi K2 (Agent)","company":"月之暗面","logo":"🌙","score":54},{"rank":23,"name":"Llama 4 Maverick (Agent)","company":"Meta","logo":"♾️","score":52.5},{"rank":24,"name":"Mai-Code-1-Flash","company":"Microsoft","logo":"🪟","score":50},{"rank":25,"name":"Grok 4 Heavy (Agent)","company":"xAI","logo":"⚡","score":48.5}]}}};</script>
+<script>
+var D = window.__EMBEDDED_DATA__;
+if (!D) { document.getElementById("newsList").innerHTML = '<div class="empty-state"><p>DATA LOAD FAILED</p></div>'; } else { init(); }
+function init() {
+    var curTab = "news", curFilter = "all", curCo = "all", curRank = "arena";
+
+    function fmt(d) { var dt = new Date(d); return (dt.getMonth()+1) + "M" + dt.getDate() + "D"; }
+    function gco(id) { var a = (D.companies.domestic || []).concat(D.companies.international || []); return a.find(function(c) { return c.id === id; }); }
+    function gcat(id) { return D.categories.find(function(c) { return c.id === id; }) || { name: id, icon: "📌" }; }
+
+    var tagCls = { "model-breakthrough": "mb", "application": "ap", "partnership": "pt", "advanced-usage": "au", "ecosystem": "ec", "capital": "cp" };
+
+    function rAll() {
+        document.getElementById("updateTime").textContent = new Date(D.lastUpdated).toLocaleString("zh-CN", { month: "short", day: "numeric", hour: "2-digit", minute: "2-digit" });
+        document.getElementById("newsCount").textContent = D.news.length;
+        document.getElementById("companyCount").textContent = D.companies.domestic.length + D.companies.international.length;
+        rCats(); rCoSel(); rNews(); rCos();
+    }
+
+    function rCats() {
+        document.getElementById("catFilters").innerHTML = D.categories.map(function(c) {
+            return '<button class="filter-btn" id="filter-' + c.id + '" onclick="filterNews(\'' + c.id + '\')">' + c.icon + ' ' + c.name + '</button>';
+        }).join("");
+    }
+
+    function rCoSel() {
+        var a = (D.companies.domestic || []).concat(D.companies.international || []);
+        document.getElementById("companyFilter").innerHTML = '<option value="all">所有厂商</option>' + a.map(function(c) { return '<option value="' + c.id + '">' + c.logo + ' ' + c.name + '</option>'; }).join("");
+    }
+
+    window.filterNews = function(cat) {
+        curFilter = cat;
+        document.querySelectorAll("#catFilters .filter-btn, #filter-all").forEach(function(b) { b.classList.remove("active"); });
+        var b = document.getElementById("filter-" + cat); if (b) b.classList.add("active");
+        rNews();
+    };
+
+    window.filterNewsByCo = function(cid) { curCo = cid; rNews(); };
+
+    function rNews() {
+        var l = D.news;
+        if (curFilter !== "all") l = l.filter(function(n) { return n.category === curFilter; });
+        if (curCo !== "all") l = l.filter(function(n) { return n.companies.indexOf(curCo) >= 0; });
+        var el = document.getElementById("newsList"), em = document.getElementById("newsEmpty");
+        if (!l.length) { el.innerHTML = ""; em.classList.remove("hidden"); return; }
+        em.classList.add("hidden");
+        el.innerHTML = l.map(function(n) {
+            var ct = gcat(n.category), tc = tagCls[n.category] || "mb";
+            var ctags = n.companies.map(function(id) { var c = gco(id); return c ? '<span class="company-tag">' + c.logo + ' ' + c.name + '</span>' : ''; }).join("");
+            return '<div class="news-card" onclick="openSrc(\'' + n.id + '\')">'
+                + '<div class="news-header"><div class="news-tags"><span class="tag tag-' + tc + '">' + ct.icon + ' ' + ct.name + '</span>' + ctags + '</div>'
+                + '<span class="news-date">' + fmt(n.date) + '</span></div>'
+                + '<h3 class="news-title">' + n.title + '</h3>'
+                + '<p class="news-summary">' + n.summary + '</p>'
+                + '<div class="news-source-link">📎 ' + n.sources.length + ' 个来源 →</div></div>';
+        }).join("");
+    }
+
+    window.openSrc = function(nid) {
+        var n = D.news.find(function(x) { return x.id === nid; }); if (!n) return;
+        if (n.sources.length === 1) { window.open(n.sources[0].url, "_blank"); return; }
+        document.getElementById("modalNewsTitle").textContent = n.title;
+        document.getElementById("modalSourceList").innerHTML = n.sources.map(function(s, i) {
+            return '<a href="' + s.url + '" target="_blank" class="modal-link">'
+                + '<span class="modal-link-num">' + (i+1) + '</span>'
+                + '<div class="modal-link-info"><div class="modal-link-name">' + s.name + '</div><div class="modal-link-url">' + s.url + '</div></div>'
+                + '<span class="modal-link-arrow">↗</span></a>';
+        }).join("");
+        document.getElementById("sourceModal").classList.add("show");
+    };
+
+    window.closeModal = function(e) { if (e.target === document.getElementById("sourceModal")) document.getElementById("sourceModal").classList.remove("show"); };
+    window.closeModalDirect = function() { document.getElementById("sourceModal").classList.remove("show"); };
+
+    function rCos() {
+        function cCard(c) {
+            var ms = c.coreModels.map(function(m) { return '<span class="model-tag">' + m + '</span>'; }).join("");
+            var ss = c.strengths.map(function(s) { return '<span class="strength-tag">' + s + '</span>'; }).join(" ");
+            var mt = "";
+            if (c.keyMetrics) {
+                mt = '<div class="co-card-metrics">' + Object.entries(c.keyMetrics).slice(0, 2).map(function(e) {
+                    return '<div class="metric-row"><span class="metric-label">' + e[0] + '</span><span class="metric-value">' + e[1] + '</span></div>';
+                }).join("") + '</div>';
+            }
+            return '<div class="co-card">'
+                + '<div class="co-card-head"><div class="co-card-logo"><span class="co-card-icon">' + c.logo + '</span><div><h3 class="co-card-name">' + c.name + '</h3><p class="co-card-en">' + c.nameEn + '</p></div></div><span class="co-card-loc">' + c.headquarters + '</span></div>'
+                + '<div style="display:flex;flex-wrap:wrap;gap:4px;margin-bottom:12px">' + ms + '</div>'
+                + '<p class="co-card-hl">' + c.latestHighlight + '</p>'
+                + '<div style="display:flex;flex-wrap:wrap;gap:4px;margin-bottom:8px">' + ss + '</div>'
+                + mt
+                + '<a href="' + c.website + '" target="_blank" class="co-card-link">访问官网 →</a></div>';
+        }
+        document.getElementById("domesticCards").innerHTML = D.companies.domestic.map(cCard).join("");
+        document.getElementById("internationalCards").innerHTML = D.companies.international.map(cCard).join("");
+    }
+
+    window.switchTab = function(tab) {
+        curTab = tab;
+        ["news", "companies", "ranking"].forEach(function(t) {
+            document.getElementById("tab-" + t).classList.remove("active");
+            document.getElementById("section-" + t).classList.add("hidden");
+        });
+        document.getElementById("tab-" + tab).classList.add("active");
+        document.getElementById("section-" + tab).classList.remove("hidden");
+        if (tab === "ranking") setTimeout(rBars, 50);
+    };
+
+    window.switchRanking = function(type) {
+        curRank = type;
+        ["arena", "artificial", "livebench", "swebench"].forEach(function(t) { var b = document.getElementById("rank-" + t); if (b) b.classList.remove("active"); });
+        var a = document.getElementById("rank-" + type); if (a) a.classList.add("active");
+        var bm = D.benchmarks[type];
+        document.getElementById("rankingTitle").textContent = bm.icon + " " + bm.name + " 排名";
+        document.getElementById("rankingSource").textContent = "来源: " + bm.source;
+        document.getElementById("rankingDesc").textContent = bm.desc;
+        rBars();
+    };
+
+    // PURE CSS BAR CHART - sorted by benchmark score only
+    function rBars() {
+        var bm = D.benchmarks[curRank];
+        if (!bm || !bm.models || !bm.models.length) return;
+        var max = bm.models[0].score;
+        var html = '';
+        bm.models.forEach(function(m, i) {
+            var pct = (m.score / max * 100).toFixed(0);
+            var cls = i === 0 ? 'gold' : i === 1 ? 'silver' : i === 2 ? 'bronze' : 'normal';
+            var medal = i === 0 ? '🥇' : i === 1 ? '🥈' : i === 2 ? '🥉' : '';
+            html += '<div class="bar-row">'
+                + '<div class="bar-label">' + medal + ' ' + m.logo + ' ' + m.name + '</div>'
+                + '<div class="bar-track"><div class="bar-fill ' + cls + '" style="width:' + pct + '%"><span class="bar-score">' + m.score + '</span></div></div>'
+                + '<div style="font-size:11px;color:#6b7280;width:100px;flex-shrink:0">' + m.company + '</div>'
+                + '</div>';
+        });
+        document.getElementById("rankingBars").innerHTML = html;
+    }
+
+    document.addEventListener("keydown", function(e) { if (e.key === "Escape") document.getElementById("sourceModal").classList.remove("show"); });
+
+    rAll();
+}
+
+</script>
+</body>
+</html>
