@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-30T08:00:00Z",
+  "lastUpdated": "2026-07-02T23:55:53.956Z",
   "platform": {
     "name": "AI技术洞察平台",
     "subtitle": "聚焦大模型前沿动态 · 服务技术路标制定",
@@ -519,6 +519,150 @@
     ]
   },
   "news": [
+    {
+      "id": "news-023",
+      "title": "美团发布LongCat-2.0：全球首个零英伟达万亿大模型",
+      "summary": "美团发布LongCat-2.0（龙猫2.0），总参数1.6万亿，MoE稀疏度达97%逼近架构渐近线。全程基于约5万张国产昇腾910C芯片完成训练和推理，英伟达含量为0。原生支持1M超长上下文，独创零计算专家机制和ScMoE跨层快捷连接。匿名测试版在OpenRouter总调用量跻身全球前三，性能接近Claude Opus 4.6。",
+      "category": "model-breakthrough",
+      "date": "2026-07-01",
+      "companies": [],
+      "tags": [
+        "万亿模型",
+        "国产算力",
+        "MoE",
+        "美团"
+      ],
+      "sources": [
+        {
+          "name": "36氪",
+          "url": "https://36kr.com/p/3878407689089282"
+        },
+        {
+          "name": "量子位",
+          "url": "https://www.qbitai.com/2026/07/442047.html"
+        },
+        {
+          "name": "东方财富",
+          "url": "https://finance.eastmoney.com/a/202607023792175920.html"
+        }
+      ]
+    },
+    {
+      "id": "news-024",
+      "title": "Anthropic发布Claude Sonnet 5：系列最强智能体AI模型",
+      "summary": "7月1日Anthropic推出Claude Sonnet 5，可制定计划、调用浏览器和终端自主运行。在BrowseComp、OSWorld-Verified等评测中显著优于Sonnet 4.6，部分任务接近Opus 4.8。输入$2/百万Tokens，输出$10/百万Tokens，优惠期至8月31日。",
+      "category": "model-breakthrough",
+      "date": "2026-07-01",
+      "companies": [
+        "anthropic"
+      ],
+      "tags": [
+        "Claude",
+        "Agent",
+        "智能体",
+        "Sonnet 5"
+      ],
+      "sources": [
+        {
+          "name": "IT之家",
+          "url": "https://www.ithome.com/0/970/809.htm"
+        }
+      ]
+    },
+    {
+      "id": "news-025",
+      "title": "GLM-5.2风靡硅谷：成本仅为美国闭源模型六分之一",
+      "summary": "智谱GLM-5.2被华尔街日报和美国前AI沙皇David Sacks高度评价，称其与OpenAI和Anthropic模型一样好。在Artificial Analysis智能榜排第5，Code Arena前端编程排第2。在OpenRouter上的使用量已超越Anthropic模型。运行成本约为Claude/GPT系列六分之一，引发了美国开发者的广泛采用。",
+      "category": "ecosystem",
+      "date": "2026-07-02",
+      "companies": [
+        "zhipu"
+      ],
+      "tags": [
+        "GLM-5.2",
+        "开源",
+        "成本优势",
+        "全球采用"
+      ],
+      "sources": [
+        {
+          "name": "Yahoo News",
+          "url": "https://malaysia.news.yahoo.com/analysis-inexpensive-chinese-ai-model-071720746.html"
+        },
+        {
+          "name": "Pakistan Today",
+          "url": "https://www.pakistantoday.com.pk/2026/07/02/chinese-ai-model-glm-52-gains-attention-as-lower-cost-rival-to-us-systems"
+        }
+      ]
+    },
+    {
+      "id": "news-026",
+      "title": "Subquadratic发布SubQ：稀疏注意力突破千万级上下文",
+      "summary": "初创公司Subquadratic从隐身模式浮出水面，发布SubQ模型。采用Sparse Attention(SSA)架构，可处理6-1200万Token上下文且精度接近98%（大海捞针测试）。RULER 128基准上仅需$8（Anthropic Opus 4.6需$2600），56倍速度提升。LiveCodeBench得分89.7%。但有争议称该模型重用了开源Qwen模型权重。",
+      "category": "advanced-usage",
+      "date": "2026-07-01",
+      "companies": [],
+      "tags": [
+        "稀疏注意力",
+        "上下文长度",
+        "推理成本"
+      ],
+      "sources": [
+        {
+          "name": "163.com",
+          "url": "https://www.163.com/dy/article/L0R54417051481US.html"
+        }
+      ]
+    },
+    {
+      "id": "news-027",
+      "title": "国产Coding模型评测：MiniMax M3意外夺冠，DeepSeek性价比称王",
+      "summary": "雷锋网对五款国产模型真实工程任务测试：MiniMax M3以85.3分夺冠（Bug诊断全场最强），Kimi K2.6以84.2分居亚军（文档规范性最佳），Qwen 3.7 Max以82.2分排第三（最稳健）。DeepSeek V4 Pro架构能力强但落地细节弱，被评性价比之王。GLM 5.1修复可读性满分5/5，适合辅助编程。",
+      "category": "application",
+      "date": "2026-06-28",
+      "companies": [
+        "alibaba",
+        "deepseek",
+        "zhipu",
+        "moonshot",
+        "minimax"
+      ],
+      "tags": [
+        "代码评测",
+        "国产模型",
+        "工程能力"
+      ],
+      "sources": [
+        {
+          "name": "雷锋网",
+          "url": "https://www.leiphone.com/category/industrynews/ft5tFfCB8Zh0ZFo8.html"
+        }
+      ]
+    },
+    {
+      "id": "news-028",
+      "title": "OpenRouter市场份额洗牌：DeepSeek紧逼Google，GLM-5.2跻身前七",
+      "summary": "截至6月28日，OpenRouter文本生成市场份额：Google 27.9%（从5月高点33.5%回落），DeepSeek 20.9%（12周涨幅超120%），OpenAI 15.8%。DeepSeek与Google差距缩小至约7个百分点。中国LLM全球份额从DeepSeek R1前的3%跃升至13%。图片生成端xAI占比达5.2%成为最明显挑战者。",
+      "category": "ecosystem",
+      "date": "2026-06-28",
+      "companies": [
+        "google",
+        "deepseek",
+        "openai",
+        "xai"
+      ],
+      "tags": [
+        "市场份额",
+        "OpenRouter",
+        "格局变化"
+      ],
+      "sources": [
+        {
+          "name": "一览Top",
+          "url": "https://www.yilantop.com/article/26820"
+        }
+      ]
+    },
     {
       "id": "news-001",
       "title": "OpenAI发布GPT-5.6三档模型家族，旗舰Sol专注网络安全",
@@ -1531,80 +1675,80 @@
         },
         {
           "rank": 15,
+          "name": "LongCat-2.0",
+          "company": "美团",
+          "logo": "🐱",
+          "score": 1408
+        },
+        {
+          "rank": 16,
           "name": "Kimi K2 Thinking",
           "company": "月之暗面",
           "logo": "🌙",
           "score": 1405
         },
         {
-          "rank": 16,
+          "rank": 17,
           "name": "Claude Opus 4.6",
           "company": "Anthropic",
           "logo": "🎭",
           "score": 1400
         },
         {
-          "rank": 17,
+          "rank": 18,
           "name": "Mai-Thinking-1",
           "company": "Microsoft",
           "logo": "🪟",
           "score": 1390
         },
         {
-          "rank": 18,
+          "rank": 19,
           "name": "Llama 4 Maverick",
           "company": "Meta",
           "logo": "♾️",
           "score": 1385
         },
         {
-          "rank": 19,
+          "rank": 20,
           "name": "混元 3.0",
           "company": "腾讯",
           "logo": "🐧",
           "score": 1380
         },
         {
-          "rank": 20,
+          "rank": 21,
           "name": "Mistral Large 3",
           "company": "Mistral",
           "logo": "🌪️",
           "score": 1370
         },
         {
-          "rank": 21,
+          "rank": 22,
           "name": "文心一言 4.0",
           "company": "百度",
           "logo": "🐻",
           "score": 1365
         },
         {
-          "rank": 22,
+          "rank": 23,
           "name": "GPT-5.6 Sol",
           "company": "OpenAI",
           "logo": "🌀",
           "score": 1360
         },
         {
-          "rank": 23,
+          "rank": 24,
           "name": "Command R+",
           "company": "Cohere",
           "logo": "🤖",
           "score": 1350
         },
         {
-          "rank": 24,
+          "rank": 25,
           "name": "MiniMax-01",
           "company": "MiniMax",
           "logo": "⭐",
           "score": 1340
-        },
-        {
-          "rank": 25,
-          "name": "盘古 5.0",
-          "company": "华为",
-          "logo": "🔮",
-          "score": 1330
         }
       ]
     },
@@ -1834,108 +1978,108 @@
         },
         {
           "rank": 11,
+          "name": "LongCat-2.0",
+          "company": "美团",
+          "logo": "🐱",
+          "score": 75
+        },
+        {
+          "rank": 12,
+          "name": "Claude Sonnet 5",
+          "company": "Anthropic",
+          "logo": "🎭",
+          "score": 74.5
+        },
+        {
+          "rank": 13,
           "name": "GPT-5 Codex (xHigh)",
           "company": "OpenAI",
           "logo": "🌀",
           "score": 74.8
         },
         {
-          "rank": 12,
+          "rank": 14,
           "name": "DeepSeek V4 Pro",
           "company": "深度求索",
           "logo": "🔍",
           "score": 74.2
         },
         {
-          "rank": 13,
+          "rank": 15,
           "name": "豆包 2.1 Pro",
           "company": "字节跳动",
           "logo": "🫘",
           "score": 73.8
         },
         {
-          "rank": 14,
+          "rank": 16,
           "name": "Qwen3.7-Plus",
           "company": "阿里巴巴",
           "logo": "☁️",
           "score": 73.2
         },
         {
-          "rank": 15,
+          "rank": 17,
           "name": "Kimi K2 Thinking",
           "company": "月之暗面",
           "logo": "🌙",
           "score": 72.5
         },
         {
-          "rank": 16,
+          "rank": 18,
           "name": "Grok 4 Heavy",
           "company": "xAI",
           "logo": "⚡",
           "score": 72
         },
         {
-          "rank": 17,
+          "rank": 19,
           "name": "Gemini 2.5 Pro (High)",
           "company": "Google",
           "logo": "🔺",
           "score": 71.5
         },
         {
-          "rank": 18,
+          "rank": 20,
           "name": "Mai-Thinking-1",
           "company": "Microsoft",
           "logo": "🪟",
           "score": 70.8
         },
         {
-          "rank": 19,
+          "rank": 21,
           "name": "Llama 4 Maverick",
           "company": "Meta",
           "logo": "♾️",
           "score": 70.2
         },
         {
-          "rank": 20,
+          "rank": 22,
           "name": "混元 3.0",
           "company": "腾讯",
           "logo": "🐧",
           "score": 69.5
         },
         {
-          "rank": 21,
+          "rank": 23,
           "name": "Mistral Large 3",
           "company": "Mistral",
           "logo": "🌪️",
           "score": 68.8
         },
         {
-          "rank": 22,
+          "rank": 24,
           "name": "文心一言 4.0",
           "company": "百度",
           "logo": "🐻",
           "score": 68
         },
         {
-          "rank": 23,
+          "rank": 25,
           "name": "Qwen3-Coder",
           "company": "阿里巴巴",
           "logo": "☁️",
           "score": 67.2
-        },
-        {
-          "rank": 24,
-          "name": "Command R+",
-          "company": "Cohere",
-          "logo": "🤖",
-          "score": 66.5
-        },
-        {
-          "rank": 25,
-          "name": "DeepSeek R1 0528",
-          "company": "深度求索",
-          "logo": "🔍",
-          "score": 65.8
         }
       ]
     },
