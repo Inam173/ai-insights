@@ -102,8 +102,10 @@ function init() {
       var strengths = c.strengths.map(function(s) { return '<span class="strength-tag">' + s + '</span>'; }).join(" ");
       var metrics = "";
       if (c.keyMetrics) {
-        metrics = '<div class="co-card-metrics">' + Object.entries(c.keyMetrics).slice(0, 2).map(function(e) {
-          return '<div class="metric-row"><span class="metric-label">' + e[0] + '</span><span class="metric-value">' + e[1] + '</span></div>';
+        var fields = ['月活用户', '日均Token调用'];
+        metrics = '<div class="co-card-metrics">' + fields.map(function(k) {
+          var v = c.keyMetrics[k] || '未公开';
+          return '<div class="metric-row"><span class="metric-label">' + k + '</span><span class="metric-value">' + v + '</span></div>';
         }).join("") + '</div>';
       }
       return '<div class="co-card"><div class="co-card-head"><div class="co-card-logo"><span class="co-card-icon">' + c.logo + '</span>' +

@@ -1,7 +1,9 @@
 
 *{box-sizing:border-box}body{background:#0a0a0f;color:#e2e8f0;font-family:"Segoe UI","Microsoft YaHei",sans-serif;min-height:100vh;margin:0}
 ::-webkit-scrollbar{width:6px}::-webkit-scrollbar-track{background:#1a1a2e}::-webkit-scrollbar-thumb{background:#3b3b5c;border-radius:3px}
-.sticky-top{position:sticky;top:0;z-index:50;background:rgba(10,10,15,0.95);backdrop-filter:blur(8px)}
+.sticky-top{position:sticky;z-index:50;background:rgba(10,10,15,0.95);backdrop-filter:blur(8px)}
+.header{top:0}
+.nav{top:73px}
 .header{border-bottom:1px solid rgba(45,45,80,0.5);padding:16px 24px}
 .header-inner{max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
 .logo{display:flex;align-items:center;gap:12px}
@@ -86,3 +88,10 @@
 .footer{border-top:1px solid rgba(45,45,80,0.3);margin-top:48px;padding:24px;text-align:center;font-size:12px;color:#4b5563}
 .footer p{margin:0}.footer p+p{margin-top:4px}
 .hide-mobile{display:none}@media(min-width:640px){.hide-mobile{display:block}}
+/* Sticky section headers */
+.filters{position:sticky;top:120px;z-index:10;background:#0a0a0f;margin-bottom:16px;padding:8px 0}
+.rank-btns{position:sticky;top:120px;z-index:10;background:#0a0a0f;margin-bottom:16px;padding:8px 0}
+.section-title{position:sticky;top:120px;z-index:10;background:#0a0a0f;padding:8px 0;margin:0}
+#section-cases>p{position:sticky;top:156px;z-index:10;background:#0a0a0f;padding-bottom:12px;margin:0}
+#section-news .filters{margin-bottom:24px}
+#section-ranking .rank-btns{margin-bottom:24px}
