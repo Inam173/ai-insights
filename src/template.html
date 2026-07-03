@@ -1,0 +1,46 @@
+<body>
+<div class="sticky-top header"><div class="header-inner">
+<div class="logo"><div class="logo-icon">🧿</div><div><h1 class="logo-text">AI技术洞察平台</h1><p class="logo-sub">聚焦大模型前沿动态 · 服务技术路标制定</p></div></div>
+<div class="stats">
+<div style="display:flex;align-items:center;gap:6px;font-size:12px;color:#9ca3af"><span class="pulse"></span>实时追踪</div>
+<div style="font-size:12px;color:#6b7280">更新于 <span id="updateTime" style="color:#9ca3af">--</span></div>
+<div class="stat-item"><div class="stat-num blue" id="newsCount">0</div><div class="stat-label">条资讯</div></div>
+<div class="stat-item"><div class="stat-num purple" id="companyCount">0</div><div class="stat-label">家厂商</div></div>
+</div></div></div>
+
+<div class="sticky-top nav"><div class="nav-inner">
+<button class="tab-btn active" id="tab-news" onclick="switchTab('news')">📰 资讯流</button>
+<button class="tab-btn" id="tab-companies" onclick="switchTab('companies')">🏢 厂商卡片</button>
+<button class="tab-btn" id="tab-ranking" onclick="switchTab('ranking')">🏆 天梯图</button><button class="tab-btn" id="tab-cases" onclick="switchTab('cases')">📋 友商案例</button>
+</div></div>
+
+<div class="main">
+
+<div class="section" id="section-news">
+<div class="filters">
+<span class="filter-label">筛选：</span>
+<button class="filter-btn active" id="filter-all" onclick="filterNews('all')">全部</button>
+<div id="catFilters" style="display:flex;flex-wrap:wrap;gap:8px"></div>
+<div class="hide-mobile" style="width:1px;height:20px;background:#2d2d50;margin:0 4px"></div>
+<select class="filter-select" id="companyFilter" onchange="filterNewsByCo(this.value)"><option value="all">所有厂商</option></select>
+</div>
+<div class="news-list" id="newsList"></div>
+<div class="empty-state hidden" id="newsEmpty"><div style="font-size:40px;margin-bottom:12px">🔍</div><p>没有匹配的资讯</p></div>
+</div>
+
+<div class="section hidden" id="section-companies">
+<h2 class="section-title">🇨🇳 国内厂商</h2><div class="card-grid" id="domesticCards"></div>
+<h2 class="section-title" style="margin-top:32px">🌍 海外厂商</h2><div class="card-grid wide" id="internationalCards"></div>
+</div>
+
+<div class="section hidden" id="section-ranking"><div class="rank-btns"><span class="rank-label">评测源：</span><button class="rank-btn active" id="rank-arena" onclick="switchRanking('arena')">🎯 Chatbot Arena</button><button class="rank-btn" id="rank-artificial" onclick="switchRanking('artificial')">📊 Artificial Analysis</button><button class="rank-btn" id="rank-livebench" onclick="switchRanking('livebench')">🧪 LiveBench</button><button class="rank-btn" id="rank-swebench" onclick="switchRanking('swebench')">💻 SWE-bench</button></div><div class="panel"><div class="panel-head"><h3 class="panel-title" id="rankingTitle">🎯 Chatbot Arena 排名</h3><span class="panel-date" id="rankingSource">来源: lmarena.ai</span></div><div id="rankingBars" style="padding:8px 0"></div></div>
+
+<div class="section hidden" id="section-cases"><h2 class="section-title">📋 友商AI应用案例</h2><p style="font-size:12px;color:#6b7280;margin:0 0 20px 0">覆盖电子消费品、汽车、物流等行业的供应链领域AI大模型落地实践</p><div class="card-grid" id="casesGrid"></div></div><div class="modal-overlay" id="sourceModal" onclick="closeModal(event)">
+<div class="modal-box" onclick="event.stopPropagation()">
+<div class="modal-head"><div><h3 class="modal-title">📎 信息来源</h3><p class="modal-sub" id="modalNewsTitle"></p></div>
+<button class="modal-close" onclick="closeModalDirect()">&times;</button></div>
+<div class="modal-list" id="modalSourceList"></div>
+<div class="modal-foot"><button class="modal-close-btn" onclick="closeModalDirect()">关闭</button></div>
+</div></div>
+
+<div class="footer"><p>AI技术洞察平台 · 数据来源于公开权威信息源 · 仅供技术路标参考</p><p>资讯内容不代表本平台立场 · 请以原始来源为准</p></div>
