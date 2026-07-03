@@ -74,7 +74,7 @@ function init() {
         '<div class="news-header"><div class="news-tags"><span class="tag tag-' + tc + '">' + ct.icon + ' ' + ct.name + '</span>' + ctags + '</div>' +
         '<span class="news-date">' + fmt(n.date) + '</span></div>' +
         '<h3 class="news-title">' + n.title + '</h3>' +
-        '<p class="news-summary">' + n.summary + '</p>' +
+        '<p class="news-summary" title="' + n.summary.replace(/"/g,'&quot;') + '">' + n.summary + '</p>' +
         '<div class="news-source-link">📎 ' + n.sources.length + ' 个来源 →</div></div>';
     }).join("");
   }
@@ -112,7 +112,7 @@ function init() {
         '<div><h3 class="co-card-name">' + c.name + '</h3><p class="co-card-en">' + c.nameEn + '</p></div></div>' +
         '<span class="co-card-loc">' + c.headquarters + '</span></div>' +
         '<div style="display:flex;flex-wrap:wrap;gap:4px;margin-bottom:12px">' + models + '</div>' +
-        '<p class="co-card-hl">' + c.latestHighlight + '</p>' +
+        '<p class="co-card-hl" title="' + c.latestHighlight.replace(/"/g,'&quot;') + '">' + c.latestHighlight + '</p>' +
         '<div style="display:flex;flex-wrap:wrap;gap:4px;margin-bottom:8px">' + strengths + '</div>' + metrics +
         '<a href="' + c.website + '" target="_blank" class="co-card-link">访问官网 →</a></div>';
     }
@@ -133,7 +133,7 @@ function init() {
       c.cases.forEach(function(cs) {
         html += '<div style="padding:10px 0;border-top:1px solid rgba(45,45,80,0.3)">';
         html += '<div style="font-size:14px;font-weight:600;color:#e5e7eb;margin-bottom:4px">' + cs.title + '</div>';
-        html += '<div style="font-size:12px;color:#9ca3af;line-height:1.6;margin-bottom:8px">' + cs.summary + '</div>';
+        html += '<div style="font-size:12px;color:#9ca3af;line-height:1.6;margin-bottom:8px" title="' + cs.summary.replace(/"/g,'&quot;') + '">' + cs.summary + '</div>';
         html += '<div style="display:flex;flex-wrap:wrap;gap:4px;margin-bottom:4px">';
         cs.tags.forEach(function(t) { html += '<span style="display:inline-block;padding:2px 6px;border-radius:4px;font-size:11px;background:rgba(26,26,46,0.5);color:#6b7280;margin:1px">' + t + '</span>'; });
         html += '</div><div style="display:flex;flex-wrap:wrap;gap:8px">';
