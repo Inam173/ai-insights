@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-03T03:35:17.031Z",
+  "lastUpdated": "2026-07-03T03:51:37.882Z",
   "platform": {
     "name": "AI技术洞察平台",
     "subtitle": "聚焦大模型前沿动态 · 服务技术路标制定",
@@ -2269,249 +2269,490 @@
   },
   "caseStudies": [
     {
-      "id": "case-010",
       "company": "荣耀",
       "logo": "📲",
       "industry": "手机",
-      "tags": [
-        "AI智能体",
-        "端侧大模型",
-        "供应链"
-      ],
-      "title": "YOYO智能体+端侧AI，投10亿建绿洲护眼实验室",
-      "summary": "荣耀YOYO智能体实现\"一句话关闭自动续费\"等跨应用操作，搭载AI隔空手势。AI新机创全球最轻直板机记录（155克）。投入10亿元成立绿洲护眼实验室。荣耀Magic系列已将AI深度融入系统底层，从影像到功耗管理全链路AI优化。",
-      "sources": [
+      "companyId": "honor",
+      "cases": [
         {
-          "name": "广东新快报",
-          "url": "https://epaper.xkb.com.cn/view/1259574"
-        }
-      ]
-    },
-    {
-      "id": "case-011",
-      "company": "OPPO",
-      "logo": "📷",
-      "industry": "手机",
-      "tags": [
-        "精益制造",
-        "供应链赋能",
-        "端侧大模型"
-      ],
-      "title": "独家精益联盟赋能供应链：9家供应商累计节省上亿元",
-      "summary": "OPPO从2024年起向供应链免费输出精益生产体系，覆盖9家核心供应商，累计超1000人次培训、育成200+绿带。品美工厂一年节省1500万元，直通率从80-90%提升至95%。ColorOS 16端侧AI支持128K超长上下文，3B模型峰值超200 token/s。账期维持60天（行业最快），精益与商务完全分开。",
-      "sources": [
-        {
-          "name": "C114",
-          "url": "https://www.c114.net.cn/industry/83790.html"
+          "title": "YOYO智能体+端侧AI，投10亿建绿洲护眼实验室",
+          "summary": "荣耀YOYO智能体实现\"一句话关闭自动续费\"等跨应用操作。AI新机创全球最轻直板机记录（155克）。投入10亿元成立绿洲护眼实验室，Magic系列全链路AI优化。",
+          "tags": [
+            "AI智能体",
+            "端侧大模型"
+          ],
+          "sources": [
+            {
+              "name": "新快报",
+              "url": "https://epaper.xkb.com.cn/view/1259574"
+            }
+          ]
         },
         {
-          "name": "广东新快报",
-          "url": "https://epaper.xkb.com.cn/view/1259574"
-        }
-      ]
-    },
-    {
-      "id": "case-012",
-      "company": "vivo",
-      "logo": "🎵",
-      "industry": "手机",
-      "tags": [
-        "自研大模型",
-        "蓝心AI",
-        "智能制造"
-      ],
-      "title": "蓝心大模型矩阵自研，OriginOS 6全链路AI融合",
-      "summary": "vivo自研蓝心大模型矩阵（含蓝晶芯片+蓝河操作系统），OriginOS 6搭载AI圈搜2.0、AI消除等功能。AI能力覆盖影像/性能/游戏/通信全场景。广东手机产业集群中，vivo与华为、OPPO共同构成全球供应链核心节点，95%零部件1小时内配齐。",
-      "sources": [
+          "title": "鲁班工业大模型：亚微米级精密制造，30秒下线一台手机",
+          "summary": "荣耀深圳坪山工厂部署自研鲁班工业大模型，每秒12.5万次并行计算，涂胶精度达0.001毫克。产线自动化率超85%，自研设备占比超60%，AI视觉+3D算法实现亚微米级质量控制。",
+          "tags": [
+            "智能制造",
+            "工业大模型"
+          ],
+          "sources": [
+            {
+              "name": "新浪财经",
+              "url": "https://finance.sina.cn/2026-01-30/detail-inhkauvi0531751.d.html"
+            },
+            {
+              "name": "网易",
+              "url": "https://www.163.com/dy/article/KKS605220514R9OJ.html"
+            }
+          ]
+        },
         {
-          "name": "广东新快报",
-          "url": "https://epaper.xkb.com.cn/view/1259574"
+          "title": "人形机器人闪电打破人类半马纪录，供应链合作深化",
+          "summary": "荣耀人形机器人闪电包揽北京亦庄半马前六名，打破人类纪录（50分26秒）。领益智造供159款核心结构件，蓝思科技供132款。2026年推进小批量量产计划。",
+          "tags": [
+            "具身智能",
+            "机器人"
+          ],
+          "sources": [
+            {
+              "name": "证券时报",
+              "url": "https://stcn.com/article/detail/3765003.html"
+            },
+            {
+              "name": "新华社",
+              "url": "https://ipingshan.sznews.com/content/2026-06/25/content_32100613.htm"
+            }
+          ]
+        },
+        {
+          "title": "OnePlan供应链协同平台，链式赋能数百家中小企业数字化转型",
+          "summary": "荣耀构建OnePlan供应链协同平台，实现订单、计划与库存数据实时同步。入选深圳市链式数字化转型典型案例，带动数百家产业链中小企业实现数字化智能化转型。",
+          "tags": [
+            "供应链协同",
+            "数字化"
+          ],
+          "sources": [
+            {
+              "name": "PConline",
+              "url": "https://news.pconline.com.cn/2081/20818792.html"
+            }
+          ]
         }
       ]
     },
     {
-      "id": "case-013",
       "company": "华为",
       "logo": "🔮",
       "industry": "手机",
-      "tags": [
-        "盘古大模型",
-        "鸿蒙生态",
-        "芯片自研",
-        "智能制造"
-      ],
-      "title": "盘古大模型+鸿蒙6全栈AI，小艺升级为智能服务统一入口",
-      "summary": "华为手机国内份额重回榜首（20%），Mate X7首发商用A2A智能体协作技术（自动值机选座）。Mate 80推出AI隔空传送、AI意图预判。天工铰链采用1900兆帕超强钢，78道工序精度达微米级。盘古大模型与鸿蒙6深度整合，小艺从语音助手升级为全场景AI服务入口。",
-      "sources": [
+      "companyId": "huawei",
+      "cases": [
         {
-          "name": "广东新快报",
-          "url": "https://epaper.xkb.com.cn/view/1259574"
+          "title": "盘古大模型2.0发布：505B参数+端侧30B模型即将推出",
+          "summary": "2026年6月HDC大会发布盘古2.0，505B主版本+920B Flash版本。秋季将推端侧30B模型直跑麒麟芯片，90%任务无需联网。openPangu 2.0从6月30日起陆续开源七大组件。",
+          "tags": [
+            "盘古大模型",
+            "端侧AI"
+          ],
+          "sources": [
+            {
+              "name": "EET-China",
+              "url": "https://www.eet-china.com/mp/a502604.html"
+            }
+          ]
+        },
+        {
+          "title": "MetaERP集成盘古：需求预测偏差从21%降至3.8%",
+          "summary": "华为MetaERP集成盘古大模型+天筹AI求解器，某车型物料需求偏差率从21%降至3.8%，避免1.2亿库存积压。计划引擎处理千万级数据，准确率达85%。替代料组合效率提升10倍，产线停滞减少70%。",
+          "tags": [
+            "供应链计划",
+            "ERP"
+          ],
+          "sources": [
+            {
+              "name": "CSDN",
+              "url": "https://blog.csdn.net/HeartForever2025/article/details/157875472"
+            }
+          ]
+        },
+        {
+          "title": "AI+物流智能调度计划引擎首发（软通动力×华为）",
+          "summary": "2026年3月，基于盘古预测大模型+天筹求解器的物流智能调度引擎发布。AI货量预测准确率89%以上，库位推荐采纳率超90%，覆盖拣货路径优化和智能装载。",
+          "tags": [
+            "物流调度",
+            "AI"
+          ],
+          "sources": [
+            {
+              "name": "证券之星",
+              "url": "https://www.stocke.com.cn/main/a/20260327/8100845.shtml"
+            }
+          ]
+        },
+        {
+          "title": "东莞AI大模型中心：17个标杆案例，赋能22万家制造企业",
+          "summary": "全国首个制造领域城市级大模型中心在东莞开服（华为底座），累计对接百余家企业，形成17个可复制标杆案例（宝钢高炉年降本千万、煤矿采煤自动化率超90%、涟钢视觉检测99.9%准确率）。",
+          "tags": [
+            "制造业",
+            "城市级AI"
+          ],
+          "sources": [
+            {
+              "name": "东莞日报",
+              "url": "https://appzdg.sun0769.com/wap/article/index/827511"
+            }
+          ]
         }
       ]
     },
     {
-      "id": "case-001",
+      "company": "OPPO",
+      "logo": "📷",
+      "industry": "手机",
+      "companyId": "oppo",
+      "cases": [
+        {
+          "title": "独家精益联盟：9家供应商免费培训，年省上亿",
+          "summary": "OPPO从2024年起向供应链免费输出精益生产体系，覆盖9家核心供应商。累计超1000人次培训，建立4000余平米实操基地，43门课程。品美工厂年省1500万，金龙浩半年省2700万，直通率从80-90%提至95%。账面60天（行业最快），精益与商务完全分开。",
+          "tags": [
+            "精益制造",
+            "供应链赋能"
+          ],
+          "sources": [
+            {
+              "name": "36氪",
+              "url": "https://36kr.com/p/3820192988926341"
+            }
+          ]
+        },
+        {
+          "title": "ColorOS 16端侧AI：3B模型峰值超200 token/s，128K上下文",
+          "summary": "OPPO ColorOS 16搭载端侧AI并行译码加速，3B模型峰值超200 token/s，支持128K超长上下文。小布助手升级为系统级AI助手。OPPO国内ASP达372美元（安卓第一）。",
+          "tags": [
+            "端侧AI",
+            "操作系统"
+          ],
+          "sources": [
+            {
+              "name": "广东新快报",
+              "url": "https://epaper.xkb.com.cn/view/1259574"
+            }
+          ]
+        },
+        {
+          "title": "AI存储芯片短缺冲击：手机出货目标下调，供应链承压",
+          "summary": "AI服务器吞噬LPDDR内存产能，LPDDR5X价格上涨78-83%。OPPO等国产手机厂商2026年出货目标大幅下调。广东省正制定AI终端高质量发展行动方案应对危机。",
+          "tags": [
+            "供应链风险",
+            "芯片短缺"
+          ],
+          "sources": [
+            {
+              "name": "日经亚洲",
+              "url": "https://finance.yahoo.com/markets/stocks/articles/xiaomi-oppo-vivo-slash-shipment-142852887.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "company": "小米",
       "logo": "📱",
-      "industry": "电子消费品",
-      "tags": [
-        "制造",
-        "供应链",
-        "具身智能",
-        "大模型"
-      ],
-      "title": "MiMo大模型+人形机器人入驻工厂，AI重构人车家全生态",
-      "summary": "五年研发投入超2000亿元，MiMo-V2.5登顶全球开源榜首。CyberOne人形机器人正式进入汽车工厂产线，自攻螺母安装成功率90.2%，完全匹配76秒产线节拍。自建涵盖手机/汽车/IoT的制造体系，AI在自有产线验证迭代。",
-      "sources": [
+      "industry": "手机",
+      "companyId": "xiaomi",
+      "cases": [
         {
-          "name": "36氪",
-          "url": "https://36kr.com/p/3827245075042944"
+          "title": "MiMo-V2.5登顶全球开源榜首，5年2000亿AI研发投入",
+          "summary": "小米MiMo-V2.5综合智能指数与Agent指数位列全球开源模型并列第一。五年研发总投入超2000亿元，三年AI投入超600亿元。MiMo-V2.5 API永久降价最高99%。天才少女罗福莉加入任MiMo负责人。",
+          "tags": [
+            "大模型",
+            "开源"
+          ],
+          "sources": [
+            {
+              "name": "36氪",
+              "url": "https://36kr.com/p/3827245075042944"
+            }
+          ]
         },
         {
-          "name": "金山云公告",
-          "url": "https://www.dramx.com/News/IC/20260703-40721.html"
+          "title": "CyberOne人形机器人入驻工厂：连续作业3小时，匹配76秒节拍",
+          "summary": "小米人形机器人CyberOne正式进入汽车工厂产线实操。自攻螺母安装成功率90.2%，完全匹配76秒产线节拍。发布全球首款贯通自动驾驶与机器人的跨具身基座模型并开源。",
+          "tags": [
+            "具身智能",
+            "智能制造"
+          ],
+          "sources": [
+            {
+              "name": "搜狐",
+              "url": "https://www.sohu.com/a/1028540185_122135404"
+            }
+          ]
         },
         {
-          "name": "华尔街见闻",
-          "url": "https://www.sohu.com/a/1028540185_122135404"
+          "title": "金山云百亿GPU算力：小米AI训练集群规模升级",
+          "summary": "小米算力采购预算从40亿提升至百亿元以上。金山云2026年资本开支上调至150亿元，为MiMo大模型训练推理、汽车出海算力、小爱AI升级提供算力底座。小米贡献金山云约30%收入。",
+          "tags": [
+            "算力",
+            "供应链"
+          ],
+          "sources": [
+            {
+              "name": "DRAMeXchange",
+              "url": "https://www.dramx.com/News/IC/20260703-40721.html"
+            }
+          ]
         }
       ]
     },
     {
-      "id": "case-002",
-      "company": "安克创新",
-      "logo": "🔋",
-      "industry": "电子消费品",
-      "tags": [
-        "芯片",
-        "供应链重构",
-        "端侧AI"
-      ],
-      "title": "自研存算一体AI芯片Thus，颠覆端侧大模型功耗瓶颈",
-      "summary": "联合知存科技研发首款神经网络存算一体AI音频芯片，算力较传统方案提升150倍。发布AI录音豆、UV打印机等AI硬件产品线。经历238万台产品召回后，SKU精简70%，建立双供应商体系，供应链管理全面升级。港交所A+H双上市。",
-      "sources": [
+      "company": "vivo",
+      "logo": "🎵",
+      "industry": "手机",
+      "companyId": "vivo",
+      "cases": [
         {
-          "name": "搜狐",
-          "url": "https://www.sohu.com/a/1035315832_413980"
+          "title": "蓝心大模型矩阵：蓝晶芯片+蓝河操作系统全栈自研",
+          "summary": "vivo自研蓝心大模型矩阵，包含蓝晶芯片+蓝河操作系统。OriginOS 6搭载AI圈搜2.0、AI消除等功能。AI能力覆盖影像/性能/游戏/通信全场景。",
+          "tags": [
+            "自研大模型",
+            "操作系统"
+          ],
+          "sources": [
+            {
+              "name": "广东新快报",
+              "url": "https://epaper.xkb.com.cn/view/1259574"
+            }
+          ]
         },
         {
-          "name": "东方财富",
-          "url": "https://finance.eastmoney.com/a/202607023792107463.html"
+          "title": "存储危机同样冲击vivo：出货目标下调，均价上涨15-25%",
+          "summary": "vivo与小米OPPO同样受AI存储芯片短缺影响，2026年出货目标大幅下调。新机均价同比上涨15-25%。广东省正制定政策支持AI终端产业链应对。",
+          "tags": [
+            "供应链风险",
+            "芯片短缺"
+          ],
+          "sources": [
+            {
+              "name": "日经亚洲",
+              "url": "https://finance.yahoo.com/markets/stocks/articles/xiaomi-oppo-vivo-slash-shipment-142852887.html"
+            }
+          ]
         }
       ]
     },
     {
-      "id": "case-003",
       "company": "比亚迪",
       "logo": "🚗",
       "industry": "汽车",
-      "tags": [
-        "智能制造",
-        "工业大模型",
-        "具身智能"
-      ],
-      "title": "璇玑工业大模型驱动超级工厂，人形机器人2万台投产",
-      "summary": "自研璇玑工业大模型覆盖研产供销服全链路。郑州超级工厂每20秒下线一辆车，AI视觉检测0.1mm瑕疵、效率10倍提升。2026年内部投用2万台人形机器人尧舜禹。自研4nm璇玑A3智驾芯片量产。",
-      "sources": [
+      "companyId": "byd",
+      "cases": [
         {
-          "name": "南方企业新闻网",
-          "url": "http://www.senn.com.cn/qc/2026/06/22/232965.html"
+          "title": "璇玑工业大模型：研产供销服全链路覆盖，人均产值翻倍",
+          "summary": "比亚迪依托自研璇玑工业大模型，覆盖研发设计（周期缩短25%）、生产调度（设备效率提升30%）、设备运维（效率提升75%）、供应链协同等五大场景。郑州超级工厂每20秒下线一辆车，焊装自动化率超97%。",
+          "tags": [
+            "工业大模型",
+            "智能制造"
+          ],
+          "sources": [
+            {
+              "name": "南方企业新闻网",
+              "url": "http://www.senn.com.cn/qc/2026/06/22/232965.html"
+            }
+          ]
         },
         {
-          "name": "汽车新闻",
-          "url": "http://auto.news18a.com/news/storys_263856.html"
+          "title": "自研4nm璇玑A3芯片量产，人形机器人2万台投产",
+          "summary": "比亚迪璇玑A3智驾芯片（4nm，700TOPS）量产。2026年内部投用2万台人形机器人尧舜禹，构建从芯片、传感器到执行器的机器人专属供应链。",
+          "tags": [
+            "芯片自研",
+            "具身智能"
+          ],
+          "sources": [
+            {
+              "name": "汽车新闻",
+              "url": "http://auto.news18a.com/news/storys_263856.html"
+            }
+          ]
         }
       ]
     },
     {
-      "id": "case-004",
       "company": "理想汽车",
       "logo": "🚙",
       "industry": "汽车",
-      "tags": [
-        "自研芯片",
-        "基座大模型",
-        "VLA智驾"
-      ],
-      "title": "全栈自研马赫M100芯片+Mind大模型，打通软硬件闭环",
-      "summary": "5nm马赫M100芯片2026年5月量产上车，独创动态数据流架构，单芯算力1280TOPS。自研马赫Mind基座大模型，VLA模仿学习规模提升50%，强化学习提升15倍。千万用户真实道路数据驱动模型迭代。",
-      "sources": [
+      "companyId": "li-auto",
+      "cases": [
         {
-          "name": "新浪财经",
-          "url": "https://finance.sina.cn/2026-06-22/detail-iniehmvt7081733.d.html"
+          "title": "马赫M100自研芯片量产：5nm制程，1280TOPS算力",
+          "summary": "理想马赫M100芯片2026年5月量产上车，从立项到量产仅三年半。5nm制程，独创动态数据流架构（非冯诺依曼），运行效率突破82%。双芯总计算力2560TOPS搭载于全新L9 Livis。",
+          "tags": [
+            "芯片自研",
+            "自动驾驶"
+          ],
+          "sources": [
+            {
+              "name": "新浪财经",
+              "url": "https://finance.sina.cn/2026-06-22/detail-iniehmvt7081733.d.html"
+            }
+          ]
         },
         {
-          "name": "南方企业新闻网",
-          "url": "http://www.senn.com.cn/qc/2026/06/22/232965.html"
+          "title": "马赫Mind基座大模型+VLA智驾架构：全面对标FSD V14",
+          "summary": "理想自研马赫Mind基座大模型，坚持基座模型必须是核心资产。VLA架构模仿学习规模提升50%，强化学习提升15倍，参数扩容10倍。规划2026年Q4智驾能力全面对标特斯拉FSD V14。",
+          "tags": [
+            "基座大模型",
+            "VLA智驾"
+          ],
+          "sources": [
+            {
+              "name": "南方企业新闻网",
+              "url": "http://www.senn.com.cn/qc/2026/06/22/232965.html"
+            }
+          ]
         }
       ]
     },
     {
-      "id": "case-005",
+      "company": "安克创新",
+      "logo": "🔋",
+      "industry": "电子消费品",
+      "companyId": "anker",
+      "cases": [
+        {
+          "title": "存算一体AI芯片Thus：端侧算力提升150倍",
+          "summary": "安克2026年发布首款神经网络存算一体AI音频芯片Thus，联合知存科技历时3年研发。突破冯诺依曼架构存算分离瓶颈（90%功耗浪费在数据搬运），芯片算力较传统方案提升150倍。搭载该芯片的消噪耳机可在100dB嘈杂环境清晰保留人声。",
+          "tags": [
+            "AI芯片",
+            "端侧AI"
+          ],
+          "sources": [
+            {
+              "name": "搜狐",
+              "url": "https://www.sohu.com/a/1035315832_413980"
+            }
+          ]
+        },
+        {
+          "title": "238万台产品召回后供应链重构：SKU精简70%，建立双供应商体系",
+          "summary": "2025年因锂电池自燃风险全球召回超238万台产品。2026年充电宝SKU从126款砍至39款，终止涉事供应商，转向宁德新能源。前五大代工厂产能占比从82%降至73%，新增22家备选厂商。港交所A+H双上市募资46亿港元。",
+          "tags": [
+            "供应链重构",
+            "品控"
+          ],
+          "sources": [
+            {
+              "name": "东方财富",
+              "url": "https://finance.eastmoney.com/a/202607023792107463.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "company": "京东物流",
       "logo": "📦",
       "industry": "物流",
-      "tags": [
-        "供应链计划",
-        "数字孪生",
-        "机器人"
-      ],
-      "title": "超脑大模型2.0全链路自研，五年采购300万台机器人",
-      "summary": "超脑大模型2.0基于数亿用户数据，在1:1数字孪生网络中自我博弈推演。千万级变量模型求解缩短至2小时内。AI智慧员工助手覆盖近1万个站点，丢件查找从4.2小时缩至23分钟。无锡全球智能工厂投产狼族机器人。",
-      "sources": [
+      "companyId": "jd-logistics",
+      "cases": [
         {
-          "name": "澎湃",
-          "url": "https://www.thepaper.cn/newsDetail_forward_32381656"
+          "title": "超脑大模型2.0：数字孪生自我博弈推演，千万变量2小时求解",
+          "summary": "京东物流超脑大模型2.0基于数亿用户数据和1:1数字孪生网络自我博弈推演。千万级变量模型求解缩短至2小时内。员工操作标准化提升15%，一线效率提升20%。",
+          "tags": [
+            "数字孪生",
+            "供应链计划"
+          ],
+          "sources": [
+            {
+              "name": "物流指闻",
+              "url": "https://www.laohunote.com/news/2606396697"
+            }
+          ]
         },
         {
-          "name": "物流指闻",
-          "url": "https://www.laohunote.com/news/2606396697"
+          "title": "AI智慧员工助手覆盖1万站点：丢件查找从4.2小时缩至23分钟",
+          "summary": "2026年3月AI智慧员工助手覆盖全国近1万个快递站点，丢件查找效率提升91%。五年采购300万台机器人计划推进中，狼族机器人全球智能工厂落地无锡。",
+          "tags": [
+            "AI应用",
+            "机器人"
+          ],
+          "sources": [
+            {
+              "name": "澎湃",
+              "url": "https://www.thepaper.cn/newsDetail_forward_32381656"
+            }
+          ]
         }
       ]
     },
     {
-      "id": "case-006",
       "company": "顺丰",
       "logo": "✈️",
       "industry": "物流",
-      "tags": [
-        "需求预测",
-        "路由优化",
-        "大模型"
-      ],
-      "title": "丰知物流决策大模型落地，预测准确率+5%，效率提升120倍",
-      "summary": "丰知物流决策大模型融合大语言模型与传统小模型，构建供应链智能体。多层级需求预测模型运行效率提升120倍。支撑2026年2月收入同比增长24.88%。楼宇配送机器人已在深圳实现门到门无人配送。",
-      "sources": [
+      "companyId": "sf-express",
+      "cases": [
         {
-          "name": "物流指闻",
-          "url": "https://www.laohunote.com/news/2606396697"
+          "title": "丰知物流决策大模型：预测效率提升120倍，准确率+5%",
+          "summary": "顺丰丰知大模型融合大语言模型与传统小模型，多层级需求预测运行效率提升120倍。支撑2026年2月收入同比增长24.88%，业务量增长17.03%。",
+          "tags": [
+            "需求预测",
+            "大模型"
+          ],
+          "sources": [
+            {
+              "name": "物流指闻",
+              "url": "https://www.laohunote.com/news/2606396697"
+            }
+          ]
         },
         {
-          "name": "headscm",
-          "url": "https://headscm.com/Fingertip/detail/id/46013.html"
+          "title": "楼宇配送机器人门到门无人配送，成立智联科技公司",
+          "summary": "顺丰2025年成立深圳顺丰智联科技（注册资本1000万元）专攻AI及机器人。楼宇配送机器人已在深圳等城市实现门到门无人配送。投资凯乐士、白犀牛等物流机器人头部企业。",
+          "tags": [
+            "机器人",
+            "无人配送"
+          ],
+          "sources": [
+            {
+              "name": "界面新闻",
+              "url": "https://www.jiemian.com/article/13882559.html"
+            }
+          ]
         }
       ]
     },
     {
-      "id": "case-007",
       "company": "菜鸟",
       "logo": "🐦",
       "industry": "物流",
-      "tags": [
-        "库存管理",
-        "预测",
-        "全球仓网"
-      ],
-      "title": "天机π大模型驱动供应链预测，AI驿站分拣效率提升300%",
-      "summary": "天机π数字化供应链产品解决销量预测、补货计划和库存健康管理。AI驿站接管分拣调度，效率提升300%。覆盖全球仓网的智能仓储机器人和AGV产品线。在多国推广新一代无人物流技术。",
-      "sources": [
+      "companyId": "cainiao",
+      "cases": [
         {
-          "name": "物流指闻",
-          "url": "https://www.laohunote.com/news/2606396697"
+          "title": "天机π大模型：供应链预测准确率从62%跃升至97%",
+          "summary": "菜鸟天机π数字化供应链产品解决销量预测、补货计划和库存健康管理。AI物流渗透率行业超37%，供应链预测准确率从62%跃升至97%。",
+          "tags": [
+            "库存管理",
+            "预测"
+          ],
+          "sources": [
+            {
+              "name": "物流指闻",
+              "url": "https://www.laohunote.com/news/2606396697"
+            }
+          ]
         },
         {
-          "name": "界面新闻",
-          "url": "https://www.jiemian.com/article/13882559.html"
+          "title": "AI驿站分拣效率提升300%，全球仓网智能化推进",
+          "summary": "AI系统接管菜鸟驿站分拣调度，效率提升300%。覆盖全球仓网的智能仓储机器人、托盘四向穿梭车、AGV等产品线。在多国推广新一代无人物流技术。",
+          "tags": [
+            "AI分拣",
+            "全球仓网"
+          ],
+          "sources": [
+            {
+              "name": "界面新闻",
+              "url": "https://www.jiemian.com/article/13882559.html"
+            }
+          ]
         }
       ]
     }
