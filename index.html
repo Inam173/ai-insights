@@ -322,8 +322,7 @@ function init() {
     var a = document.getElementById("rank-" + type); if (a) a.classList.add("active");
     var bm = D.benchmarks[type];
     document.getElementById("rankingTitle").textContent = bm.icon + " " + bm.name + " 排名";
-    document.getElementById("rankingSource").textContent = "来源: " + bm.source;
-    document.getElementById("rankingDesc").textContent = bm.desc;
+    document.getElementById("rankingSource").textContent = "来源: " + bm.source + " — " + bm.desc;
     renderBars();
   };
 
