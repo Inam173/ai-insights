@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-03T03:51:37.882Z",
+  "lastUpdated": "2026-07-06T00:18:57.918Z",
   "platform": {
     "name": "AI技术洞察平台",
     "subtitle": "聚焦大模型前沿动态 · 服务技术路标制定",
@@ -503,6 +503,208 @@
     ]
   },
   "news": [
+    {
+      "id": "news-032",
+      "title": "企业AI成本反叛潮：Uber烧光全年预算，中国开源模型蚕食美国市场",
+      "summary": "Uber 4个月烧光全年AI预算（使用Claude）。Lindy将所有流量从Anthropic迁至DeepSeek，节省数百万美元。中国模型(DeepSeek/Qwen/GLM)占OpenRouter开源Token的65%，中国周调用量连续8周超美国。Together AI借势融资8亿美元(估值83亿)。",
+      "category": "ecosystem",
+      "date": "2026-07-03",
+      "companies": [
+        "deepseek",
+        "anthropic",
+        "alibaba",
+        "zhipu"
+      ],
+      "tags": [
+        "成本优化",
+        "开源替代",
+        "市场格局"
+      ],
+      "sources": [
+        {
+          "name": "纽约时报",
+          "url": "https://www.nytimes.com/2026/07/01/business/dealbook/together-ai-funding.html"
+        },
+        {
+          "name": "一覧Top",
+          "url": "https://www.yilantop.com/article/26820"
+        }
+      ]
+    },
+    {
+      "id": "news-031",
+      "title": "英伟达开源TwoTower双塔架构：Token生成提速2.42倍，质量保留98.7%",
+      "summary": "英伟达7月2日开源Nemotron-Labs-TwoTower扩散语言模型，采用双塔架构（上下文塔+去噪塔）实现Token并行生成。总参数600亿，在保留98.7%质量的前提下生成吞吐量提升2.42倍。已在HuggingFace开源，标志着扩散模型从研究走向实用。",
+      "category": "advanced-usage",
+      "date": "2026-07-02",
+      "companies": [],
+      "tags": [
+        "英伟达",
+        "扩散模型",
+        "推理加速",
+        "开源"
+      ],
+      "sources": [
+        {
+          "name": "IT之家",
+          "url": "https://www.ithome.com/0/972/162.htm"
+        },
+        {
+          "name": "品玩",
+          "url": "https://www.pingwest.com/w/315261"
+        }
+      ]
+    },
+    {
+      "id": "news-030",
+      "title": "美国解除Anthropic Fable 5/Mythos 5出口限制，全球恢复访问",
+      "summary": "7月1日美国商务部全面解除对Anthropic Fable 5和Mythos 5的出口限制（此前因Amazon研究员发现安全漏洞被禁3周）。Anthropic实施了额外安全加固，7月2日起全球恢复。同时OpenAI确认应美国政府要求延迟GPT-5.6全面开放。",
+      "category": "ecosystem",
+      "date": "2026-07-02",
+      "companies": [
+        "anthropic",
+        "openai"
+      ],
+      "tags": [
+        "出口管制",
+        "Fable 5",
+        "Mythos 5",
+        "GPT-5.6"
+      ],
+      "sources": [
+        {
+          "name": "Vietnam.vn",
+          "url": "https://www.vietnam.vn/en/my-bat-den-xanh-tro-lai-cho-hai-mo-hinh-ai-tien-tien-nhat-hien-nay-cuoc-dua-quan-ly-lai-nong-len"
+        }
+      ]
+    },
+    {
+      "id": "news-029",
+      "title": "Meta下一代模型Watermelon追平GPT-5.5，算力投入10倍于前代",
+      "summary": "Meta AI主管汪滔7月2日内部披露，下一代模型Watermelon(西瓜)在基准测试中追平OpenAI旗舰GPT-5.5。训练算力比前代Avocado高出一个数量级，即将推出能比肩Claude Opus的编程模型。Meta今年AI基建投入1250-1450亿美元。",
+      "category": "model-breakthrough",
+      "date": "2026-07-02",
+      "companies": [
+        "meta"
+      ],
+      "tags": [
+        "Meta",
+        "Watermelon",
+        "GPT-5.5",
+        "开源"
+      ],
+      "sources": [
+        {
+          "name": "IT之家",
+          "url": "https://www.ithome.com/0/972/120.htm"
+        },
+        {
+          "name": "ComputerWorld",
+          "url": "https://www.computerworld.com/article/4192733/metas-ai-chief-says-new-muse-spark-update-will-sharpen-coding-agentic-ai-2.html"
+        }
+      ]
+    },
+    {
+      "id": "news-032",
+      "title": "企业AI成本反叛潮：Uber烧光全年预算，中国开源模型蚕食美国市场",
+      "summary": "Uber 4个月烧光全年AI预算（使用Claude）。Lindy将所有流量从Anthropic迁至DeepSeek，节省数百万美元。中国模型(DeepSeek/Qwen/GLM)占OpenRouter开源Token的65%，中国周调用量连续8周超美国。Together AI借势融资8亿美元(估值83亿)。",
+      "category": "ecosystem",
+      "date": "2026-07-03",
+      "companies": [
+        "deepseek",
+        "anthropic",
+        "alibaba",
+        "zhipu"
+      ],
+      "tags": [
+        "成本优化",
+        "开源替代",
+        "市场格局"
+      ],
+      "sources": [
+        {
+          "name": "纽约时报",
+          "url": "https://www.nytimes.com/2026/07/01/business/dealbook/together-ai-funding.html"
+        },
+        {
+          "name": "一覧Top",
+          "url": "https://www.yilantop.com/article/26820"
+        }
+      ]
+    },
+    {
+      "id": "news-031",
+      "title": "英伟达开源TwoTower双塔架构：Token生成提速2.42倍，质量保留98.7%",
+      "summary": "英伟达7月2日开源Nemotron-Labs-TwoTower扩散语言模型，采用双塔架构（上下文塔+去噪塔）实现Token并行生成。总参数600亿，在保留98.7%质量的前提下生成吞吐量提升2.42倍。已在HuggingFace开源，标志着扩散模型从研究走向实用。",
+      "category": "advanced-usage",
+      "date": "2026-07-02",
+      "companies": [],
+      "tags": [
+        "英伟达",
+        "扩散模型",
+        "推理加速",
+        "开源"
+      ],
+      "sources": [
+        {
+          "name": "IT之家",
+          "url": "https://www.ithome.com/0/972/162.htm"
+        },
+        {
+          "name": "品玩",
+          "url": "https://www.pingwest.com/w/315261"
+        }
+      ]
+    },
+    {
+      "id": "news-030",
+      "title": "美国解除Anthropic Fable 5/Mythos 5出口限制，全球恢复访问",
+      "summary": "7月1日美国商务部全面解除对Anthropic Fable 5和Mythos 5的出口限制（此前因Amazon研究员发现安全漏洞被禁3周）。Anthropic实施了额外安全加固，7月2日起全球恢复。同时OpenAI确认应美国政府要求延迟GPT-5.6全面开放。",
+      "category": "ecosystem",
+      "date": "2026-07-02",
+      "companies": [
+        "anthropic",
+        "openai"
+      ],
+      "tags": [
+        "出口管制",
+        "Fable 5",
+        "Mythos 5",
+        "GPT-5.6"
+      ],
+      "sources": [
+        {
+          "name": "Vietnam.vn",
+          "url": "https://www.vietnam.vn/en/my-bat-den-xanh-tro-lai-cho-hai-mo-hinh-ai-tien-tien-nhat-hien-nay-cuoc-dua-quan-ly-lai-nong-len"
+        }
+      ]
+    },
+    {
+      "id": "news-029",
+      "title": "Meta下一代模型Watermelon追平GPT-5.5，算力投入10倍于前代",
+      "summary": "Meta AI主管汪滔7月2日内部披露，下一代模型Watermelon(西瓜)在基准测试中追平OpenAI旗舰GPT-5.5。训练算力比前代Avocado高出一个数量级，即将推出能比肩Claude Opus的编程模型。Meta今年AI基建投入1250-1450亿美元。",
+      "category": "model-breakthrough",
+      "date": "2026-07-02",
+      "companies": [
+        "meta"
+      ],
+      "tags": [
+        "Meta",
+        "Watermelon",
+        "GPT-5.5",
+        "开源"
+      ],
+      "sources": [
+        {
+          "name": "IT之家",
+          "url": "https://www.ithome.com/0/972/120.htm"
+        },
+        {
+          "name": "ComputerWorld",
+          "url": "https://www.computerworld.com/article/4192733/metas-ai-chief-says-new-muse-spark-update-will-sharpen-coding-agentic-ai-2.html"
+        }
+      ]
+    },
     {
       "id": "news-023",
       "title": "美团发布LongCat-2.0：全球首个零英伟达万亿大模型",
