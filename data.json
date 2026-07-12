@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-06T00:18:57.918Z",
+  "lastUpdated": "2026-07-12T22:42:32.229Z",
   "platform": {
     "name": "AI技术洞察平台",
     "subtitle": "聚焦大模型前沿动态 · 服务技术路标制定",
@@ -503,6 +503,155 @@
     ]
   },
   "news": [
+    {
+      "id": "news-037",
+      "title": "GPT-5.6三档模型全球上线：Token效率飙升54%，Ultra模式独立证明50年数学猜想",
+      "summary": "7月10日OpenAI正式发布GPT-5.6全系列：Sol(旗舰/0)、Terra(均衡.5/5)、Luna(轻量/)。Ultra子代理模式调用64个智能体并行，不到1小时独立完成图论循环双覆盖猜想完整证明（50年未解难题），Terminal-Bench编程得分91.9%超越Claude Mythos 5。上下文扩展至150万tokens。",
+      "category": "model-breakthrough",
+      "date": "2026-07-10",
+      "companies": [
+        "openai"
+      ],
+      "tags": [
+        "GPT-5.6",
+        "数学突破",
+        "Ultra模式",
+        "Agent"
+      ],
+      "sources": [
+        {
+          "name": "腾讯新闻",
+          "url": "https://news.qq.com/rain/a/20260710A0AJG900"
+        },
+        {
+          "name": "东方财富",
+          "url": "https://finance.eastmoney.com/a/202607103800479289.html"
+        }
+      ]
+    },
+    {
+      "id": "news-038",
+      "title": "Meta发布Muse Spark 1.1：最强Agent编程模型，扎克伯格时隔3年X平台首发声",
+      "summary": "Meta 7月10日发布Muse Spark 1.1，100万token上下文+多模态推理+并行子Agent协调。定价激进：输入.25/输出.25。Meta Model API首次公测。内部代号Watermelon的新模型关键基准已追上GPT-5.5。扎克伯格时隔3年首次在X发帖宣传。",
+      "category": "model-breakthrough",
+      "date": "2026-07-10",
+      "companies": [
+        "meta"
+      ],
+      "tags": [
+        "Meta",
+        "Muse Spark",
+        "Agent编程",
+        "开源API"
+      ],
+      "sources": [
+        {
+          "name": "36氪",
+          "url": "https://36kr.com/p/3889198226995971"
+        },
+        {
+          "name": "36氪2",
+          "url": "https://www.36kr.com/p/3889553810504194"
+        }
+      ]
+    },
+    {
+      "id": "news-039",
+      "title": "国产大模型全球调用占比首次突破50%：中国AI周调用量达23.45万亿词元",
+      "summary": "OpenRouter最新数据：中国大模型全球周调用量突破23.45万亿词元，环比增长15%，全球占比首次过半(50.2%)。DeepSeek V4、阿里Qwen、Kimi K2.6为核心驱动力。中国已连续8周在模型调用量上超越美国。",
+      "category": "ecosystem",
+      "date": "2026-07-12",
+      "companies": [
+        "deepseek",
+        "alibaba",
+        "moonshot"
+      ],
+      "tags": [
+        "市场份额",
+        "中国AI",
+        "里程碑",
+        "全球格局"
+      ],
+      "sources": [
+        {
+          "name": "新浪财经",
+          "url": "https://finance.sina.cn/2026-07-12/detail-inihpiqc7973626.d.html"
+        }
+      ]
+    },
+    {
+      "id": "news-040",
+      "title": "MiniMax融资160亿港元+智谱314亿配售，国产大模型双雄同日发声",
+      "summary": "MiniMax完成160亿港元融资（7倍认购覆盖），创始人闫俊杰承诺至AGI实现零薪酬并出让4%股权激励。智谱同日启动314亿港元配售（创2026港股科技单次配售纪录），发布TouchHigh摸高计划：长程任务→自治智能体→完全自我训练→极致安全治理。",
+      "category": "capital",
+      "date": "2026-07-11",
+      "companies": [
+        "zhipu",
+        "minimax"
+      ],
+      "tags": [
+        "融资",
+        "IPO",
+        "MiniMax",
+        "智谱",
+        "AGI"
+      ],
+      "sources": [
+        {
+          "name": "新浪财经",
+          "url": "https://finance.sina.cn/2026-07-12/detail-inihpiqc7973626.d.html"
+        }
+      ]
+    },
+    {
+      "id": "news-041",
+      "title": "DeepSeek与智谱双双被曝自研AI推理芯片，国产大模型绕开英伟达",
+      "summary": "两大国产大模型龙头同时秘密自研推理ASIC芯片。DeepSeek 6月完成70亿美元融资后加速芯片设计，已与代工厂洽谈。智谱GLM-5.2海外日Token量一周暴涨27倍，算力吃紧迫切寻求本土晶圆合作。两者均对标Google TPU路线，聚焦推理场景专用芯片。",
+      "category": "model-breakthrough",
+      "date": "2026-07-08",
+      "companies": [
+        "deepseek",
+        "zhipu"
+      ],
+      "tags": [
+        "AI芯片",
+        "自研",
+        "DeepSeek",
+        "智谱",
+        "国产替代"
+      ],
+      "sources": [
+        {
+          "name": "PConline",
+          "url": "https://www.pconline.com.cn/focus/2178/21783999.html"
+        }
+      ]
+    },
+    {
+      "id": "news-042",
+      "title": "阿里全面封禁Claude全系产品，字节腾讯同步跟进国产替代",
+      "summary": "阿里云百炼、钉钉、蚂蚁集团7月10日全线禁用Claude API/Claude Code。通义灵码上线一键迁移工具，Qwen-Coder-Plus免费额度提升3倍。字节Trae、腾讯CodeBuddy同步跟进。标志着中国大模型市场正式进入国产闭环替代阶段。",
+      "category": "ecosystem",
+      "date": "2026-07-10",
+      "companies": [
+        "alibaba",
+        "anthropic",
+        "bytedance",
+        "tencent"
+      ],
+      "tags": [
+        "国产替代",
+        "Claude",
+        "阿里",
+        "监管"
+      ],
+      "sources": [
+        {
+          "name": "新浪财经",
+          "url": "https://finance.sina.cn/2026-07-12/detail-inihpiqc7973626.d.html"
+        }
+      ]
+    },
     {
       "id": "news-032",
       "title": "企业AI成本反叛潮：Uber烧光全年预算，中国开源模型蚕食美国市场",
