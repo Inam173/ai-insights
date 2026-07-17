@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-12T22:42:32.229Z",
+  "lastUpdated": "2026-07-18T08:00:00.000Z",
   "platform": {
     "name": "AI技术洞察平台",
     "subtitle": "聚焦大模型前沿动态 · 服务技术路标制定",
@@ -210,7 +210,7 @@
         "coreModels": [
           "Kimi"
         ],
-        "latestHighlight": "持续迭代长文本处理能力，在C端智能助手赛道保持领先",
+        "latestHighlight": "发布Kimi K3：全球最大开源模型2.8万亿参数，WebDev编程榜第一，超越GPT-5.6 Sol和Fable 5",
         "strengths": [
           "超长文本处理",
           "C端产品体验",
@@ -259,7 +259,7 @@
           "MiniMax-Text-01",
           "MiniMax-VL-01"
         ],
-        "latestHighlight": "冲刺A股IPO，多模态能力持续增强，在AI陪伴和内容生成赛道表现突出",
+        "latestHighlight": "自研MSA稀疏注意力架构破解「不可能三角」；旗舰模型M3的SWE-bench达80.5%、BrowseComp超Opus 4.7",
         "strengths": [
           "多模态生成",
           "AI陪伴",
@@ -503,6 +503,101 @@
     ]
   },
   "news": [
+    {
+      "id": "news-043",
+      "title": "Kimi K3发布：全球最大开源模型2.8万亿参数，WebDev编程榜超越GPT-5.6 Sol和Fable 5",
+      "summary": "7月17日，月之暗面在世界人工智能大会（WAIC）上正式发布Kimi K3，总参数2.8万亿（896专家MoE，仅激活16个）。在Arena.ai的WebDev前端编程榜排名第一，超越Fable 5和GPT-5.6 Sol；Terminal Bench 2.1得分88.3（Claude Opus 4.8为84.6）。首创KDA注意力机制+AttnRes残差连接，1M上下文窗口，原生多模态。API定价仅为Fable 5的三分之一（输入$3/输出$15每百万Token），模型权重将于7月27日开源。发布当日Z.ai暴跌30%、MiniMax跌16%。",
+      "category": "model-breakthrough",
+      "date": "2026-07-17",
+      "companies": [
+        "moonshot"
+      ],
+      "tags": [
+        "Kimi K3",
+        "开源",
+        "2.8万亿参数",
+        "WebDev",
+        "WAIC"
+      ],
+      "sources": [
+        {
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/2026/07/17/moonshot-ai-kimi-k3-model-openai-anthropic-china.html"
+        },
+        {
+          "name": "品玩",
+          "url": "https://www.pingwest.com/w/315601"
+        },
+        {
+          "name": "Digit.in",
+          "url": "https://www.digit.in/features/general/what-is-kimi-k3-moonshots-frontier-ai-model-that-matches-claude-opus-4-8-and-gpt-5-5.html"
+        }
+      ]
+    },
+    {
+      "id": "news-044",
+      "title": "Altman放话OpenAI降价75%，公开承认被DeepSeek和Anthropic双重夹击",
+      "summary": "7月16日，OpenAI CEO Sam Altman在社交媒体公开表态「乐意再降价75%」，是首次明确承认中国模型价格压力。DeepSeek V4-Pro输出Token仅$0.87/百万（GPT-5.6 Sol为$30），开发者实测1小时编码Claude花$10、DeepSeek不到$0.5且质量无差异。OpenAI当前困局：Q2亏损370亿美元、11名核心高管4个月内离职、苹果7月10日起诉窃取商业机密、微软评估用DeepSeek替代Copilot中的OpenAI。Anthropic在美国企业AI支出份额已达41%（OpenAI降至32.3%），中国模型占OpenRouter美国企业Token用量的30-46%。",
+      "category": "ecosystem",
+      "date": "2026-07-16",
+      "companies": [
+        "openai",
+        "deepseek",
+        "anthropic"
+      ],
+      "tags": [
+        "价格战",
+        "OpenAI",
+        "DeepSeek",
+        "Altman",
+        "市场竞争"
+      ],
+      "sources": [
+        {
+          "name": "钛媒体",
+          "url": "https://www.tmtpost.com/8069117.html"
+        },
+        {
+          "name": "DoNews",
+          "url": "https://www.donews.com/news/detail/4/6635908.html"
+        },
+        {
+          "name": "Forbes",
+          "url": "https://www.forbes.com/sites/janakirammsv/2026/07/13/cheaper-ai-tokens-do-not-guarantee-cheaper-enterprise-agents/"
+        }
+      ]
+    },
+    {
+      "id": "news-045",
+      "title": "MiniMax自研MSA稀疏注意力架构：破解大模型「不可能三角」，百万字成本降至1/20",
+      "summary": "7月14日（WAIC前夕），MiniMax披露自研MSA（MiniMax Sparse Attention）稀疏注意力架构，选择性激活最相关专家模块替代全注意力机制。在109B参数模型上，MSA每Token注意力计算量降低28.4倍，百万字长文本预填充加速14.2倍、解码加速7.6倍，单位Token成本降至传统架构的约1/20。该架构已应用于旗舰模型M3（428B总参数/22B激活），SWE-bench Verified达80.5%、BrowseComp达83.5%（超越Opus 4.7）。消息披露次日MiniMax港股（0100.HK）大涨超11%。",
+      "category": "advanced-usage",
+      "date": "2026-07-15",
+      "companies": [
+        "minimax"
+      ],
+      "tags": [
+        "MiniMax",
+        "MSA",
+        "稀疏注意力",
+        "降本增效",
+        "M3"
+      ],
+      "sources": [
+        {
+          "name": "人民网",
+          "url": "http://sh.people.com.cn/n2/2026/0715/c138654-41639490.html"
+        },
+        {
+          "name": "澎湃新闻",
+          "url": "https://www.thepaper.cn/newsDetail_forward_33595036"
+        },
+        {
+          "name": "东方财富",
+          "url": "https://fund.eastmoney.com/a/202607153806306123.html"
+        }
+      ]
+    },
     {
       "id": "news-037",
       "title": "GPT-5.6三档模型全球上线：Token效率飙升54%，Ultra模式独立证明50年数学猜想",
