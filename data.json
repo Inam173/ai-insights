@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-18T08:00:00.000Z",
+  "lastUpdated": "2026-07-21T08:00:00.000Z",
   "platform": {
     "name": "AI技术洞察平台",
     "subtitle": "聚焦大模型前沿动态 · 服务技术路标制定",
@@ -59,7 +59,7 @@
           "DeepSeek-R1",
           "DeepSeek-V3.2"
         ],
-        "latestHighlight": "首轮外部融资510亿元落地，投后估值近4000亿元；V4模型开创CSA+HCA混合注意力架构",
+        "latestHighlight": "V4正式版灰度上线：1.6万亿参数，业界首创峰谷计费，推理量仅为V3.2的27%；首轮融资510亿元落地",
         "strengths": [
           "开源领先",
           "推理能力强",
@@ -111,7 +111,7 @@
           "Qwen-Robot",
           "Qwen2.5"
         ],
-        "latestHighlight": "Qwen3.7-Plus多模态智能体发布；Qwen-Robot具身智能系列发布，覆盖VLA/VLN/世界模型",
+        "latestHighlight": "Qwen3.8-Max预览版发布：2.4万亿参数MoE，编码仅次于Fable 5，宣布将开源；Qwen-Robot具身智能系列发布",
         "strengths": [
           "多模态融合",
           "开源生态丰富",
@@ -503,6 +503,101 @@
     ]
   },
   "news": [
+    {
+      "id": "news-046",
+      "title": "阿里Qwen3.8-Max预览版发布：2.4万亿MoE参数，编码能力仅次于Fable 5，宣布将开源",
+      "summary": "7月19日WAIC期间，阿里通义千问发布Qwen3.8-Max预览版，成为千问系列首个万亿级原生多模态模型。2.4万亿MoE参数、256K上下文，自评综合能力仅次Claude Fable 5。编码Cowork实测：vs Fable-5-Xhigh编码胜率+12.6%，vs Kimi K3整体胜率+7.2%。首创按天迭代机制，正式版将完整开源权重（旗舰线闭源两代后回归开源）。上线Token Plan订阅39元/月起，Qoder编程平台和QoderWork办公智能体同步推出。阿里港股一度涨超5%。",
+      "category": "model-breakthrough",
+      "date": "2026-07-19",
+      "companies": [
+        "alibaba"
+      ],
+      "tags": [
+        "Qwen3.8-Max",
+        "2.4万亿参数",
+        "MoE",
+        "开源",
+        "WAIC"
+      ],
+      "sources": [
+        {
+          "name": "艾瑞网",
+          "url": "https://news.iresearch.cn/content/202607/561095.shtml"
+        },
+        {
+          "name": "PConline",
+          "url": "http://news.pconline.com.cn/2178/21788400.html"
+        },
+        {
+          "name": "IT168",
+          "url": "https://cloud.it168.com/a2026/0720/6941/000006941985.shtml"
+        }
+      ]
+    },
+    {
+      "id": "news-047",
+      "title": "DeepSeek V4正式版灰度上线：业界首创峰谷计费，推理效率革新降低87%计算量",
+      "summary": "7月19日起DeepSeek V4系列灰度上线，分V4 Pro（旗舰约1.6万亿参数）和V4 Flash（轻量版）。全系支持100万Token上下文，推理计算量仅为前代V3.2的27%，显存占用降至10%。SWE-bench Verified达91.2%，整体接近Opus 4.8级别。业界首创峰谷分时定价：高峰时段（9-12时/14-18时）翻倍，V4 Flash平时输出仅$0.28/百万Token。7月24日起旧版deepseek-chat和deepseek-reasoner接口将关停，全面迁移至V4。",
+      "category": "model-breakthrough",
+      "date": "2026-07-20",
+      "companies": [
+        "deepseek"
+      ],
+      "tags": [
+        "DeepSeek V4",
+        "峰谷计费",
+        "推理效率",
+        "SWE-bench",
+        "成本突破"
+      ],
+      "sources": [
+        {
+          "name": "36氪",
+          "url": "https://36kr.com/p/3902097586800259"
+        },
+        {
+          "name": "东方财富",
+          "url": "https://finance.eastmoney.com/a/202607193811790960.html"
+        },
+        {
+          "name": "21经济网",
+          "url": "https://m.21jingji.com/article/20260720/herald/a02bfa7ee0342440601ebd545f96e476.html"
+        }
+      ]
+    },
+    {
+      "id": "news-048",
+      "title": "WAIC 2026国产三连发：中国AI调用量突破52.6万亿Tokens，中美差距缩至2-3个月",
+      "summary": "7月17-20日WAIC 2026上海世博中心举办，1100余家企业参展，超300款AI新品全球首发，意向签约162亿元。月之暗面Kimi K3（2.8万亿参数）、阿里Qwen3.8-Max（2.4万亿）、DeepSeek V4正式版三连发，被视为国产大模型从「跟跑」到「并跑」的标志。中国大模型周调用量达52.6万亿tokens创新高。国产模型占OpenRouter美国企业Token用量的30-46%。彭博社称「美国AI领先中国的固有认知被打破」。美国学界评估中美差距已从6-9个月缩至2-3个月。",
+      "category": "ecosystem",
+      "date": "2026-07-20",
+      "companies": [
+        "deepseek",
+        "alibaba",
+        "moonshot"
+      ],
+      "tags": [
+        "WAIC 2026",
+        "国产三连发",
+        "市场份额",
+        "中美差距",
+        "52.6万亿tokens"
+      ],
+      "sources": [
+        {
+          "name": "CGTN",
+          "url": "https://news.cgtn.com/news/2026-07-20/Alibaba-Moonshot-launches-mark-new-phase-in-China-s-AI-race-1OWbBvdkH28/p.html"
+        },
+        {
+          "name": "证券时报",
+          "url": "https://stcn.com/article/detail/4029637.html"
+        },
+        {
+          "name": "东方财富",
+          "url": "https://finance.eastmoney.com/a/202607193811738150.html"
+        }
+      ]
+    },
     {
       "id": "news-043",
       "title": "Kimi K3发布：全球最大开源模型2.8万亿参数，WebDev编程榜超越GPT-5.6 Sol和Fable 5",
