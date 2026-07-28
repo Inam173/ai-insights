@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-21T08:00:00.000Z",
+  "lastUpdated": "2026-07-28T17:05:04.938Z",
   "platform": {
     "name": "AI技术洞察平台",
     "subtitle": "聚焦大模型前沿动态 · 服务技术路标制定",
@@ -503,6 +503,194 @@
     ]
   },
   "news": [
+    {
+      "id": "news-049",
+      "title": "Kimi K3蝉联LMArena前端开发榜全球第一：1682分力压Claude Opus 5与Fable 5",
+      "summary": "7月27日LMArena发布第30周榜单（统计7月20-26日），月之暗面Kimi K3以1682分蝉联前端开发榜全球第一，超过Claude Opus 5 High（1673分）、Claude Fable 5（1629分）与GPT-5.6 Sol xHigh（1625分），国产模型占据前端开发榜近半数席位。代码榜1530分升至第8、综合榜1485分第11，智能体榜第4且任务确认成功率14%为头部模型最高。预发布版定价输入$3/输出$15每百万token，上下文窗口1.05M。",
+      "category": "model-breakthrough",
+      "date": "2026-07-27",
+      "companies": [
+        "moonshot"
+      ],
+      "tags": [
+        "Kimi K3",
+        "LMArena",
+        "前端开发",
+        "开源模型"
+      ],
+      "sources": [
+        {
+          "name": "IT之家",
+          "url": "https://www.ithome.com/0/982/095.htm"
+        },
+        {
+          "name": "同花顺",
+          "url": "https://news.10jqka.com.cn/20260727/c678467256.shtml"
+        }
+      ]
+    },
+    {
+      "id": "news-050",
+      "title": "阿里发布Qwen3.7-Flash原生视觉语言系列：多模态理解与Agent能力全面升级",
+      "summary": "7月25日阿里云百炼发布Qwen3.7-Flash系列原生视觉语言模型，相较3.6-Flash全面升级多模态理解与Agent执行能力。强化万物识别、真实世界感知与空间智能，Search/CI Agent执行更稳定，vibe coding体验更流畅，主打高性价比的视觉+语言一体化能力，面向智能体与多模态场景。",
+      "category": "model-breakthrough",
+      "date": "2026-07-25",
+      "companies": [
+        "alibaba"
+      ],
+      "tags": [
+        "Qwen3.7-Flash",
+        "视觉语言模型",
+        "多模态",
+        "Agent"
+      ],
+      "sources": [
+        {
+          "name": "阿里云",
+          "url": "https://cn.aliyun.com/product/news/29909"
+        }
+      ]
+    },
+    {
+      "id": "news-051",
+      "title": "Anthropic发布Claude Opus 5：半价逼近Fable 5，Frontier-Bench与ARC-AGI登顶SOTA",
+      "summary": "7月24日Anthropic发布Claude Opus 5，定价输入$5/输出$25每百万token，仅为旗舰Fable 5一半价格。编程Frontier-Bench v0.1得43.3%登顶（超Fable 5的33.7%、为Opus 4.8两倍以上），ARC-AGI 3得30.2%为次优模型近4倍，Artificial Analysis综合智能指数61分在170个模型中排名第一，IMO 2026不借助外部工具独立拿满分。媒体称其\"半价跑赢旗舰\"，被视为Anthropic应对开源模型价格冲击与IPO前夜的市场策略调整。",
+      "category": "model-breakthrough",
+      "date": "2026-07-24",
+      "companies": [
+        "anthropic"
+      ],
+      "tags": [
+        "Claude Opus 5",
+        "半价旗舰",
+        "Frontier-Bench",
+        "ARC-AGI"
+      ],
+      "sources": [
+        {
+          "name": "超能网",
+          "url": "https://m.expreview.com/107243.html"
+        },
+        {
+          "name": "钛媒体",
+          "url": "https://www.tmtpost.com/8078939.html"
+        },
+        {
+          "name": "南方财经网",
+          "url": "https://m.sfccn.com/2026/7-26/3MMDE1MThfMjE5MDQ3MA.html"
+        }
+      ]
+    },
+    {
+      "id": "news-052",
+      "title": "Anthropic披露2GW AMD Helios算力计划：Claude周末自主完成ROCm全栈适配",
+      "summary": "据行业深度解读，Anthropic披露旗下Claude在周末自主完成AMD MI355/ROCm平台全套适配，打破CUDA生态壁垒，并宣布2GW AMD Helios算力计划，降低对英伟达的单一依赖。此举标志前沿模型厂商开始构建多元算力底座，为规模化推理降本与供应链安全铺路。",
+      "category": "ecosystem",
+      "date": "2026-07-24",
+      "companies": [
+        "anthropic"
+      ],
+      "tags": [
+        "AMD",
+        "ROCm",
+        "Helios",
+        "多元算力"
+      ],
+      "sources": [
+        {
+          "name": "行业深度解读",
+          "url": "https://gxmuzi.com/index.php/industry/896.html"
+        }
+      ]
+    },
+    {
+      "id": "news-053",
+      "title": "白宫加速敲定AI前沿模型审查标准：OpenAI/Anthropic/Google发布前最长30天风险评估",
+      "summary": "7月白宫联合国家安全相关部门，加速与OpenAI、Anthropic、Google等头部企业敲定针对AI前沿模型发布的自愿性行业标准：最先进闭源模型公开发布前给予联邦机构最长30天国家安全风险评估窗口，开源/开放权重模型被排除在审查之外。此前三方已联合提交修改意见。业界认为绕过政府审查发布存在风险，但\"自愿\"协议的实际约束力仍存争议。",
+      "category": "partnership",
+      "date": "2026-07-23",
+      "companies": [
+        "openai",
+        "anthropic",
+        "google"
+      ],
+      "tags": [
+        "监管",
+        "国家安全",
+        "白宫",
+        "自愿标准"
+      ],
+      "sources": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/975509/white-house-ai-framework-open-models-excluded"
+        },
+        {
+          "name": "上海科技情报",
+          "url": "http://www.istis.sh.cn/?_t=66t"
+        }
+      ]
+    },
+    {
+      "id": "news-054",
+      "title": "OpenAI发布企业智能体平台Presence：从卖模型转向卖企业软件",
+      "summary": "7月22日OpenAI正式发布企业级AI智能体部署平台Presence，帮助企业将智能体与内部数据、管理制度、软件及业务流程连接，实现客服、销售等工作自动化。内置安全护栏、人工审核与AI评分，部署后可由Codex排查优化；权限按最小化原则管控。目前面向符合条件企业客户有限开放，BBVA、软银、IAG等已试点。OpenAI自用英语电话客服1-888-GPT-0090，75%呼入无需人工介入。",
+      "category": "application",
+      "date": "2026-07-22",
+      "companies": [
+        "openai"
+      ],
+      "tags": [
+        "Presence",
+        "企业智能体",
+        "Agent平台",
+        "企业软件"
+      ],
+      "sources": [
+        {
+          "name": "IT之家",
+          "url": "https://m.ithome.com/html/980300.htm"
+        },
+        {
+          "name": "财联社",
+          "url": "https://api3.cls.cn/share/article/2435144"
+        },
+        {
+          "name": "观点网",
+          "url": "https://www.guandian.hk/article/20260722/575800.html"
+        }
+      ]
+    },
+    {
+      "id": "news-055",
+      "title": "谷歌连发三款Gemini Flash模型并启动Gemini 4预训练：旗舰Pro再延期",
+      "summary": "7月21日谷歌发布三款轻量级Gemini Flash模型：Gemini 3.6 Flash输出token消耗较3.5 Flash减少17%、编码基准最高省65%，价格降至输入$1.5/输出$7.5；Gemini 3.5 Flash-Lite输出速度每秒350token、输入$0.3/输出$2.5；Gemini 3.5 Flash Cyber专注代码漏洞检测。三款均面向大规模AI智能体开发。谷歌同步宣布启动\"史上最激进\"的Gemini 4预训练，但旗舰Gemini 3.5 Pro因编程能力不达预期继续跳票。",
+      "category": "model-breakthrough",
+      "date": "2026-07-21",
+      "companies": [
+        "google"
+      ],
+      "tags": [
+        "Gemini 3.6 Flash",
+        "Flash-Lite",
+        "Flash Cyber",
+        "Gemini 4"
+      ],
+      "sources": [
+        {
+          "name": "财联社",
+          "url": "https://api3.cls.cn/share/article/2433141"
+        },
+        {
+          "name": "东方财富",
+          "url": "https://finance.eastmoney.com/a/202607223816065236.html"
+        },
+        {
+          "name": "ITmedia",
+          "url": "https://www.itmedia.co.jp/aiplus/article/2607/22/2000000212/"
+        }
+      ]
+    },
     {
       "id": "news-046",
       "title": "阿里Qwen3.8-Max预览版发布：2.4万亿MoE参数，编码能力仅次于Fable 5，宣布将开源",
