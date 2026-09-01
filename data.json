@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-01T03:30:04.187Z",
+  "lastUpdated": "2026-09-01T03:36:19.553Z",
   "platform": {
     "name": "AI技术洞察平台",
     "subtitle": "聚焦大模型前沿动态 · 服务技术路标制定",
@@ -503,6 +503,284 @@
     ]
   },
   "news": [
+    {
+      "id": "news-074",
+      "title": "Kimi K3正式上线：定位智能体编程与知识工作",
+      "summary": "8月31日月之暗面Kimi K3正式上线，定位智能体编程与知识工作。此前K3已于7月以2.8万亿参数开源引爆行业、登顶多项编程榜，此次正式版上线进一步完善智能体能力，成为月之暗面冲刺Pre-IPO（估值500亿美元）的核心产品支撑。",
+      "category": "model-breakthrough",
+      "date": "2026-08-31",
+      "companies": [
+        "moonshot"
+      ],
+      "tags": [
+        "Kimi K3",
+        "智能体",
+        "正式上线",
+        "月之暗面"
+      ],
+      "sources": [
+        {
+          "name": "AI应用日报",
+          "url": "https://damodev.csdn.net/6a95553a2b83d06f0eca3e22.html"
+        },
+        {
+          "name": "界面新闻",
+          "url": "https://www.jiemian.com/article/14988211.html"
+        }
+      ]
+    },
+    {
+      "id": "news-075",
+      "title": "字节上调豆包虚拟股14.6%，TRAE/扣子并入豆包体系",
+      "summary": "8月31日字节跳动上调豆包虚拟股价格（涨幅约14.6%），激励Seed大模型、豆包产品等AI团队。同时完成AI办公产品整合，TRAE、扣子团队并入豆包体系。另据透露，豆包2.2被曝推迟发布，集中补课Coding能力。",
+      "category": "capital",
+      "date": "2026-08-31",
+      "companies": [
+        "bytedance"
+      ],
+      "tags": [
+        "字节",
+        "豆包",
+        "虚拟股",
+        "组织调整"
+      ],
+      "sources": [
+        {
+          "name": "腾讯新闻",
+          "url": "https://news.qq.com/rain/a/20260831A08VAO00"
+        }
+      ]
+    },
+    {
+      "id": "news-076",
+      "title": "腾讯混元Hy4 Preview开源：770B参数，上下文突破1M",
+      "summary": "腾讯混元Hy4 Preview发布并开源，总参数770B、激活参数49B，上下文长度突破1M，延续腾讯在长上下文大模型上的布局。发布后调用激增，WorkBuddy紧急扩容。",
+      "category": "model-breakthrough",
+      "date": "2026-08-30",
+      "companies": [
+        "tencent"
+      ],
+      "tags": [
+        "腾讯混元",
+        "Hy4",
+        "开源",
+        "770B"
+      ],
+      "sources": [
+        {
+          "name": "格隆汇",
+          "url": "https://m.gelonghui.com/p/6435087"
+        }
+      ]
+    },
+    {
+      "id": "news-077",
+      "title": "英伟达拟129亿美元收购Hugging Face，卡位开源AI生态",
+      "summary": "据The Information报道，英伟达同意以129亿美元收购开源AI模型平台Hugging Face（尚未正式官宣）。若落地，将成为英伟达在AI软件与开源生态上的一次重大卡位，也是其在算力硬件之外向模型与工具链上游延伸的信号。",
+      "category": "capital",
+      "date": "2026-08-30",
+      "companies": [],
+      "tags": [
+        "英伟达",
+        "Hugging Face",
+        "收购",
+        "开源"
+      ],
+      "sources": [
+        {
+          "name": "格隆汇",
+          "url": "https://m.gelonghui.com/p/6435087"
+        }
+      ]
+    },
+    {
+      "id": "news-078",
+      "title": "智谱GLM-5.3-Flash登顶OpenRouter：320B-A18B，国产芯片集群支撑",
+      "summary": "智谱GLM-5.3-Flash（320B-A18B）登顶OpenRouter周调用量榜首，为GLM-5系列首个原生多模态模型，支持1M超长上下文，测试期间由国产芯片集群提供算力支持，进一步验证国产大模型\"开源+国产算力\"路线的可行性。",
+      "category": "model-breakthrough",
+      "date": "2026-08-29",
+      "companies": [
+        "zhipu"
+      ],
+      "tags": [
+        "智谱",
+        "GLM-5.3-Flash",
+        "OpenRouter",
+        "国产算力"
+      ],
+      "sources": [
+        {
+          "name": "格隆汇",
+          "url": "https://m.gelonghui.com/p/6435087"
+        }
+      ]
+    },
+    {
+      "id": "news-079",
+      "title": "阿里发布Qwen3.8-Flash：125B参数、激活仅6B，训练成本降近90%",
+      "summary": "阿里发布Qwen3.8-Flash，MoE架构、总参数125B、每次推理仅激活6B，训练成本较前代下降近90%。继Qwen3.8-Max开源后，Flash进一步补齐阿里在高性价比小模型上的布局，应对Meta等开源对手的竞争。",
+      "category": "model-breakthrough",
+      "date": "2026-08-29",
+      "companies": [
+        "alibaba"
+      ],
+      "tags": [
+        "Qwen3.8-Flash",
+        "MoE",
+        "高性价比",
+        "阿里"
+      ],
+      "sources": [
+        {
+          "name": "格隆汇",
+          "url": "https://m.gelonghui.com/p/6435087"
+        },
+        {
+          "name": "HK Warrants",
+          "url": "https://hk.warrants.com/en/us-market/news-inside/nfid/9185/nsid/8/title/Alibaba,%20Facing%20Meta%20AI%20Challenge,%20Launches%20New%20Model%20That%20Can%20Run%20on%20Laptops"
+        }
+      ]
+    },
+    {
+      "id": "news-080",
+      "title": "DeepSeek重启第二轮融资：拟募500亿，投前估值5000亿元",
+      "summary": "DeepSeek重启第二轮融资，计划募资500亿元，投前估值约5000亿元，较首轮投后估值提升约43%，计划8月下旬完成签约。若落地两轮合计募资将突破1000亿元。此前7月底曾因\"投资人会议实录\"泄露短暂暂停，8月初重启。首轮投资方包括国家人工智能产业投资基金、腾讯、宁德时代等。",
+      "category": "capital",
+      "date": "2026-08-28",
+      "companies": [
+        "deepseek"
+      ],
+      "tags": [
+        "DeepSeek",
+        "融资",
+        "500亿",
+        "5000亿估值"
+      ],
+      "sources": [
+        {
+          "name": "财经网",
+          "url": "https://m.caijing.com.cn/s/202608/5175397"
+        },
+        {
+          "name": "星岛日报",
+          "url": "https://www.stheadline.com/realtime-finance/3601126/"
+        }
+      ]
+    },
+    {
+      "id": "news-081",
+      "title": "OpenAI自研推理芯片Jalapeño首测：每瓦AI任务量为英伟达1.5-1.9倍",
+      "summary": "OpenAI公布自研推理芯片Jalapeño首测数据，每瓦AI任务量达英伟达GB200/GB300系统的1.5至1.9倍。同时OpenAI拟于11月12日起停止向Cursor直供模型，加速自建模型分发渠道与芯片自主化进程。",
+      "category": "ecosystem",
+      "date": "2026-08-28",
+      "companies": [
+        "openai"
+      ],
+      "tags": [
+        "OpenAI",
+        "Jalapeño",
+        "自研芯片",
+        "推理芯片"
+      ],
+      "sources": [
+        {
+          "name": "格隆汇",
+          "url": "https://m.gelonghui.com/p/6435087"
+        }
+      ]
+    },
+    {
+      "id": "news-082",
+      "title": "OpenAI正式退役o3：由GPT-5.5替代，API端12月停服",
+      "summary": "8月26日OpenAI正式将o3模型从ChatGPT退役（过渡期90天，API端12月11日停服），由GPT-5.5系列替代。o3与GPT-4.5相继退役，标志着OpenAI全面收缩旧模型组合、集中算力到GPT-5.6等新模型，但不少付费用户对\"GOAT级推理模型\"o3退役表示惋惜。",
+      "category": "ecosystem",
+      "date": "2026-08-26",
+      "companies": [
+        "openai"
+      ],
+      "tags": [
+        "o3",
+        "模型退役",
+        "GPT-5.5",
+        "OpenAI"
+      ],
+      "sources": [
+        {
+          "name": "创业邦",
+          "url": "https://www.cyzone.cn/article/835142.html"
+        },
+        {
+          "name": "Forkast",
+          "url": "https://forkast.news/openai-retired-o3-from-chatgpt-today-the-real-cost-is-the-churn-it-forces-on-everyone-else/"
+        }
+      ]
+    },
+    {
+      "id": "news-083",
+      "title": "智谱确认神秘模型Ox Alpha为GLM新版本，当晚释放权重",
+      "summary": "彭博社报道，智谱确认神秘模型Ox Alpha是其GLM系列新迭代版本，并于当晚释放模型权重。该模型被认为可与DeepSeek正面竞争，延续国产开源模型的密集发布势头，进一步巩固智谱在开源与国产算力路线上的地位。",
+      "category": "model-breakthrough",
+      "date": "2026-08-26",
+      "companies": [
+        "zhipu"
+      ],
+      "tags": [
+        "智谱",
+        "Ox Alpha",
+        "GLM",
+        "开源"
+      ],
+      "sources": [
+        {
+          "name": "Mitrade/彭博",
+          "url": "https://www.mitrade.com/cn/insights/news/live-news/article-3-2032693-20260826"
+        }
+      ]
+    },
+    {
+      "id": "news-084",
+      "title": "Meta被曝将推AI代理平台Hatch，10月发布Watermelon模型",
+      "summary": "Meta被曝计划在未来几周推出AI代理平台\"Hatch\"，并计划10月推出最新AI模型\"Watermelon\"。此前Watermelon已以追平GPT-5.5、算力投入10倍于前代引发关注。此举显示Meta在开源模型竞争加剧下，加速向AI代理平台与更强模型发力。",
+      "category": "ecosystem",
+      "date": "2026-08-24",
+      "companies": [
+        "meta"
+      ],
+      "tags": [
+        "Meta",
+        "Hatch",
+        "Watermelon",
+        "AI代理"
+      ],
+      "sources": [
+        {
+          "name": "界面新闻",
+          "url": "https://www.jiemian.com/article/14988211.html"
+        }
+      ]
+    },
+    {
+      "id": "news-085",
+      "title": "特斯拉中国车机接入豆包大模型：入华以来首次集成第三方大模型",
+      "summary": "8月19日火山引擎宣布特斯拉中国车机系统上线豆包大模型，覆盖Model 3/Y/S/X四款车型，为特斯拉入华以来首次集成第三方大模型。此举标志国产大模型进入主流车机生态，是字节在端侧与车载场景的重要落地。",
+      "category": "application",
+      "date": "2026-08-19",
+      "companies": [
+        "bytedance"
+      ],
+      "tags": [
+        "特斯拉",
+        "豆包",
+        "车机",
+        "火山引擎"
+      ],
+      "sources": [
+        {
+          "name": "界面新闻",
+          "url": "https://www.jiemian.com/article/14971181.html"
+        }
+      ]
+    },
     {
       "id": "news-056",
       "title": "Anthropic冲刺史上最大IPO：募资或超SpaceX，估值有望达2万亿美元",
