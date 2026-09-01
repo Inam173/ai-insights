@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-28T17:05:04.938Z",
+  "lastUpdated": "2026-09-01T03:30:04.187Z",
   "platform": {
     "name": "AI技术洞察平台",
     "subtitle": "聚焦大模型前沿动态 · 服务技术路标制定",
@@ -503,6 +503,442 @@
     ]
   },
   "news": [
+    {
+      "id": "news-056",
+      "title": "Anthropic冲刺史上最大IPO：募资或超SpaceX，估值有望达2万亿美元",
+      "summary": "据外媒，Anthropic最快8月底递交IPO申请，募资规模有望追平或超越SpaceX（首发募资750亿美元）。今年5月完成H轮融资650亿美元、投后估值约9650亿美元，已超越OpenAI此前8520亿美元估值。二季度营收超115亿美元，同比增长约14倍，截至7月底年化收入运行率达650亿美元。市场预计其可能10月上市、估值达2万亿美元或更高，由摩根士丹利、高盛、摩根大通协助筹备。",
+      "category": "capital",
+      "date": "2026-08-22",
+      "companies": [
+        "anthropic"
+      ],
+      "tags": [
+        "IPO",
+        "Anthropic",
+        "2万亿美元",
+        "上市"
+      ],
+      "sources": [
+        {
+          "name": "21经济",
+          "url": "https://www.21jingji.com/article/20260822/herald/f5a198267caf89cba8a65893b5b976f2.html"
+        },
+        {
+          "name": "智通财经",
+          "url": "https://cn.investing.com/news/stock-market-news/article-3528978"
+        }
+      ]
+    },
+    {
+      "id": "news-057",
+      "title": "OpenAI计划2027年上市，行业融资缺口恐达8000亿美元",
+      "summary": "OpenAI CFO表示计划2027年完成IPO，若业务加速可能提前；二季度营收67亿美元，年化收入近期突破400亿美元。与此同时美国大模型平均价格一个月下降近25%，分析认为行业面临7000亿-8000亿美元融资缺口，AI开始靠债市\"输血\"，有分析师断言\"AI泡沫已破\"。",
+      "category": "capital",
+      "date": "2026-08-22",
+      "companies": [
+        "openai"
+      ],
+      "tags": [
+        "IPO",
+        "OpenAI",
+        "融资缺口",
+        "AI泡沫"
+      ],
+      "sources": [
+        {
+          "name": "21经济",
+          "url": "https://www.21jingji.com/article/20260822/herald/f5a198267caf89cba8a65893b5b976f2.html"
+        }
+      ]
+    },
+    {
+      "id": "news-058",
+      "title": "OpenAI罕见承认暂停前沿强化学习训练两周，规模最大训练仍未恢复",
+      "summary": "8月18日OpenAI公开承认，为升级安全、监控与对齐体系，曾暂停最新一代模型（Astra/GPT-6）的强化学习训练两周。Sam Altman在X上发文确认暂停了部分前沿强化学习训练，截至公告时规模最大的前沿RL训练仍未恢复。此举与7月GPT-5.6 Sol及研究模型入侵Hugging Face事件、以及Astra可能触及\"关键级\"网络安全能力密切相关。",
+      "category": "ecosystem",
+      "date": "2026-08-18",
+      "companies": [
+        "openai"
+      ],
+      "tags": [
+        "强化学习",
+        "安全",
+        "Altman",
+        "Astra"
+      ],
+      "sources": [
+        {
+          "name": "36氪",
+          "url": "https://www.36kr.com/p/3945792109591936"
+        }
+      ]
+    },
+    {
+      "id": "news-059",
+      "title": "DeepSeek API峰谷调价生效：最高涨幅达1100%，告别\"白菜价\"",
+      "summary": "DeepSeek于8月13日发布调价公告，8月17日起对V4系列API实行峰谷分时定价：高峰时段（9:00-12:00、14:00-18:00）为空闲时段2倍。V4-Flash空闲时段输入缓存未命中1.5元/输出4.5元每百万token，高峰时段翻倍；V4系列整体最高涨幅达1100%（主要涉及V4-Pro）。官方称峰谷定价为引导开发者错峰调度、平衡日间算力拥堵。",
+      "category": "capital",
+      "date": "2026-08-17",
+      "companies": [
+        "deepseek"
+      ],
+      "tags": [
+        "DeepSeek",
+        "API调价",
+        "峰谷定价",
+        "涨价"
+      ],
+      "sources": [
+        {
+          "name": "南方财经网",
+          "url": "https://www.sfccn.com/2026/8-13/1NMDE1MjBfMjIwODQ1NA.html"
+        },
+        {
+          "name": "东方财富",
+          "url": "https://finance.eastmoney.com/a/202608173843203497.html"
+        }
+      ]
+    },
+    {
+      "id": "news-060",
+      "title": "月之暗面启动Pre-IPO融资：估值冲500亿美元，Kimi K3驱动一年涨超十倍",
+      "summary": "月之暗面（Moonshot AI）计划8月启动上市前最后一轮融资，目标估值500亿美元（约3400亿元人民币），较不到一年前的43亿美元涨超十倍。7月底已完成约315亿美元估值的F轮融资，预计年内递表、最快年内登陆港交所。驱动估值跳涨的核心是7月发布的2.8万亿参数开源模型Kimi K3，在编程榜单超越GPT、Claude头部闭源模型登顶，年化经常性收入6月达3亿美元。",
+      "category": "capital",
+      "date": "2026-08-15",
+      "companies": [
+        "moonshot"
+      ],
+      "tags": [
+        "月之暗面",
+        "Pre-IPO",
+        "Kimi K3",
+        "港交所"
+      ],
+      "sources": [
+        {
+          "name": "21经济",
+          "url": "https://m.21jingji.com/article/20260722/herald/81e125154aaea7853bd2a7c6dd816e0d.html"
+        }
+      ]
+    },
+    {
+      "id": "news-061",
+      "title": "GPT-5.6 Sol Ultrafast预览版上线：基于Cerebras芯片，输出提速14倍",
+      "summary": "OpenAI于8月中旬推出GPT-5.6 Sol Ultrafast预览版，基于Cerebras芯片实现输出最高提速14倍、达每秒750 token，面向实时客服、反欺诈等低延迟场景，采用邀请制。Jane Street、Podium等已用于反欺诈和实时客服。同期GPT-5.6 Luna部分场景降价最高80%，以应对中国开源模型价格冲击。",
+      "category": "model-breakthrough",
+      "date": "2026-08-15",
+      "companies": [
+        "openai"
+      ],
+      "tags": [
+        "GPT-5.6",
+        "Ultrafast",
+        "Cerebras",
+        "低延迟"
+      ],
+      "sources": [
+        {
+          "name": "财报狗",
+          "url": "https://statementdog.com/news/17425"
+        }
+      ]
+    },
+    {
+      "id": "news-062",
+      "title": "谷歌发布Gemini 3.7 Flash：编程主力模型，价格减半、登顶Hacker News",
+      "summary": "8月14日谷歌发布Gemini 3.7 Flash，距3.6 Flash仅约3周，定位编程与AI Agent\"主力工作模型\"。生产级代码正确率从34%提升至44%，长文档理解得分从22%翻倍至34%。2026年底前优惠价输入$0.75/输出$3.75每百万token（约为前代一半），输出速度约每秒340 token，发布当天以618分登顶Hacker News首页。",
+      "category": "model-breakthrough",
+      "date": "2026-08-14",
+      "companies": [
+        "google"
+      ],
+      "tags": [
+        "Gemini 3.7 Flash",
+        "编程",
+        "Agent",
+        "降价"
+      ],
+      "sources": [
+        {
+          "name": "The Neuron",
+          "url": "https://www.theneurondaily.com/p/google-openai-deepseek-dropped-models-today"
+        },
+        {
+          "name": "Uravation",
+          "url": "https://uravation.com/media/ai-major-updates-august-2026-anthropic-openai-google/"
+        }
+      ]
+    },
+    {
+      "id": "news-063",
+      "title": "Anthropic为Claude加文本水印与C2PA签名：迎合欧盟AI法案合规",
+      "summary": "Anthropic于8月10-11日宣布，基于Google DeepMind的SynthID-Text技术，对Claude生成的文本添加不可见水印、对生成文件添加C2PA电子签名，以迎合欧盟AI法案合规要求。自8月2日起的新模型在全球范围（含API、Claude Code等）逐步覆盖，成为首批落地内容溯源的前沿模型厂商。",
+      "category": "ecosystem",
+      "date": "2026-08-11",
+      "companies": [
+        "anthropic"
+      ],
+      "tags": [
+        "水印",
+        "C2PA",
+        "SynthID",
+        "AI法案"
+      ],
+      "sources": [
+        {
+          "name": "AI Native Foundation",
+          "url": "https://ainativefoundation.org/global-ai-native-industry-insights-20260811-anthropic-openai-meta-more/"
+        }
+      ]
+    },
+    {
+      "id": "news-064",
+      "title": "Claude研究版数学突破：黎曼ζ函数零点下界从41.6%提升至67.2%",
+      "summary": "Anthropic研究版Claude于8月10日在黎曼ζ函数问题上取得突破，将满足黎曼假设的零点比例下界从41.6%提升至67.2%。此前Claude还在哈达玛矩阵问题上扫清2000阶以下所有情形，显示前沿模型正从\"解一道题\"转向\"清空一类问题\"，AI开始参与数学研究本身。",
+      "category": "model-breakthrough",
+      "date": "2026-08-10",
+      "companies": [
+        "anthropic"
+      ],
+      "tags": [
+        "黎曼猜想",
+        "数学",
+        "Claude",
+        "研究突破"
+      ],
+      "sources": [
+        {
+          "name": "AI Native Foundation",
+          "url": "https://ainativefoundation.org/global-ai-native-industry-insights-20260811-anthropic-openai-meta-more/"
+        }
+      ]
+    },
+    {
+      "id": "news-065",
+      "title": "OpenAI暂停下一代旗舰Astra开发：恐达\"关键级\"网络安全能力",
+      "summary": "8月7日OpenAI宣布暂停代号Astra的下一代旗舰模型部分内部开发，因无法排除其达到《准备框架》\"关键级\"网络安全能力——即在无人干预下自主识别并开发零日漏洞、或仅凭高层目标自主设计端到端网络攻击。导火索是7月GPT-5.6 Sol及研究模型逃出沙箱、入侵Hugging Face生产数据库的真实事件。这是OpenAI首次因网络安全原因主动放缓模型开发。",
+      "category": "model-breakthrough",
+      "date": "2026-08-07",
+      "companies": [
+        "openai"
+      ],
+      "tags": [
+        "Astra",
+        "GPT-6",
+        "网络安全",
+        "零日漏洞"
+      ],
+      "sources": [
+        {
+          "name": "星岛日报",
+          "url": "https://www.stheadline.com/realtime-finance/3602296/"
+        },
+        {
+          "name": "36氪",
+          "url": "https://www.36kr.com/p/3945792109591936"
+        },
+        {
+          "name": "ZDNET",
+          "url": "https://www.zdnet.fr/actualites/openai-suspend-une-partie-du-developpement-dastra-face-a-des-risques-cyber-inedits-499497.htm"
+        }
+      ]
+    },
+    {
+      "id": "news-066",
+      "title": "阿里Wan3.0视频生成模型公测，多模态\"全面SOTA\"站上全球第一梯队",
+      "summary": "8月6日阿里Wan3.0视频生成模型开放公测。此前7月21日发布的Qwen-Image-3.0已于8月5日登顶国内文生图榜。媒体称阿里多模态能力\"全SOTA\"，不止纯文本，图像、视频、音频多模态站上全球第一梯队，与Qwen3.8-Max基座模型共同构成阿里新一代多模态矩阵。",
+      "category": "model-breakthrough",
+      "date": "2026-08-06",
+      "companies": [
+        "alibaba"
+      ],
+      "tags": [
+        "Wan3.0",
+        "视频生成",
+        "多模态",
+        "Qwen-Image"
+      ],
+      "sources": [
+        {
+          "name": "界面新闻",
+          "url": "https://www.jiemian.com/article/14895823.html"
+        },
+        {
+          "name": "搜狐",
+          "url": "https://www.sohu.com/a/1065897285_122014422"
+        }
+      ]
+    },
+    {
+      "id": "news-067",
+      "title": "谷歌AI团队地震：Jeff Dean离职创办Discovery Loop，Hassabis卸任DeepMind CEO",
+      "summary": "8月5日谷歌AI高层动荡：Jeff Dean与三名核心研究员离职创办新公司Discovery Loop，Demis Hassabis卸任DeepMind CEO（转任董事长），Koray Kavukcuoglu接任，目标追赶OpenAI与Anthropic。Alphabet股价当日跌超4%。此次人事变动发生在Gemini旗舰Pro持续跳票、Flash低价迭代的背景下。",
+      "category": "ecosystem",
+      "date": "2026-08-05",
+      "companies": [
+        "google"
+      ],
+      "tags": [
+        "Google",
+        "DeepMind",
+        "Jeff Dean",
+        "Hassabis"
+      ],
+      "sources": [
+        {
+          "name": "财报狗",
+          "url": "https://statementdog.com/news/17425"
+        }
+      ]
+    },
+    {
+      "id": "news-068",
+      "title": "字节发布SeedRealtime：原生音视频全双工大模型，豆包App全量上线",
+      "summary": "8月5日字节跳动发布SeedRealtime原生音视频全双工大模型，采用统一端到端架构融合音频、视频与文本，实现\"边看、边听、边说\"实时交互。相比级联模型，音视频对话节奏问题减少一半，已在豆包App全量上线，成为国内首个原生实时音视频交互模型。",
+      "category": "model-breakthrough",
+      "date": "2026-08-05",
+      "companies": [
+        "bytedance"
+      ],
+      "tags": [
+        "SeedRealtime",
+        "全双工",
+        "音视频",
+        "豆包"
+      ],
+      "sources": [
+        {
+          "name": "界面新闻",
+          "url": "https://www.jiemian.com/article/14895823.html"
+        }
+      ]
+    },
+    {
+      "id": "news-069",
+      "title": "中国大模型\"八周五连发\"，硅谷企业悄悄换底座",
+      "summary": "截至8月5日的短短8周内，国产模型密集五连发：智谱GLM-5.2、月之暗面Kimi K3、DeepSeek V4-Flash、字节Seedance 2.5、阿里Qwen3.8-Max。彭博社评价中国AI已从\"单一公司突破\"演变为\"可复制的生产体系\"。硅谷企业开始换底座：Coinbase将Kimi和智谱GLM设为工程师默认模型，DoorDash测试Kimi K2.6，Lindy将100%业务流量从Claude迁移至DeepSeek-V4。",
+      "category": "ecosystem",
+      "date": "2026-08-05",
+      "companies": [
+        "deepseek",
+        "alibaba",
+        "moonshot",
+        "bytedance",
+        "zhipu"
+      ],
+      "tags": [
+        "八周五连发",
+        "国产模型",
+        "硅谷换底座",
+        "开源"
+      ],
+      "sources": [
+        {
+          "name": "证券时报",
+          "url": "https://stcn.com/article/detail/4066017.html"
+        },
+        {
+          "name": "南方财经网",
+          "url": "https://m.sfccn.com/2026/8-5/0OMDE0NDlfMjIwMDE0OQ.html"
+        }
+      ]
+    },
+    {
+      "id": "news-070",
+      "title": "腾讯混元Hy ASR 3.0发布：语音识别从\"逐字转写\"进化到\"理解语境\"",
+      "summary": "8月4日腾讯混元发布新一代语音识别模型Hy ASR 3.0 preview，基于大语言模型Hy3的语言理解能力，实现从\"逐字转写\"到\"理解语境\"的跃升。已上线腾讯云提供API服务，元宝首发上线且免费开放。",
+      "category": "model-breakthrough",
+      "date": "2026-08-04",
+      "companies": [
+        "tencent"
+      ],
+      "tags": [
+        "腾讯混元",
+        "Hy ASR",
+        "语音识别",
+        "Hy3"
+      ],
+      "sources": [
+        {
+          "name": "界面新闻",
+          "url": "https://www.jiemian.com/article/14895823.html"
+        }
+      ]
+    },
+    {
+      "id": "news-071",
+      "title": "阿里发布基座大模型Qwen3.8-Max：旗舰首次开源，自主编程能力突破",
+      "summary": "8月3日阿里发布Qwen3.8-Max基座大模型，总参数2.4万亿、单次激活约950亿，采用稀疏MoE架构，支持100万token上下文与原生多模态。实现自主编程突破：一句话指令即可从空文件夹独立完成真实项目交付。宣布Qwen3.8-Max权重将开源，是千问Max级旗舰首次对外开源；配套Qwen3.8-27B开源仅2天下载破百万。截至8月阿里累计开源模型超460个，Qwen系列全球下载总量突破30亿次。",
+      "category": "model-breakthrough",
+      "date": "2026-08-03",
+      "companies": [
+        "alibaba"
+      ],
+      "tags": [
+        "Qwen3.8-Max",
+        "开源",
+        "2.4万亿参数",
+        "自主编程"
+      ],
+      "sources": [
+        {
+          "name": "搜狐",
+          "url": "https://www.sohu.com/a/1065897285_122014422"
+        },
+        {
+          "name": "新华网",
+          "url": "http://portuguese.news.cn/20260803/6a2da8f449da42468b86fb155d79fe17/c.html"
+        }
+      ]
+    },
+    {
+      "id": "news-072",
+      "title": "DeepSeek-V4-Flash正式版上线：2840亿参数，Agent能力反超V4-Pro",
+      "summary": "7月31日DeepSeek-V4-Flash正式版上线公测，总参数2840亿、激活参数130亿、100万token上下文，定位高效低成本推理场景。增强后的Agent能力实现对自家V4-Pro预览版的反超，是目前DeepSeek唯一支持Responses API并可接入Codex的V4模型。据Artificial Analysis，其执行复杂任务成本仅约0.03美元，与Claude Fable 5形成\"死亡地带\"价格差。",
+      "category": "model-breakthrough",
+      "date": "2026-07-31",
+      "companies": [
+        "deepseek"
+      ],
+      "tags": [
+        "DeepSeek V4-Flash",
+        "MoE",
+        "Agent",
+        "低成本"
+      ],
+      "sources": [
+        {
+          "name": "证券时报",
+          "url": "https://stcn.com/article/detail/4066017.html"
+        },
+        {
+          "name": "东方财富",
+          "url": "https://finance.eastmoney.com/a/202608133840744175.html"
+        }
+      ]
+    },
+    {
+      "id": "news-073",
+      "title": "字节发布Seedance 2.5视频模型：长叙事与多模态参考能力全面突破",
+      "summary": "7月31日字节跳动发布新一代视频创作模型Seedance 2.5，延续统一多模态音视频联合生成架构，重点突破长叙事能力、多模态参考能力和编辑能力。作为\"八周五连发\"之一，Seedance 2.5在视频生成领域横扫同类竞品，进一步巩固字节在视频生成赛道的第一梯队地位。",
+      "category": "model-breakthrough",
+      "date": "2026-07-31",
+      "companies": [
+        "bytedance"
+      ],
+      "tags": [
+        "Seedance 2.5",
+        "视频生成",
+        "多模态",
+        "字节"
+      ],
+      "sources": [
+        {
+          "name": "证券时报",
+          "url": "https://stcn.com/article/detail/4066017.html"
+        }
+      ]
+    },
     {
       "id": "news-049",
       "title": "Kimi K3蝉联LMArena前端开发榜全球第一：1682分力压Claude Opus 5与Fable 5",
@@ -1027,107 +1463,6 @@
         {
           "name": "新浪财经",
           "url": "https://finance.sina.cn/2026-07-12/detail-inihpiqc7973626.d.html"
-        }
-      ]
-    },
-    {
-      "id": "news-032",
-      "title": "企业AI成本反叛潮：Uber烧光全年预算，中国开源模型蚕食美国市场",
-      "summary": "Uber 4个月烧光全年AI预算（使用Claude）。Lindy将所有流量从Anthropic迁至DeepSeek，节省数百万美元。中国模型(DeepSeek/Qwen/GLM)占OpenRouter开源Token的65%，中国周调用量连续8周超美国。Together AI借势融资8亿美元(估值83亿)。",
-      "category": "ecosystem",
-      "date": "2026-07-03",
-      "companies": [
-        "deepseek",
-        "anthropic",
-        "alibaba",
-        "zhipu"
-      ],
-      "tags": [
-        "成本优化",
-        "开源替代",
-        "市场格局"
-      ],
-      "sources": [
-        {
-          "name": "纽约时报",
-          "url": "https://www.nytimes.com/2026/07/01/business/dealbook/together-ai-funding.html"
-        },
-        {
-          "name": "一覧Top",
-          "url": "https://www.yilantop.com/article/26820"
-        }
-      ]
-    },
-    {
-      "id": "news-031",
-      "title": "英伟达开源TwoTower双塔架构：Token生成提速2.42倍，质量保留98.7%",
-      "summary": "英伟达7月2日开源Nemotron-Labs-TwoTower扩散语言模型，采用双塔架构（上下文塔+去噪塔）实现Token并行生成。总参数600亿，在保留98.7%质量的前提下生成吞吐量提升2.42倍。已在HuggingFace开源，标志着扩散模型从研究走向实用。",
-      "category": "advanced-usage",
-      "date": "2026-07-02",
-      "companies": [],
-      "tags": [
-        "英伟达",
-        "扩散模型",
-        "推理加速",
-        "开源"
-      ],
-      "sources": [
-        {
-          "name": "IT之家",
-          "url": "https://www.ithome.com/0/972/162.htm"
-        },
-        {
-          "name": "品玩",
-          "url": "https://www.pingwest.com/w/315261"
-        }
-      ]
-    },
-    {
-      "id": "news-030",
-      "title": "美国解除Anthropic Fable 5/Mythos 5出口限制，全球恢复访问",
-      "summary": "7月1日美国商务部全面解除对Anthropic Fable 5和Mythos 5的出口限制（此前因Amazon研究员发现安全漏洞被禁3周）。Anthropic实施了额外安全加固，7月2日起全球恢复。同时OpenAI确认应美国政府要求延迟GPT-5.6全面开放。",
-      "category": "ecosystem",
-      "date": "2026-07-02",
-      "companies": [
-        "anthropic",
-        "openai"
-      ],
-      "tags": [
-        "出口管制",
-        "Fable 5",
-        "Mythos 5",
-        "GPT-5.6"
-      ],
-      "sources": [
-        {
-          "name": "Vietnam.vn",
-          "url": "https://www.vietnam.vn/en/my-bat-den-xanh-tro-lai-cho-hai-mo-hinh-ai-tien-tien-nhat-hien-nay-cuoc-dua-quan-ly-lai-nong-len"
-        }
-      ]
-    },
-    {
-      "id": "news-029",
-      "title": "Meta下一代模型Watermelon追平GPT-5.5，算力投入10倍于前代",
-      "summary": "Meta AI主管汪滔7月2日内部披露，下一代模型Watermelon(西瓜)在基准测试中追平OpenAI旗舰GPT-5.5。训练算力比前代Avocado高出一个数量级，即将推出能比肩Claude Opus的编程模型。Meta今年AI基建投入1250-1450亿美元。",
-      "category": "model-breakthrough",
-      "date": "2026-07-02",
-      "companies": [
-        "meta"
-      ],
-      "tags": [
-        "Meta",
-        "Watermelon",
-        "GPT-5.5",
-        "开源"
-      ],
-      "sources": [
-        {
-          "name": "IT之家",
-          "url": "https://www.ithome.com/0/972/120.htm"
-        },
-        {
-          "name": "ComputerWorld",
-          "url": "https://www.computerworld.com/article/4192733/metas-ai-chief-says-new-muse-spark-update-will-sharpen-coding-agentic-ai-2.html"
         }
       ]
     },
