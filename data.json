@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-01T03:36:19.553Z",
+  "lastUpdated": "2026-09-01T10:01:04.163Z",
   "platform": {
     "name": "AI技术洞察平台",
     "subtitle": "聚焦大模型前沿动态 · 服务技术路标制定",
@@ -41,6 +41,18 @@
       "name": "资本动态",
       "icon": "💰",
       "color": "#14B8A6"
+    },
+    {
+      "id": "supply-chain",
+      "name": "供应链案例",
+      "icon": "🏭",
+      "color": "#F97316"
+    },
+    {
+      "id": "apa",
+      "name": "APA",
+      "icon": "🤖",
+      "color": "#F43F5E"
     }
   ],
   "companies": {
@@ -738,6 +750,102 @@
       ]
     },
     {
+      "id": "news-093",
+      "title": "京东物流发布「超脑」大模型3.0，物流行业首个全链路工业级AI集成体",
+      "summary": "京东物流发布「超脑」大模型3.0，为物流行业首个从仓储到配送全程由AI指挥的工业级大模型集成体，由PreX、OptiX、OmniX、GeoX、EmbodiedX五大供应链原生大模型组成。亿级包裹路径规划从分钟级压缩至秒级，车辆自动化调度率达86%。",
+      "category": "supply-chain",
+      "date": "2026-08-26",
+      "companies": [
+        "京东物流"
+      ],
+      "tags": [
+        "超脑3.0",
+        "工业级大模型",
+        "供应链",
+        "路径规划"
+      ],
+      "sources": [
+        {
+          "name": "新浪财经",
+          "url": "https://finance.sina.com.cn/jjxw/2026-08-26/doc-inipsezp9138162.shtml"
+        },
+        {
+          "name": "21世纪经济报道",
+          "url": "https://m.21jingji.com/timeline/a6596cd95c19dca951dea5b0258973c3.html"
+        }
+      ]
+    },
+    {
+      "id": "news-094",
+      "title": "顺丰「阿朴」AI智能体集群亮相交通展，时空预测大模型准确率超98%",
+      "summary": "顺丰在第十八届交通展展示「阿朴」AI智能体集群，以客户智能体为核心覆盖客户、预测、规划、营销、履约、客服全环节。时空预测大模型日度级预测准确率超98%，运筹大模型日均输出数千条优化方案，截至6月末智能体规模增至约1.5万个。",
+      "category": "supply-chain",
+      "date": "2026-08-26",
+      "companies": [
+        "顺丰"
+      ],
+      "tags": [
+        "智能体集群",
+        "时空预测",
+        "运筹",
+        "供应链"
+      ],
+      "sources": [
+        {
+          "name": "新浪财经",
+          "url": "https://finance.sina.com.cn/stock/relnews/cn/2026-08-26/doc-iniprytq2352798.shtml"
+        }
+      ]
+    },
+    {
+      "id": "news-112",
+      "title": "威海银行数智员工流程自动化平台二期招标，基于艺赛旗RPA架构",
+      "summary": "威海银行发布数智员工流程自动化平台二期项目招标公告，明确基于艺赛旗RPA产品架构建设45个业务场景，新增绿色金融智能体、数字函证自动化等，并新增5个RPA机器人，体现银行对艺赛旗平台的续采。",
+      "category": "apa",
+      "date": "2026-08-26",
+      "companies": [
+        "艺赛旗"
+      ],
+      "tags": [
+        "威海银行",
+        "招标",
+        "RPA"
+      ],
+      "sources": [
+        {
+          "name": "阳光采购服务平台",
+          "url": "http://yantai.ygcgfw.com/gggs/001001/001001001/20260826/6ee54690-7b23-4e46-9212-9647d7a59840.html"
+        }
+      ]
+    },
+    {
+      "id": "news-097",
+      "title": "比亚迪与帕西尼签署战略合作，以工业数据反哺大模型训练",
+      "summary": "比亚迪与帕西尼感知科技签署战略合作，将在数据采集与机器人领域深度协同，推动工业制造场景机器人落地。比亚迪以真实工厂工况与供应链资源反哺大模型训练，帕西尼提供触觉传感器与全模态具身数据采集能力，加速工业具身智能规模化。",
+      "category": "supply-chain",
+      "date": "2026-08-25",
+      "companies": [
+        "比亚迪",
+        "帕西尼"
+      ],
+      "tags": [
+        "具身智能",
+        "工业机器人",
+        "触觉感知",
+        "汽车供应链"
+      ],
+      "sources": [
+        {
+          "name": "新浪财经",
+          "url": "https://finance.sina.com.cn/roll/2026-08-31/doc-iniqfeap4617003.shtml"
+        },
+        {
+          "name": "证券时报",
+          "url": "https://www.stcn.com/article/detail/4165738.html"
+        }
+      ]
+    },
+    {
       "id": "news-084",
       "title": "Meta被曝将推AI代理平台Hatch，10月发布Watermelon模型",
       "summary": "Meta被曝计划在未来几周推出AI代理平台\"Hatch\"，并计划10月推出最新AI模型\"Watermelon\"。此前Watermelon已以追平GPT-5.5、算力投入10倍于前代引发关注。此举显示Meta在开源模型竞争加剧下，加速向AI代理平台与更强模型发力。",
@@ -756,28 +864,6 @@
         {
           "name": "界面新闻",
           "url": "https://www.jiemian.com/article/14988211.html"
-        }
-      ]
-    },
-    {
-      "id": "news-085",
-      "title": "特斯拉中国车机接入豆包大模型：入华以来首次集成第三方大模型",
-      "summary": "8月19日火山引擎宣布特斯拉中国车机系统上线豆包大模型，覆盖Model 3/Y/S/X四款车型，为特斯拉入华以来首次集成第三方大模型。此举标志国产大模型进入主流车机生态，是字节在端侧与车载场景的重要落地。",
-      "category": "application",
-      "date": "2026-08-19",
-      "companies": [
-        "bytedance"
-      ],
-      "tags": [
-        "特斯拉",
-        "豆包",
-        "车机",
-        "火山引擎"
-      ],
-      "sources": [
-        {
-          "name": "界面新闻",
-          "url": "https://www.jiemian.com/article/14971181.html"
         }
       ]
     },
@@ -830,6 +916,96 @@
       ]
     },
     {
+      "id": "news-096",
+      "title": "菜鸟CEO万霖：将建机器人仓储，AI关务系统单票清关时长压缩80%",
+      "summary": "APEC海关与商界对话会上，菜鸟CEO万霖表示将持续用AI提升跨境物流效率、合规与绿色能力。自研AI关务系统将单票清关时长压缩80%，ZeeBot攀爬机器人、四向穿梭车矩阵等已应用，并计划在多个APEC经济体建设机器人仓储。",
+      "category": "supply-chain",
+      "date": "2026-08-21",
+      "companies": [
+        "菜鸟"
+      ],
+      "tags": [
+        "机器人仓储",
+        "AI关务",
+        "跨境物流",
+        "ZeeBot"
+      ],
+      "sources": [
+        {
+          "name": "新华网",
+          "url": "https://www.news.cn/tech/20260821/75e3b68386b948c8bc62c6edaa6e48ec/c.html"
+        }
+      ]
+    },
+    {
+      "id": "news-110",
+      "title": "金智维二次递表港交所，携200万AI数字员工冲刺IPO",
+      "summary": "金智维二次向港交所主板递交18C特专科技上市申请，联席保荐人为国泰君安国际及中银国际。截至2026年6月底，金智维已部署超200万AI数字员工、服务超1600家客户，连续三年居中国AI数字员工收入第一。",
+      "category": "apa",
+      "date": "2026-08-21",
+      "companies": [
+        "金智维"
+      ],
+      "tags": [
+        "IPO",
+        "港交所",
+        "数字员工"
+      ],
+      "sources": [
+        {
+          "name": "证券之星",
+          "url": "https://wap.stockstar.com/detail/IG2026082100047673"
+        },
+        {
+          "name": "i黑马",
+          "url": "http://www.iheima.com/article-401021.html"
+        }
+      ]
+    },
+    {
+      "id": "news-111",
+      "title": "艺赛旗亮相2026第十期华北制造业CIO研讨会，主张「智能体执行时代」",
+      "summary": "艺赛旗亮相2026第十期华北制造业CIO研讨会，提出AI进入「智能体执行时代」，主张从「对话给建议」转向「实际执行产出结果」，推介自动化魔术师作为AI数字员工技能工厂，重构制造业流程自动化。",
+      "category": "apa",
+      "date": "2026-08-21",
+      "companies": [
+        "艺赛旗"
+      ],
+      "tags": [
+        "智能体",
+        "制造业",
+        "CIO研讨会"
+      ],
+      "sources": [
+        {
+          "name": "艺赛旗官网",
+          "url": "https://www.i-search.com.cn/html/news/2026/0827/18889.html"
+        }
+      ]
+    },
+    {
+      "id": "news-085",
+      "title": "特斯拉中国车机接入豆包大模型：入华以来首次集成第三方大模型",
+      "summary": "8月19日火山引擎宣布特斯拉中国车机系统上线豆包大模型，覆盖Model 3/Y/S/X四款车型，为特斯拉入华以来首次集成第三方大模型。此举标志国产大模型进入主流车机生态，是字节在端侧与车载场景的重要落地。",
+      "category": "application",
+      "date": "2026-08-19",
+      "companies": [
+        "bytedance"
+      ],
+      "tags": [
+        "特斯拉",
+        "豆包",
+        "车机",
+        "火山引擎"
+      ],
+      "sources": [
+        {
+          "name": "界面新闻",
+          "url": "https://www.jiemian.com/article/14971181.html"
+        }
+      ]
+    },
+    {
       "id": "news-058",
       "title": "OpenAI罕见承认暂停前沿强化学习训练两周，规模最大训练仍未恢复",
       "summary": "8月18日OpenAI公开承认，为升级安全、监控与对齐体系，曾暂停最新一代模型（Astra/GPT-6）的强化学习训练两周。Sam Altman在X上发文确认暂停了部分前沿强化学习训练，截至公告时规模最大的前沿RL训练仍未恢复。此举与7月GPT-5.6 Sol及研究模型入侵Hugging Face事件、以及Astra可能触及\"关键级\"网络安全能力密切相关。",
@@ -848,6 +1024,27 @@
         {
           "name": "36氪",
           "url": "https://www.36kr.com/p/3945792109591936"
+        }
+      ]
+    },
+    {
+      "id": "news-109",
+      "title": "影刀RPA发布V6.3版本，AI流程助手全面升级、CLI版开放",
+      "summary": "影刀RPA发布V6.3版本，AI流程助手全面升级，新增「选择日期(AI)」指令，「影刀技能CLI版」面向所有用户开放，可在Cursor、Claude Code等Agent中唤起影刀实现全自动化操作，进一步降低RPA使用门槛。",
+      "category": "apa",
+      "date": "2026-08-18",
+      "companies": [
+        "影刀"
+      ],
+      "tags": [
+        "版本更新",
+        "AI流程助手",
+        "CLI"
+      ],
+      "sources": [
+        {
+          "name": "影刀社区",
+          "url": "https://www.yingdao.com/community/detaildiscuss?id=985848597913886720"
         }
       ]
     },
@@ -1122,6 +1319,32 @@
       ]
     },
     {
+      "id": "news-095",
+      "title": "菜鸟发布「全球三日达」，以AI驱动跨境物流实现72小时门到门",
+      "summary": "菜鸟发布「全球三日达」跨境物流产品，覆盖中欧、泛欧、中东15条核心线路，单票成本约为标准国际快递一半。依托AI自动化作业、100多个口岸智能清关、AI路由分单，实现72小时门到门配送，标志跨境电商物流迈入「以小时计」阶段。",
+      "category": "supply-chain",
+      "date": "2026-08-05",
+      "companies": [
+        "菜鸟"
+      ],
+      "tags": [
+        "跨境物流",
+        "AI路由",
+        "智能清关",
+        "时效"
+      ],
+      "sources": [
+        {
+          "name": "IT之家",
+          "url": "https://www.ithome.com/0/986/215.htm"
+        },
+        {
+          "name": "中国交通报",
+          "url": "https://www.zgjtb.com/m/2026-08/06/content_531692.html"
+        }
+      ]
+    },
+    {
       "id": "news-070",
       "title": "腾讯混元Hy ASR 3.0发布：语音识别从\"逐字转写\"进化到\"理解语境\"",
       "summary": "8月4日腾讯混元发布新一代语音识别模型Hy ASR 3.0 preview，基于大语言模型Hy3的语言理解能力，实现从\"逐字转写\"到\"理解语境\"的跃升。已上线腾讯云提供API服务，元宝首发上线且免费开放。",
@@ -1140,6 +1363,33 @@
         {
           "name": "界面新闻",
           "url": "https://www.jiemian.com/article/14895823.html"
+        }
+      ]
+    },
+    {
+      "id": "news-108",
+      "title": "IDC首次发布APA市场份额报告，来也科技居APA产品市场中国第一",
+      "summary": "IDC首次发布中国APA产品市场份额报告，来也科技以10.8%市场份额位居APA产品市场中国第一，艺赛旗10.7%、金智维9.5%紧随其后。2025年中国APA市场规模约21.5亿元，数字员工成为应用新形态。",
+      "category": "apa",
+      "date": "2026-08-04",
+      "companies": [
+        "来也科技",
+        "艺赛旗",
+        "金智维"
+      ],
+      "tags": [
+        "IDC",
+        "APA",
+        "市场报告"
+      ],
+      "sources": [
+        {
+          "name": "中国日报网",
+          "url": "https://cn.chinadaily.com.cn/a/202608/04/WS6a71aa3ba310d709c2fc1804.html"
+        },
+        {
+          "name": "新京报",
+          "url": "https://www.bjnews.com.cn/detail/1785924376129407.html"
         }
       ]
     },
@@ -1218,6 +1468,28 @@
       ]
     },
     {
+      "id": "news-091",
+      "title": "顺丰发布服装行业数智化供应链解决方案，丰知Agent OS驱动供应链智能体集群",
+      "summary": "顺丰发布服装行业数智化供应链解决方案，依托丰知物流决策大模型搭建集需求预测、智能运筹、全局决策于一体的供应链智能体集群，通过丰知Agent OS与OMA/WMA/MA供应链数字员工，将AI嵌入订单、仓储、运输全环节，已在鞋服多场景落地。",
+      "category": "supply-chain",
+      "date": "2026-07-30",
+      "companies": [
+        "顺丰"
+      ],
+      "tags": [
+        "Agent OS",
+        "智能体集群",
+        "需求预测",
+        "供应链数字员工"
+      ],
+      "sources": [
+        {
+          "name": "新浪财经",
+          "url": "https://finance.sina.com.cn/stock/relnews/cn/2026-07-30/doc-inikqupy9647951.shtml"
+        }
+      ]
+    },
+    {
       "id": "news-049",
       "title": "Kimi K3蝉联LMArena前端开发榜全球第一：1682分力压Claude Opus 5与Fable 5",
       "summary": "7月27日LMArena发布第30周榜单（统计7月20-26日），月之暗面Kimi K3以1682分蝉联前端开发榜全球第一，超过Claude Opus 5 High（1673分）、Claude Fable 5（1629分）与GPT-5.6 Sol xHigh（1625分），国产模型占据前端开发榜近半数席位。代码榜1530分升至第8、综合榜1485分第11，智能体榜第4且任务确认成功率14%为头部模型最高。预发布版定价输入$3/输出$15每百万token，上下文窗口1.05M。",
@@ -1240,6 +1512,31 @@
         {
           "name": "同花顺",
           "url": "https://news.10jqka.com.cn/20260727/c678467256.shtml"
+        }
+      ]
+    },
+    {
+      "id": "news-107",
+      "title": "实在智能实在Agent以90.2%成功率登顶OSWorld全球榜首",
+      "summary": "实在智能自研Computer-Use智能体「实在Agent」以90.2%任务成功率登顶OSWorld全球总榜及Agentic Framework分榜，成为该榜单发布以来首个突破90%的智能体，反超Meta、Anthropic、OpenAI等海外巨头纪录。",
+      "category": "apa",
+      "date": "2026-07-27",
+      "companies": [
+        "实在智能"
+      ],
+      "tags": [
+        "实在Agent",
+        "OSWorld",
+        "Computer-Use"
+      ],
+      "sources": [
+        {
+          "name": "新华网",
+          "url": "https://www.xinhuanet.com/government/20260805/60bc929f7f0d4722b6ad4f4f22d90fcb/c.html"
+        },
+        {
+          "name": "钛媒体",
+          "url": "https://m.tmtpost.com/8084224.html"
         }
       ]
     },
@@ -1406,37 +1703,6 @@
       ]
     },
     {
-      "id": "news-046",
-      "title": "阿里Qwen3.8-Max预览版发布：2.4万亿MoE参数，编码能力仅次于Fable 5，宣布将开源",
-      "summary": "7月19日WAIC期间，阿里通义千问发布Qwen3.8-Max预览版，成为千问系列首个万亿级原生多模态模型。2.4万亿MoE参数、256K上下文，自评综合能力仅次Claude Fable 5。编码Cowork实测：vs Fable-5-Xhigh编码胜率+12.6%，vs Kimi K3整体胜率+7.2%。首创按天迭代机制，正式版将完整开源权重（旗舰线闭源两代后回归开源）。上线Token Plan订阅39元/月起，Qoder编程平台和QoderWork办公智能体同步推出。阿里港股一度涨超5%。",
-      "category": "model-breakthrough",
-      "date": "2026-07-19",
-      "companies": [
-        "alibaba"
-      ],
-      "tags": [
-        "Qwen3.8-Max",
-        "2.4万亿参数",
-        "MoE",
-        "开源",
-        "WAIC"
-      ],
-      "sources": [
-        {
-          "name": "艾瑞网",
-          "url": "https://news.iresearch.cn/content/202607/561095.shtml"
-        },
-        {
-          "name": "PConline",
-          "url": "http://news.pconline.com.cn/2178/21788400.html"
-        },
-        {
-          "name": "IT168",
-          "url": "https://cloud.it168.com/a2026/0720/6941/000006941985.shtml"
-        }
-      ]
-    },
-    {
       "id": "news-047",
       "title": "DeepSeek V4正式版灰度上线：业界首创峰谷计费，推理效率革新降低87%计算量",
       "summary": "7月19日起DeepSeek V4系列灰度上线，分V4 Pro（旗舰约1.6万亿参数）和V4 Flash（轻量版）。全系支持100万Token上下文，推理计算量仅为前代V3.2的27%，显存占用降至10%。SWE-bench Verified达91.2%，整体接近Opus 4.8级别。业界首创峰谷分时定价：高峰时段（9-12时/14-18时）翻倍，V4 Flash平时输出仅$0.28/百万Token。7月24日起旧版deepseek-chat和deepseek-reasoner接口将关停，全面迁移至V4。",
@@ -1501,6 +1767,37 @@
       ]
     },
     {
+      "id": "news-046",
+      "title": "阿里Qwen3.8-Max预览版发布：2.4万亿MoE参数，编码能力仅次于Fable 5，宣布将开源",
+      "summary": "7月19日WAIC期间，阿里通义千问发布Qwen3.8-Max预览版，成为千问系列首个万亿级原生多模态模型。2.4万亿MoE参数、256K上下文，自评综合能力仅次Claude Fable 5。编码Cowork实测：vs Fable-5-Xhigh编码胜率+12.6%，vs Kimi K3整体胜率+7.2%。首创按天迭代机制，正式版将完整开源权重（旗舰线闭源两代后回归开源）。上线Token Plan订阅39元/月起，Qoder编程平台和QoderWork办公智能体同步推出。阿里港股一度涨超5%。",
+      "category": "model-breakthrough",
+      "date": "2026-07-19",
+      "companies": [
+        "alibaba"
+      ],
+      "tags": [
+        "Qwen3.8-Max",
+        "2.4万亿参数",
+        "MoE",
+        "开源",
+        "WAIC"
+      ],
+      "sources": [
+        {
+          "name": "艾瑞网",
+          "url": "https://news.iresearch.cn/content/202607/561095.shtml"
+        },
+        {
+          "name": "PConline",
+          "url": "http://news.pconline.com.cn/2178/21788400.html"
+        },
+        {
+          "name": "IT168",
+          "url": "https://cloud.it168.com/a2026/0720/6941/000006941985.shtml"
+        }
+      ]
+    },
+    {
       "id": "news-043",
       "title": "Kimi K3发布：全球最大开源模型2.8万亿参数，WebDev编程榜超越GPT-5.6 Sol和Fable 5",
       "summary": "7月17日，月之暗面在世界人工智能大会（WAIC）上正式发布Kimi K3，总参数2.8万亿（896专家MoE，仅激活16个）。在Arena.ai的WebDev前端编程榜排名第一，超越Fable 5和GPT-5.6 Sol；Terminal Bench 2.1得分88.3（Claude Opus 4.8为84.6）。首创KDA注意力机制+AttnRes残差连接，1M上下文窗口，原生多模态。API定价仅为Fable 5的三分之一（输入$3/输出$15每百万Token），模型权重将于7月27日开源。发布当日Z.ai暴跌30%、MiniMax跌16%。",
@@ -1528,6 +1825,54 @@
         {
           "name": "Digit.in",
           "url": "https://www.digit.in/features/general/what-is-kimi-k3-moonshots-frontier-ai-model-that-matches-claude-opus-4-8-and-gpt-5-5.html"
+        }
+      ]
+    },
+    {
+      "id": "news-090",
+      "title": "京东物流亮相WAIC：AI智能体应用于供应链全链路超千场景，人形机器人首落智狼仓",
+      "summary": "WAIC 2026上，京东物流宣布AI智能体已应用于供应链全链路超千个场景，「超脑」2.0可在3分钟内为亿万包裹算出最快路线；并与智元机器人联合推出重载具身机器人「精灵G2 Max」，首次在真实智能仓储场景落地，可24小时搬运码垛。",
+      "category": "supply-chain",
+      "date": "2026-07-17",
+      "companies": [
+        "京东物流",
+        "智元机器人"
+      ],
+      "tags": [
+        "AI智能体",
+        "具身智能",
+        "仓储",
+        "WAIC"
+      ],
+      "sources": [
+        {
+          "name": "央广网",
+          "url": "https://tech.cnr.cn/techph/20260719/t20260719_527718693.shtml"
+        },
+        {
+          "name": "新浪财经",
+          "url": "https://finance.sina.cn/2026-07-17/detail-iniicqkx8193442.d.html"
+        }
+      ]
+    },
+    {
+      "id": "news-106",
+      "title": "来也科技携Laiye Worker参展WAIC 2026世界人工智能大会",
+      "summary": "来也科技受邀参展WAIC 2026世界人工智能大会，与香港贸发局联合展出桌面端AI员工Laiye Worker及企业级智能体数字员工平台，CTO胡一川参与「企业Agent」圆桌，探讨智能体在真实业务流程中的落地。",
+      "category": "apa",
+      "date": "2026-07-17",
+      "companies": [
+        "来也科技"
+      ],
+      "tags": [
+        "WAIC",
+        "Laiye Worker",
+        "行业合作"
+      ],
+      "sources": [
+        {
+          "name": "来也科技官网",
+          "url": "https://laiye.com/news/post/3008.html"
         }
       ]
     },
@@ -1565,6 +1910,29 @@
       ]
     },
     {
+      "id": "news-092",
+      "title": "中国一汽汽车行业大模型入驻阿里云百炼，面向全行业开放",
+      "summary": "中国一汽基于通义千问自研的汽车行业大模型入驻阿里云百炼，为业内首个商业化服务的垂直行业大模型。模型由研发、生产、制造、供应链全链条数据训练，覆盖制造、研发、营销、视觉质检等场景，已触达10余家生态伙伴及20余家潜在客户。",
+      "category": "supply-chain",
+      "date": "2026-07-16",
+      "companies": [
+        "中国一汽",
+        "alibaba"
+      ],
+      "tags": [
+        "汽车行业大模型",
+        "通义千问",
+        "供应链",
+        "质检"
+      ],
+      "sources": [
+        {
+          "name": "新华网",
+          "url": "http://www.xinhuanet.com/tech/20260716/490af8c95b5e4f33adee78c8eb97baaf/c.html"
+        }
+      ]
+    },
+    {
       "id": "news-045",
       "title": "MiniMax自研MSA稀疏注意力架构：破解大模型「不可能三角」，百万字成本降至1/20",
       "summary": "7月14日（WAIC前夕），MiniMax披露自研MSA（MiniMax Sparse Attention）稀疏注意力架构，选择性激活最相关专家模块替代全注意力机制。在109B参数模型上，MSA每Token注意力计算量降低28.4倍，百万字长文本预填充加速14.2倍、解码加速7.6倍，单位Token成本降至传统架构的约1/20。该架构已应用于旗舰模型M3（428B总参数/22B激活），SWE-bench Verified达80.5%、BrowseComp达83.5%（超越Opus 4.7）。消息披露次日MiniMax港股（0100.HK）大涨超11%。",
@@ -1592,6 +1960,54 @@
         {
           "name": "东方财富",
           "url": "https://fund.eastmoney.com/a/202607153806306123.html"
+        }
+      ]
+    },
+    {
+      "id": "news-039",
+      "title": "国产大模型全球调用占比首次突破50%：中国AI周调用量达23.45万亿词元",
+      "summary": "OpenRouter最新数据：中国大模型全球周调用量突破23.45万亿词元，环比增长15%，全球占比首次过半(50.2%)。DeepSeek V4、阿里Qwen、Kimi K2.6为核心驱动力。中国已连续8周在模型调用量上超越美国。",
+      "category": "ecosystem",
+      "date": "2026-07-12",
+      "companies": [
+        "deepseek",
+        "alibaba",
+        "moonshot"
+      ],
+      "tags": [
+        "市场份额",
+        "中国AI",
+        "里程碑",
+        "全球格局"
+      ],
+      "sources": [
+        {
+          "name": "新浪财经",
+          "url": "https://finance.sina.cn/2026-07-12/detail-inihpiqc7973626.d.html"
+        }
+      ]
+    },
+    {
+      "id": "news-040",
+      "title": "MiniMax融资160亿港元+智谱314亿配售，国产大模型双雄同日发声",
+      "summary": "MiniMax完成160亿港元融资（7倍认购覆盖），创始人闫俊杰承诺至AGI实现零薪酬并出让4%股权激励。智谱同日启动314亿港元配售（创2026港股科技单次配售纪录），发布TouchHigh摸高计划：长程任务→自治智能体→完全自我训练→极致安全治理。",
+      "category": "capital",
+      "date": "2026-07-11",
+      "companies": [
+        "zhipu",
+        "minimax"
+      ],
+      "tags": [
+        "融资",
+        "IPO",
+        "MiniMax",
+        "智谱",
+        "AGI"
+      ],
+      "sources": [
+        {
+          "name": "新浪财经",
+          "url": "https://finance.sina.cn/2026-07-12/detail-inihpiqc7973626.d.html"
         }
       ]
     },
@@ -1648,21 +2064,22 @@
       ]
     },
     {
-      "id": "news-039",
-      "title": "国产大模型全球调用占比首次突破50%：中国AI周调用量达23.45万亿词元",
-      "summary": "OpenRouter最新数据：中国大模型全球周调用量突破23.45万亿词元，环比增长15%，全球占比首次过半(50.2%)。DeepSeek V4、阿里Qwen、Kimi K2.6为核心驱动力。中国已连续8周在模型调用量上超越美国。",
+      "id": "news-042",
+      "title": "阿里全面封禁Claude全系产品，字节腾讯同步跟进国产替代",
+      "summary": "阿里云百炼、钉钉、蚂蚁集团7月10日全线禁用Claude API/Claude Code。通义灵码上线一键迁移工具，Qwen-Coder-Plus免费额度提升3倍。字节Trae、腾讯CodeBuddy同步跟进。标志着中国大模型市场正式进入国产闭环替代阶段。",
       "category": "ecosystem",
-      "date": "2026-07-12",
+      "date": "2026-07-10",
       "companies": [
-        "deepseek",
         "alibaba",
-        "moonshot"
+        "anthropic",
+        "bytedance",
+        "tencent"
       ],
       "tags": [
-        "市场份额",
-        "中国AI",
-        "里程碑",
-        "全球格局"
+        "国产替代",
+        "Claude",
+        "阿里",
+        "监管"
       ],
       "sources": [
         {
@@ -1672,26 +2089,27 @@
       ]
     },
     {
-      "id": "news-040",
-      "title": "MiniMax融资160亿港元+智谱314亿配售，国产大模型双雄同日发声",
-      "summary": "MiniMax完成160亿港元融资（7倍认购覆盖），创始人闫俊杰承诺至AGI实现零薪酬并出让4%股权激励。智谱同日启动314亿港元配售（创2026港股科技单次配售纪录），发布TouchHigh摸高计划：长程任务→自治智能体→完全自我训练→极致安全治理。",
-      "category": "capital",
-      "date": "2026-07-11",
+      "id": "news-105",
+      "title": "艺赛旗亮相2026工业AI+智能制造（华东）论坛，推介Agentic Automation",
+      "summary": "艺赛旗在华东论坛推介自研Agentic Automation Platform，展示自动化魔术师与DocAgent两大智能体，并披露央企财务共享中心案例：落地5800余个自动化流程、财务共享自动化使用率超85%。",
+      "category": "apa",
+      "date": "2026-07-10",
       "companies": [
-        "zhipu",
-        "minimax"
+        "艺赛旗"
       ],
       "tags": [
-        "融资",
-        "IPO",
-        "MiniMax",
-        "智谱",
-        "AGI"
+        "Agentic Automation",
+        "DocAgent",
+        "制造业"
       ],
       "sources": [
         {
-          "name": "新浪财经",
-          "url": "https://finance.sina.cn/2026-07-12/detail-inihpiqc7973626.d.html"
+          "name": "e-works",
+          "url": "https://news.e-works.net.cn/category10/news136769.htm"
+        },
+        {
+          "name": "艺赛旗官网",
+          "url": "https://www.i-search.com.cn/html/news/2026/0714/18861.html"
         }
       ]
     },
@@ -1716,31 +2134,6 @@
         {
           "name": "PConline",
           "url": "https://www.pconline.com.cn/focus/2178/21783999.html"
-        }
-      ]
-    },
-    {
-      "id": "news-042",
-      "title": "阿里全面封禁Claude全系产品，字节腾讯同步跟进国产替代",
-      "summary": "阿里云百炼、钉钉、蚂蚁集团7月10日全线禁用Claude API/Claude Code。通义灵码上线一键迁移工具，Qwen-Coder-Plus免费额度提升3倍。字节Trae、腾讯CodeBuddy同步跟进。标志着中国大模型市场正式进入国产闭环替代阶段。",
-      "category": "ecosystem",
-      "date": "2026-07-10",
-      "companies": [
-        "alibaba",
-        "anthropic",
-        "bytedance",
-        "tencent"
-      ],
-      "tags": [
-        "国产替代",
-        "Claude",
-        "阿里",
-        "监管"
-      ],
-      "sources": [
-        {
-          "name": "新浪财经",
-          "url": "https://finance.sina.cn/2026-07-12/detail-inihpiqc7973626.d.html"
         }
       ]
     },
@@ -1846,6 +2239,32 @@
       ]
     },
     {
+      "id": "news-025",
+      "title": "GLM-5.2风靡硅谷：成本仅为美国闭源模型六分之一",
+      "summary": "智谱GLM-5.2被华尔街日报和美国前AI沙皇David Sacks高度评价，称其与OpenAI和Anthropic模型一样好。在Artificial Analysis智能榜排第5，Code Arena前端编程排第2。在OpenRouter上的使用量已超越Anthropic模型。运行成本约为Claude/GPT系列六分之一，引发了美国开发者的广泛采用。",
+      "category": "ecosystem",
+      "date": "2026-07-02",
+      "companies": [
+        "zhipu"
+      ],
+      "tags": [
+        "GLM-5.2",
+        "开源",
+        "成本优势",
+        "全球采用"
+      ],
+      "sources": [
+        {
+          "name": "Yahoo News",
+          "url": "https://malaysia.news.yahoo.com/analysis-inexpensive-chinese-ai-model-071720746.html"
+        },
+        {
+          "name": "Pakistan Today",
+          "url": "https://www.pakistantoday.com.pk/2026/07/02/chinese-ai-model-glm-52-gains-attention-as-lower-cost-rival-to-us-systems"
+        }
+      ]
+    },
+    {
       "id": "news-023",
       "title": "美团发布LongCat-2.0：全球首个零英伟达万亿大模型",
       "summary": "美团发布LongCat-2.0（龙猫2.0），总参数1.6万亿，MoE稀疏度达97%逼近架构渐近线。全程基于约5万张国产昇腾910C芯片完成训练和推理，英伟达含量为0。原生支持1M超长上下文，独创零计算专家机制和ScMoE跨层快捷连接。匿名测试版在OpenRouter总调用量跻身全球前三，性能接近Claude Opus 4.6。",
@@ -1896,32 +2315,6 @@
       ]
     },
     {
-      "id": "news-025",
-      "title": "GLM-5.2风靡硅谷：成本仅为美国闭源模型六分之一",
-      "summary": "智谱GLM-5.2被华尔街日报和美国前AI沙皇David Sacks高度评价，称其与OpenAI和Anthropic模型一样好。在Artificial Analysis智能榜排第5，Code Arena前端编程排第2。在OpenRouter上的使用量已超越Anthropic模型。运行成本约为Claude/GPT系列六分之一，引发了美国开发者的广泛采用。",
-      "category": "ecosystem",
-      "date": "2026-07-02",
-      "companies": [
-        "zhipu"
-      ],
-      "tags": [
-        "GLM-5.2",
-        "开源",
-        "成本优势",
-        "全球采用"
-      ],
-      "sources": [
-        {
-          "name": "Yahoo News",
-          "url": "https://malaysia.news.yahoo.com/analysis-inexpensive-chinese-ai-model-071720746.html"
-        },
-        {
-          "name": "Pakistan Today",
-          "url": "https://www.pakistantoday.com.pk/2026/07/02/chinese-ai-model-glm-52-gains-attention-as-lower-cost-rival-to-us-systems"
-        }
-      ]
-    },
-    {
       "id": "news-026",
       "title": "Subquadratic发布SubQ：稀疏注意力突破千万级上下文",
       "summary": "初创公司Subquadratic从隐身模式浮出水面，发布SubQ模型。采用Sparse Attention(SSA)架构，可处理6-1200万Token上下文且精度接近98%（大海捞针测试）。RULER 128基准上仅需$8（Anthropic Opus 4.6需$2600），56倍速度提升。LiveCodeBench得分89.7%。但有争议称该模型重用了开源Qwen模型权重。",
@@ -1937,6 +2330,75 @@
         {
           "name": "163.com",
           "url": "https://www.163.com/dy/article/L0R54417051481US.html"
+        }
+      ]
+    },
+    {
+      "id": "news-104",
+      "title": "达观数据发布新一代企业级数字员工平台DG Claw",
+      "summary": "达观数据发布新一代数字员工DG Claw，主打稳定、可靠、安全与全流程可追溯，融合RPA+AI，支持拖拽零代码开发、技能卡片市场、钉钉/飞书/企微等全渠道接入，强化企业级数字劳动力治理。",
+      "category": "apa",
+      "date": "2026-06-30",
+      "companies": [
+        "达观数据"
+      ],
+      "tags": [
+        "DG Claw",
+        "数字员工",
+        "产品发布"
+      ],
+      "sources": [
+        {
+          "name": "达观数据官网",
+          "url": "http://www.datagrand.com/blog/%e8%be%be%e8%a7%82%e5%8f%91%e5%b8%83%e6%96%b0%e4%b8%80%e4%bb%a3%e6%95%b0%e5%ad%97%e5%91%98%e5%b7%a5dg-claw%ef%bc%9a%e6%89%93%e9%80%a0%e9%ab%98%e5%8f%af%e9%9d%a0%e4%bc%81%e4%b8%9a%e7%ba%a7%e6%95%b0.html"
+        }
+      ]
+    },
+    {
+      "id": "news-001",
+      "title": "OpenAI发布GPT-5.6三档模型家族，旗舰Sol专注网络安全",
+      "summary": "OpenAI于6月29日发布GPT-5.6系列：Sol（网络安全旗舰）、Terra（日常经济型）、Luna（最快最便宜）。Sol在ExploitBench上匹配Anthropic Mythos Preview水平，但仅用约1/3输出Token。投入超70万A100等效GPU小时进行自动化红队测试。",
+      "category": "model-breakthrough",
+      "date": "2026-06-29",
+      "companies": [
+        "openai"
+      ],
+      "tags": [
+        "GPT-5.6",
+        "网络安全",
+        "模型发布"
+      ],
+      "sources": [
+        {
+          "name": "SecurityWeek",
+          "url": "https://www.securityweek.com/openai-unveils-gpt-5-6-sol-as-its-most-advanced-cybersecurity-ai/"
+        },
+        {
+          "name": "Digital Watch Observatory",
+          "url": "https://dig.watch/updates/openai-gpt-5-6-sol-preview"
+        },
+        {
+          "name": "DigitalToday (韩)",
+          "url": "https://www.digitaltoday.co.kr/en/view/76305/openai-limited-release-of-three-gpt-56-models-top-model-focused-on-cybersecurity"
+        }
+      ]
+    },
+    {
+      "id": "news-021",
+      "title": "Amalgam Rx医疗大模型Chiron获2026 AI突破奖“年度LLM”",
+      "summary": "6月29日，Amalgam Rx的Chiron医疗基础模型获2026 AI Breakthrough Awards“年度最佳大语言模型”。该模型基于数百万纵向患者记录训练，将睡眠呼吸暂停诊断效率提升2倍，不必要随访减少近一半。标志着垂直领域大模型走向成熟。",
+      "category": "application",
+      "date": "2026-06-29",
+      "companies": [],
+      "tags": [
+        "医疗AI",
+        "垂直应用",
+        "AI Breakthrough"
+      ],
+      "sources": [
+        {
+          "name": "BusinessWire",
+          "url": "https://www.businesswire.com/news/home/20260629335085/en/Amalgam-Rx-Wins-Overall-Large-Language-Model-of-the-Year"
         }
       ]
     },
@@ -1990,31 +2452,64 @@
       ]
     },
     {
-      "id": "news-001",
-      "title": "OpenAI发布GPT-5.6三档模型家族，旗舰Sol专注网络安全",
-      "summary": "OpenAI于6月29日发布GPT-5.6系列：Sol（网络安全旗舰）、Terra（日常经济型）、Luna（最快最便宜）。Sol在ExploitBench上匹配Anthropic Mythos Preview水平，但仅用约1/3输出Token。投入超70万A100等效GPU小时进行自动化红队测试。",
-      "category": "model-breakthrough",
-      "date": "2026-06-29",
-      "companies": [
-        "openai"
-      ],
+      "id": "news-015",
+      "title": "EPFL发布MiCRo脑启发式可解释LLM架构（ICLR 2026）",
+      "summary": "6月27日，瑞士EPFL在ICLR 2026发表MiCRo（Mixture of Cognitive Reasoners），模仿人脑结构设置语言、逻辑、社交推理、世界知识四个专家模块。每个词可被路由到最合适的专家模块，推理过程完全可见和可调控。代表可解释AI（XAI）的重大进展。",
+      "category": "advanced-usage",
+      "date": "2026-06-27",
+      "companies": [],
       "tags": [
-        "GPT-5.6",
-        "网络安全",
-        "模型发布"
+        "可解释AI",
+        "ICLR",
+        "脑启发",
+        "学术突破"
       ],
       "sources": [
         {
-          "name": "SecurityWeek",
-          "url": "https://www.securityweek.com/openai-unveils-gpt-5-6-sol-as-its-most-advanced-cybersecurity-ai/"
-        },
+          "name": "AI Times (韩)",
+          "url": "https://www.aitimes.kr/news/articleView.html?idxno=40717"
+        }
+      ]
+    },
+    {
+      "id": "news-014",
+      "title": "JetSpec实现9.64倍LLM推理加速（UCSD郝AI实验室）",
+      "summary": "6月26日，UC San Diego郝AI实验室发布JetSpec推测解码方法。MATH-500上实现9.64倍加速，GSM8K上7.82倍，峰值约1,456 Token/秒。采用因果并行草稿头技术，一次前向传播生成整棵评分候选Token树。已在GitHub和HuggingFace开源。",
+      "category": "advanced-usage",
+      "date": "2026-06-26",
+      "companies": [],
+      "tags": [
+        "推理加速",
+        "推测解码",
+        "开源",
+        "学术突破"
+      ],
+      "sources": [
         {
-          "name": "Digital Watch Observatory",
-          "url": "https://dig.watch/updates/openai-gpt-5-6-sol-preview"
-        },
+          "name": "NYU Shanghai RITS",
+          "url": "http://rits.shanghai.nyu.edu/ai/jetspec-causal-parallel-tree-drafting-hits-9-64x-faster-llm-inference/"
+        }
+      ]
+    },
+    {
+      "id": "news-087",
+      "title": "京东物流「狼族」机器人军团亮相亚洲物流双年展，超脑大模型统一调度",
+      "summary": "京东物流「狼族」机器人军团亮相2026亚洲物流双年展，由超脑大模型统一调度，覆盖「存、拣、搬、运、送」全链路。「异狼」机械臂每10秒完成一次抓取码放，618订单处理同比提升约400%；「智狼」仓储机器人拣货准确率达99.99%，单仓成本最高降50%。",
+      "category": "supply-chain",
+      "date": "2026-06-26",
+      "companies": [
+        "京东物流"
+      ],
+      "tags": [
+        "具身智能",
+        "仓储机器人",
+        "机械臂",
+        "物流"
+      ],
+      "sources": [
         {
-          "name": "DigitalToday (韩)",
-          "url": "https://www.digitaltoday.co.kr/en/view/76305/openai-limited-release-of-three-gpt-56-models-top-model-focused-on-cybersecurity"
+          "name": "凤凰网科技",
+          "url": "https://tech.ifeng.com/c/8uGhIwFvsJ2"
         }
       ]
     },
@@ -2045,54 +2540,54 @@
       ]
     },
     {
-      "id": "news-003",
-      "title": "Anthropic发布Claude Opus 4.8，距上一代仅41天",
-      "summary": "6月初，Anthropic发布Claude Opus 4.8，在SWE-bench Pro上达到69.2%（4.7为64.3%），Online-Mind2Web浏览器Agent任务达84%。采用Adaptive Thinking技术，模型自主判断任务复杂度并调整认知投入。新增Dynamic Workflows功能，支持数百并行子Agent。H轮融资650亿美元，估值9650亿美元。",
-      "category": "model-breakthrough",
-      "date": "2026-06-01",
+      "id": "news-019",
+      "title": "豆包开启付费订阅模式，AI商业化路径现两极分化",
+      "summary": "6月下旬，豆包上线付费订阅（68-500元/月），Seedance毛利率达70%。与此同时，腾讯、小米等对模型调用价格最高降97%。中国大模型行业出现“高端付费+低价走量”的二元商业化格局。",
+      "category": "ecosystem",
+      "date": "2026-06-25",
       "companies": [
-        "anthropic"
+        "bytedance",
+        "tencent"
       ],
       "tags": [
-        "Claude Opus",
-        "SWE-bench",
-        "Agent",
-        "Dynamic Workflows"
+        "商业化",
+        "付费订阅",
+        "价格战"
       ],
       "sources": [
         {
-          "name": "Dig Watch",
-          "url": "https://dig.watch/updates/anthropic-launches-claude-opus-4-8"
+          "name": "i黑马",
+          "url": "http://www.iheima.com/article-398475.html"
         },
         {
-          "name": "Anthropic Blog",
-          "url": "https://www.anthropic.com/webinars/building-agents-on-claude-opus-4-8-live-demos-with-letta-and-browserbase"
-        },
-        {
-          "name": "Appwrite Arena",
-          "url": "https://appwrite.io/blog/post/arena-june-2026-update"
+          "name": "新华网",
+          "url": "http://www3.xinhuanet.com/tech/20260623/acd6f2f27fc34459a7d1684c03278431/c.html"
         }
       ]
     },
     {
-      "id": "news-004",
-      "title": "Google发布DiffusionGemma：扩散模型颠覆自回归文本生成",
-      "summary": "6月12日，Google发布DiffusionGemma——一个26B MoE扩散语言模型，从随机占位Token开始同时精炼256个Token块。4倍推理加速，仅3.8B参数激活，可在RTX 5090消费级GPU运行。采用Apache 2.0开源许可，标志着文本生成从自回归向扩散方法的重大范式转变。",
-      "category": "model-breakthrough",
-      "date": "2026-06-12",
+      "id": "news-088",
+      "title": "顺丰发布海运价格预测、船货匹配、在途异常诊断三大AI模型，重构大宗多式联运",
+      "summary": "顺丰发布三大供应链AI模型：海运价格预测支持14日/90日运价预测，研报生成从数小时缩至5分钟内；船货匹配将找船时间从数天压缩至分钟级；在途异常诊断可提前24–72小时预警，根因定位不超15分钟，推动大宗多式联运走向全局决策。",
+      "category": "supply-chain",
+      "date": "2026-06-25",
       "companies": [
-        "google"
+        "顺丰"
       ],
       "tags": [
-        "扩散模型",
-        "Gemma",
-        "开源",
-        "推理加速"
+        "多式联运",
+        "运价预测",
+        "船货匹配",
+        "异常诊断"
       ],
       "sources": [
         {
-          "name": "InfoWorld",
-          "url": "https://www.infoworld.com/article/4184668/google-unveils-diffusiongemma-an-ai-model-that-breaks-free-of-left-to-right-processing.html"
+          "name": "湖北日报",
+          "url": "https://news.hubeidaily.net/pc/c_5694870.html"
+        },
+        {
+          "name": "同花顺财经",
+          "url": "http://stock.10jqka.com.cn/20260626/c677751458.shtml"
         }
       ]
     },
@@ -2123,6 +2618,117 @@
         {
           "name": "ZOL",
           "url": "https://ai.zol.com.cn/1204/12041523.html"
+        }
+      ]
+    },
+    {
+      "id": "news-103",
+      "title": "金智维Ki-AgentS入选「2026中国AI智能体领航者」榜单",
+      "summary": "金智维Ki-AgentS企业级智能体平台入选「2026中国AI智能体领航者」榜单，该榜在2026全球数字经济大会数字安全论坛上揭晓，覆盖政务、金融、能源等20余行业，彰显其受监督智能体路线的行业示范性。",
+      "category": "apa",
+      "date": "2026-06-23",
+      "companies": [
+        "金智维"
+      ],
+      "tags": [
+        "Ki-AgentS",
+        "榜单",
+        "智能体"
+      ],
+      "sources": [
+        {
+          "name": "金智维官网",
+          "url": "https://www.kingsware.cn/qiyerongyu/775"
+        }
+      ]
+    },
+    {
+      "id": "news-011",
+      "title": "华为昇腾950PR全量运行DeepSeek-V4，国产算力闭环形成",
+      "summary": "DeepSeek-V4完全运行在华为昇腾950PR推理芯片上，底层代码从CUDA全面转向华为CANN Next框架。阿里、字节跳动、腾讯已向华为下达数十万片芯片批量订单。华为在《财富》2026年中国科技50强中排名第一，年研发投入1923亿元。",
+      "category": "ecosystem",
+      "date": "2026-06-20",
+      "companies": [
+        "huawei",
+        "deepseek"
+      ],
+      "tags": [
+        "国产芯片",
+        "昇腾",
+        "CANN",
+        "自主可控"
+      ],
+      "sources": [
+        {
+          "name": "AAStocks",
+          "url": "http://wdatacn.aastocks.com/sc/(Z(@@78XMF=@@sPxRU%7B%7B%7Bthis%7D%7D%7Dxca))/stocks/news/aafn-con/NOW.1516089/latest-news/AAFN"
+        },
+        {
+          "name": "凤凰科技",
+          "url": "https://tech.ifeng.com/c/8uFFVTMgtnY"
+        }
+      ]
+    },
+    {
+      "id": "news-018",
+      "title": "英特尔与火山引擎联手推动Agentic AI落地",
+      "summary": "英特尔与火山引擎联合推出至强6智能体部署优化方案，单颗处理器支持超1000个智能体稳定运行。结合英特尔TDX与火山引擎，打造可信智能体端到端数据保护方案，从芯片级硬件安全到云平台数据加密全覆盖。",
+      "category": "partnership",
+      "date": "2026-06-18",
+      "companies": [
+        "bytedance"
+      ],
+      "tags": [
+        "英特尔",
+        "火山引擎",
+        "智能体",
+        "安全"
+      ],
+      "sources": [
+        {
+          "name": "PCPOP",
+          "url": "https://www.pcpop.com/article/6937333.shtml"
+        }
+      ]
+    },
+    {
+      "id": "news-013",
+      "title": "Odyssey ML获3.1亿美元融资，亚马逊等押注世界模型赛道",
+      "summary": "6月17日，世界模型公司Odyssey ML完成3.1亿美元融资，投后估值14.5亿美元。投资方包括亚马逊、AMD Ventures、Google DeepMind首席科学家Jeff Dean等。AWS成为首选云服务商，Odyssey将针对AWS Trainium芯片优化模型。",
+      "category": "capital",
+      "date": "2026-06-17",
+      "companies": [],
+      "tags": [
+        "世界模型",
+        "融资",
+        "亚马逊"
+      ],
+      "sources": [
+        {
+          "name": "i黑马",
+          "url": "http://www.iheima.com/article-398475.html"
+        }
+      ]
+    },
+    {
+      "id": "news-086",
+      "title": "京东物流「超脑大模型」618大规模实战，覆盖千余物流供应链场景",
+      "summary": "618期间，京东物流自研超脑大模型在超1000个物流供应链场景深度应用。「动态路由」按货量、拥堵、天气为包裹秒级规划路径，一线作业效率提升近20%；「AI地图库存诊断助手」半小时完成千万级订单仓网布局，商家库存周转效率提升30%–40%。",
+      "category": "supply-chain",
+      "date": "2026-06-17",
+      "companies": [
+        "京东物流"
+      ],
+      "tags": [
+        "大模型",
+        "物流",
+        "动态路由",
+        "库存优化"
+      ],
+      "sources": [
+        {
+          "name": "中国交通报",
+          "url": "https://www.zgjtb.com/2026-06/17/content_523896.html"
         }
       ]
     },
@@ -2206,73 +2812,94 @@
       ]
     },
     {
-      "id": "news-009",
-      "title": "微软Build大会发布Mai系列模型，与英伟达达成深度合作",
-      "summary": "6月2日微软Build大会：发布首个AI推理模型Mai-Thinking-1（350亿活跃参数）和首款代码模型MAI-Code-1-Flash；与英伟达联合推出统一技术栈覆盖从Windows设备到云端的全场景Agentic AI部署。微软透露对OpenAI累计投入已超1000亿美元。",
-      "category": "model-breakthrough",
-      "date": "2026-06-02",
+      "id": "news-089",
+      "title": "阿里发布首个具身智能大模型Qwen-Robot，菜鸟仓储机器人接入通义大模型",
+      "summary": "阿里发布首个具身智能大模型Qwen-Robot系列（操作、移动、世界模型三类），作为机器人通用底座。应用层面，菜鸟智能仓储机器人借助通义大模型提升分拣效率，并将机器人应用从仓内延伸至城市末端配送，推动仓储走向AI调度协作。",
+      "category": "supply-chain",
+      "date": "2026-06-16",
       "companies": [
+        "alibaba",
+        "菜鸟"
+      ],
+      "tags": [
+        "具身智能",
+        "仓储机器人",
+        "通义千问",
+        "分拣"
+      ],
+      "sources": [
+        {
+          "name": "上海证券报",
+          "url": "https://www.cnstock.com/commonDetail/730135"
+        }
+      ]
+    },
+    {
+      "id": "news-020",
+      "title": "Claude Opus 4.8在Microsoft Foundry正式全面上线",
+      "summary": "Anthropic模型在Microsoft Foundry on Azure上正式全面可用（GA），企业客户可直接在Azure平台上使用Claude Opus 4.8。加上Amazon Bedrock和Google Cloud Vertex AI，Claude已覆盖三大云平台。",
+      "category": "ecosystem",
+      "date": "2026-06-15",
+      "companies": [
+        "anthropic",
         "microsoft"
       ],
       "tags": [
-        "微软",
-        "英伟达",
-        "Build大会",
-        "Agentic AI"
+        "Azure",
+        "Foundry",
+        "多云部署"
       ],
       "sources": [
         {
-          "name": "搜狐",
-          "url": "https://www.sohu.com/a/1031429608_313745"
+          "name": "Anthropic Blog",
+          "url": "https://claude.com/blog/claude-in-microsoft-foundry"
         }
       ]
     },
     {
-      "id": "news-010",
-      "title": "腾讯上线Hy-Memory长期记忆技术，参投DeepSeek 100亿元",
-      "summary": "6月3日，腾讯上线Hy-Memory长期记忆增强技术，采用三级分层记忆架构，支持百万级Token容量，检索准确率超95%。同时宣布对DeepSeek-V4系列模型调用价格最高降97.5%，持平官方售价。",
-      "category": "advanced-usage",
-      "date": "2026-06-03",
+      "id": "news-102",
+      "title": "来也科技发布桌面端Agent产品Laiye Worker，AI员工全面入职",
+      "summary": "来也科技在Laiye Lead 2026发布会上发布桌面端Agent产品Laiye Worker及「AI员工全家桶」。该产品定位企业级执行层，主打模型中立智能路由、企业级技能生态与本地隐私脱敏，标志其从RPA向APA全面升级。",
+      "category": "apa",
+      "date": "2026-06-15",
       "companies": [
-        "tencent",
-        "deepseek"
+        "来也科技"
       ],
       "tags": [
-        "长期记忆",
-        "降价",
-        "Agent"
+        "Laiye Worker",
+        "AI Agent",
+        "产品发布"
       ],
       "sources": [
         {
-          "name": "i黑马",
-          "url": "http://www.iheima.com/article-398475.html"
-        }
-      ]
-    },
-    {
-      "id": "news-011",
-      "title": "华为昇腾950PR全量运行DeepSeek-V4，国产算力闭环形成",
-      "summary": "DeepSeek-V4完全运行在华为昇腾950PR推理芯片上，底层代码从CUDA全面转向华为CANN Next框架。阿里、字节跳动、腾讯已向华为下达数十万片芯片批量订单。华为在《财富》2026年中国科技50强中排名第一，年研发投入1923亿元。",
-      "category": "ecosystem",
-      "date": "2026-06-20",
-      "companies": [
-        "huawei",
-        "deepseek"
-      ],
-      "tags": [
-        "国产芯片",
-        "昇腾",
-        "CANN",
-        "自主可控"
-      ],
-      "sources": [
-        {
-          "name": "AAStocks",
-          "url": "http://wdatacn.aastocks.com/sc/(Z(@@78XMF=@@sPxRU%7B%7B%7Bthis%7D%7D%7Dxca))/stocks/news/aafn-con/NOW.1516089/latest-news/AAFN"
+          "name": "新京报",
+          "url": "http://www.bjnews.com.cn/detail/1782305648129326.html"
         },
         {
-          "name": "凤凰科技",
-          "url": "https://tech.ifeng.com/c/8uFFVTMgtnY"
+          "name": "中国日报财经",
+          "url": "https://caijing.chinadaily.com.cn/a/202606/25/WS6a3ca397a310d709c2fb9fdc.html"
+        }
+      ]
+    },
+    {
+      "id": "news-004",
+      "title": "Google发布DiffusionGemma：扩散模型颠覆自回归文本生成",
+      "summary": "6月12日，Google发布DiffusionGemma——一个26B MoE扩散语言模型，从随机占位Token开始同时精炼256个Token块。4倍推理加速，仅3.8B参数激活，可在RTX 5090消费级GPU运行。采用Apache 2.0开源许可，标志着文本生成从自回归向扩散方法的重大范式转变。",
+      "category": "model-breakthrough",
+      "date": "2026-06-12",
+      "companies": [
+        "google"
+      ],
+      "tags": [
+        "扩散模型",
+        "Gemma",
+        "开源",
+        "推理加速"
+      ],
+      "sources": [
+        {
+          "name": "InfoWorld",
+          "url": "https://www.infoworld.com/article/4184668/google-unveils-diffusiongemma-an-ai-model-that-breaks-free-of-left-to-right-processing.html"
         }
       ]
     },
@@ -2301,61 +2928,23 @@
       ]
     },
     {
-      "id": "news-013",
-      "title": "Odyssey ML获3.1亿美元融资，亚马逊等押注世界模型赛道",
-      "summary": "6月17日，世界模型公司Odyssey ML完成3.1亿美元融资，投后估值14.5亿美元。投资方包括亚马逊、AMD Ventures、Google DeepMind首席科学家Jeff Dean等。AWS成为首选云服务商，Odyssey将针对AWS Trainium芯片优化模型。",
-      "category": "capital",
-      "date": "2026-06-17",
-      "companies": [],
+      "id": "news-101",
+      "title": "金智维举办证券行业企业级智能体共创沙龙",
+      "summary": "金智维在上海举办「券动AI·稳见智远」证券行业企业级智能体共创沙龙，联合券商探索Ki-AgentS企业级智能体平台在研报分析、舆情监测、客户营销等真实业务流程中的AI落地路径。",
+      "category": "apa",
+      "date": "2026-06-09",
+      "companies": [
+        "金智维"
+      ],
       "tags": [
-        "世界模型",
-        "融资",
-        "亚马逊"
+        "Ki-AgentS",
+        "证券",
+        "行业沙龙"
       ],
       "sources": [
         {
-          "name": "i黑马",
-          "url": "http://www.iheima.com/article-398475.html"
-        }
-      ]
-    },
-    {
-      "id": "news-014",
-      "title": "JetSpec实现9.64倍LLM推理加速（UCSD郝AI实验室）",
-      "summary": "6月26日，UC San Diego郝AI实验室发布JetSpec推测解码方法。MATH-500上实现9.64倍加速，GSM8K上7.82倍，峰值约1,456 Token/秒。采用因果并行草稿头技术，一次前向传播生成整棵评分候选Token树。已在GitHub和HuggingFace开源。",
-      "category": "advanced-usage",
-      "date": "2026-06-26",
-      "companies": [],
-      "tags": [
-        "推理加速",
-        "推测解码",
-        "开源",
-        "学术突破"
-      ],
-      "sources": [
-        {
-          "name": "NYU Shanghai RITS",
-          "url": "http://rits.shanghai.nyu.edu/ai/jetspec-causal-parallel-tree-drafting-hits-9-64x-faster-llm-inference/"
-        }
-      ]
-    },
-    {
-      "id": "news-015",
-      "title": "EPFL发布MiCRo脑启发式可解释LLM架构（ICLR 2026）",
-      "summary": "6月27日，瑞士EPFL在ICLR 2026发表MiCRo（Mixture of Cognitive Reasoners），模仿人脑结构设置语言、逻辑、社交推理、世界知识四个专家模块。每个词可被路由到最合适的专家模块，推理过程完全可见和可调控。代表可解释AI（XAI）的重大进展。",
-      "category": "advanced-usage",
-      "date": "2026-06-27",
-      "companies": [],
-      "tags": [
-        "可解释AI",
-        "ICLR",
-        "脑启发",
-        "学术突破"
-      ],
-      "sources": [
-        {
-          "name": "AI Times (韩)",
-          "url": "https://www.aitimes.kr/news/articleView.html?idxno=40717"
+          "name": "金智维官网",
+          "url": "https://www.kingsware.cn/qiyexinwen/755"
         }
       ]
     },
@@ -2381,6 +2970,144 @@
         {
           "name": "NY Post",
           "url": "https://nypost.com/2026/06/09/business/anthropic-which-claimed-ai-model-was-too-risky-for-public-to-use-releases-safe-version/"
+        }
+      ]
+    },
+    {
+      "id": "news-100",
+      "title": "艺赛旗亮相2026 WOD制造业数智化博览会，展出两大智能体产品",
+      "summary": "艺赛旗以「企业级智能体自动化平台」参展2026 WOD制造业数智化博览会，重点展示自动化魔术师(Magical Automator)与文档处理智能体(DocAgent)，主打自然语言生成流程与端到端文档自动化。",
+      "category": "apa",
+      "date": "2026-06-05",
+      "companies": [
+        "艺赛旗"
+      ],
+      "tags": [
+        "智能体自动化",
+        "DocAgent",
+        "制造业"
+      ],
+      "sources": [
+        {
+          "name": "艺赛旗官网",
+          "url": "https://www.i-search.com.cn/html/news/2026/0605/18607.html"
+        }
+      ]
+    },
+    {
+      "id": "news-099",
+      "title": "影刀RPA发布V6.2版本，升级AI辅助定位与AI工作流",
+      "summary": "影刀RPA发布V6.2，AI辅助定位支持一键修复、AI工作流支持批量输入输出、AI搭建流程网页自动化能力升级，并预告「影刀技能CLI版」，让任意Agent可通过命令行操作影刀运行应用与管理任务。",
+      "category": "apa",
+      "date": "2026-06-04",
+      "companies": [
+        "影刀"
+      ],
+      "tags": [
+        "版本更新",
+        "AI工作流",
+        "AI辅助定位"
+      ],
+      "sources": [
+        {
+          "name": "影刀社区",
+          "url": "https://www.yingdao.com/community/detaildiscuss?id=958598614209159168"
+        }
+      ]
+    },
+    {
+      "id": "news-010",
+      "title": "腾讯上线Hy-Memory长期记忆技术，参投DeepSeek 100亿元",
+      "summary": "6月3日，腾讯上线Hy-Memory长期记忆增强技术，采用三级分层记忆架构，支持百万级Token容量，检索准确率超95%。同时宣布对DeepSeek-V4系列模型调用价格最高降97.5%，持平官方售价。",
+      "category": "advanced-usage",
+      "date": "2026-06-03",
+      "companies": [
+        "tencent",
+        "deepseek"
+      ],
+      "tags": [
+        "长期记忆",
+        "降价",
+        "Agent"
+      ],
+      "sources": [
+        {
+          "name": "i黑马",
+          "url": "http://www.iheima.com/article-398475.html"
+        }
+      ]
+    },
+    {
+      "id": "news-022",
+      "title": "腾讯云对DeepSeek-V4系列模型降价最高97.5%",
+      "summary": "6月3日起，腾讯云对DeepSeek-V4系列模型调用价格大幅下调，最高降幅达97.5%，调整后价格全面持平DeepSeek官方售价。这标志着中国大模型API市场进入“价格战”阶段，对中小企业AI应用部署形成利好。",
+      "category": "ecosystem",
+      "date": "2026-06-03",
+      "companies": [
+        "tencent",
+        "deepseek"
+      ],
+      "tags": [
+        "腾讯云",
+        "降价",
+        "API"
+      ],
+      "sources": [
+        {
+          "name": "i黑马",
+          "url": "http://www.iheima.com/article-398475.html"
+        }
+      ]
+    },
+    {
+      "id": "news-009",
+      "title": "微软Build大会发布Mai系列模型，与英伟达达成深度合作",
+      "summary": "6月2日微软Build大会：发布首个AI推理模型Mai-Thinking-1（350亿活跃参数）和首款代码模型MAI-Code-1-Flash；与英伟达联合推出统一技术栈覆盖从Windows设备到云端的全场景Agentic AI部署。微软透露对OpenAI累计投入已超1000亿美元。",
+      "category": "model-breakthrough",
+      "date": "2026-06-02",
+      "companies": [
+        "microsoft"
+      ],
+      "tags": [
+        "微软",
+        "英伟达",
+        "Build大会",
+        "Agentic AI"
+      ],
+      "sources": [
+        {
+          "name": "搜狐",
+          "url": "https://www.sohu.com/a/1031429608_313745"
+        }
+      ]
+    },
+    {
+      "id": "news-003",
+      "title": "Anthropic发布Claude Opus 4.8，距上一代仅41天",
+      "summary": "6月初，Anthropic发布Claude Opus 4.8，在SWE-bench Pro上达到69.2%（4.7为64.3%），Online-Mind2Web浏览器Agent任务达84%。采用Adaptive Thinking技术，模型自主判断任务复杂度并调整认知投入。新增Dynamic Workflows功能，支持数百并行子Agent。H轮融资650亿美元，估值9650亿美元。",
+      "category": "model-breakthrough",
+      "date": "2026-06-01",
+      "companies": [
+        "anthropic"
+      ],
+      "tags": [
+        "Claude Opus",
+        "SWE-bench",
+        "Agent",
+        "Dynamic Workflows"
+      ],
+      "sources": [
+        {
+          "name": "Dig Watch",
+          "url": "https://dig.watch/updates/anthropic-launches-claude-opus-4-8"
+        },
+        {
+          "name": "Anthropic Blog",
+          "url": "https://www.anthropic.com/webinars/building-agents-on-claude-opus-4-8-live-demos-with-letta-and-browserbase"
+        },
+        {
+          "name": "Appwrite Arena",
+          "url": "https://appwrite.io/blog/post/arena-june-2026-update"
         }
       ]
     },
@@ -2411,113 +3138,23 @@
       ]
     },
     {
-      "id": "news-018",
-      "title": "英特尔与火山引擎联手推动Agentic AI落地",
-      "summary": "英特尔与火山引擎联合推出至强6智能体部署优化方案，单颗处理器支持超1000个智能体稳定运行。结合英特尔TDX与火山引擎，打造可信智能体端到端数据保护方案，从芯片级硬件安全到云平台数据加密全覆盖。",
-      "category": "partnership",
-      "date": "2026-06-18",
+      "id": "news-098",
+      "title": "实在智能与云库汇金融签署「资本+业务+战略」三位一体战略合作协议",
+      "summary": "实在智能与云库汇金融签署战略合作协议，云库汇将通过股权投资、产业基金等路径为其注入资本动能。实在智能自研TARS大模型已获国家生成式AI服务与算法双备案，实在Agent用于打造各行业数字员工。",
+      "category": "apa",
+      "date": "2026-06-01",
       "companies": [
-        "bytedance"
+        "实在智能"
       ],
       "tags": [
-        "英特尔",
-        "火山引擎",
-        "智能体",
-        "安全"
+        "战略合作",
+        "TARS大模型",
+        "资本合作"
       ],
       "sources": [
         {
-          "name": "PCPOP",
-          "url": "https://www.pcpop.com/article/6937333.shtml"
-        }
-      ]
-    },
-    {
-      "id": "news-019",
-      "title": "豆包开启付费订阅模式，AI商业化路径现两极分化",
-      "summary": "6月下旬，豆包上线付费订阅（68-500元/月），Seedance毛利率达70%。与此同时，腾讯、小米等对模型调用价格最高降97%。中国大模型行业出现“高端付费+低价走量”的二元商业化格局。",
-      "category": "ecosystem",
-      "date": "2026-06-25",
-      "companies": [
-        "bytedance",
-        "tencent"
-      ],
-      "tags": [
-        "商业化",
-        "付费订阅",
-        "价格战"
-      ],
-      "sources": [
-        {
-          "name": "i黑马",
-          "url": "http://www.iheima.com/article-398475.html"
-        },
-        {
-          "name": "新华网",
-          "url": "http://www3.xinhuanet.com/tech/20260623/acd6f2f27fc34459a7d1684c03278431/c.html"
-        }
-      ]
-    },
-    {
-      "id": "news-020",
-      "title": "Claude Opus 4.8在Microsoft Foundry正式全面上线",
-      "summary": "Anthropic模型在Microsoft Foundry on Azure上正式全面可用（GA），企业客户可直接在Azure平台上使用Claude Opus 4.8。加上Amazon Bedrock和Google Cloud Vertex AI，Claude已覆盖三大云平台。",
-      "category": "ecosystem",
-      "date": "2026-06-15",
-      "companies": [
-        "anthropic",
-        "microsoft"
-      ],
-      "tags": [
-        "Azure",
-        "Foundry",
-        "多云部署"
-      ],
-      "sources": [
-        {
-          "name": "Anthropic Blog",
-          "url": "https://claude.com/blog/claude-in-microsoft-foundry"
-        }
-      ]
-    },
-    {
-      "id": "news-021",
-      "title": "Amalgam Rx医疗大模型Chiron获2026 AI突破奖“年度LLM”",
-      "summary": "6月29日，Amalgam Rx的Chiron医疗基础模型获2026 AI Breakthrough Awards“年度最佳大语言模型”。该模型基于数百万纵向患者记录训练，将睡眠呼吸暂停诊断效率提升2倍，不必要随访减少近一半。标志着垂直领域大模型走向成熟。",
-      "category": "application",
-      "date": "2026-06-29",
-      "companies": [],
-      "tags": [
-        "医疗AI",
-        "垂直应用",
-        "AI Breakthrough"
-      ],
-      "sources": [
-        {
-          "name": "BusinessWire",
-          "url": "https://www.businesswire.com/news/home/20260629335085/en/Amalgam-Rx-Wins-Overall-Large-Language-Model-of-the-Year"
-        }
-      ]
-    },
-    {
-      "id": "news-022",
-      "title": "腾讯云对DeepSeek-V4系列模型降价最高97.5%",
-      "summary": "6月3日起，腾讯云对DeepSeek-V4系列模型调用价格大幅下调，最高降幅达97.5%，调整后价格全面持平DeepSeek官方售价。这标志着中国大模型API市场进入“价格战”阶段，对中小企业AI应用部署形成利好。",
-      "category": "ecosystem",
-      "date": "2026-06-03",
-      "companies": [
-        "tencent",
-        "deepseek"
-      ],
-      "tags": [
-        "腾讯云",
-        "降价",
-        "API"
-      ],
-      "sources": [
-        {
-          "name": "i黑马",
-          "url": "http://www.iheima.com/article-398475.html"
+          "name": "实在智能官网",
+          "url": "https://www.ai-indeed.com/aboutNews/22125.html"
         }
       ]
     }

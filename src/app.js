@@ -21,7 +21,8 @@ function init() {
   function gcat(id) { return D.categories.find(function(c){ return c.id === id; }) || { name: id, icon: "📌" }; }
   var tagCls = {
     "model-breakthrough": "mb", "application": "ap", "partnership": "pt",
-    "advanced-usage": "au", "ecosystem": "ec", "capital": "cp"
+    "advanced-usage": "au", "ecosystem": "ec", "capital": "cp",
+    "supply-chain": "sc", "apa": "apa"
   };
 
   // ====== 主渲染入口 ======
