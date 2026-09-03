@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-01T10:01:04.163Z",
+  "lastUpdated": "2026-09-03T02:02:23.998Z",
   "platform": {
     "name": "AI技术洞察平台",
     "subtitle": "聚焦大模型前沿动态 · 服务技术路标制定",
@@ -515,6 +515,347 @@
     ]
   },
   "news": [
+    {
+      "id": "news-125",
+      "title": "Meta发布迄今最强模型Muse Spark 1.3，主攻编程与智能体",
+      "summary": "Meta发布迄今最强模型Muse Spark 1.3，编程与智能体任务能力显著提升，官方称与前沿模型竞争相当，价格维持不变，当日上线Muse Code与Meta API，AAII评分62，为个人AI代理产品铺路。",
+      "category": "model-breakthrough",
+      "date": "2026-09-03",
+      "companies": [
+        "meta"
+      ],
+      "tags": [
+        "新模型发布",
+        "AI Agent",
+        "编程",
+        "模型突破"
+      ],
+      "sources": [
+        {
+          "name": "财联社",
+          "url": "https://www.cls.cn/detail/2472529"
+        },
+        {
+          "name": "金十数据",
+          "url": "https://flash.jin10.com/detail/20260903032439628800"
+        }
+      ]
+    },
+    {
+      "id": "news-120",
+      "title": "谷歌发布Gemini 3.8 Flash及网络安全版Flash Cyber",
+      "summary": "谷歌发布Gemini 3.8 Flash及网络安全专用版Flash Cyber，聚焦编程与智能体任务，内部Jetski测试工程师偏好度超Anthropic Opus，DeepSWE等基准表现突出，价格维持不变，距上代发布仅三周。",
+      "category": "model-breakthrough",
+      "date": "2026-09-02",
+      "companies": [
+        "google"
+      ],
+      "tags": [
+        "新模型发布",
+        "编程",
+        "网络安全",
+        "AI Agent"
+      ],
+      "sources": [
+        {
+          "name": "VentureBeat",
+          "url": "https://venturebeat.com/security/googles-gemini-3-8-flash-is-built-for-agents-while-its-cyber-twin-hunts-vulnerabilities"
+        },
+        {
+          "name": "CNBC TV18",
+          "url": "https://www.cnbctv18.com/technology/google-rolls-out-gemini-3-8-flash-claims-big-gains-in-coding-and-cybersecurity-19982772.htm"
+        }
+      ]
+    },
+    {
+      "id": "news-121",
+      "title": "月之暗面Kimi被曝秘密递表港交所，启动港股IPO",
+      "summary": "月之暗面（Kimi）被曝以保密形式向港交所递交A1文件，正式启动港股IPO流程，适用18C特专科技公司规则，中金、高盛联合保荐；同时以500亿美元投前估值推进新一轮融资。",
+      "category": "capital",
+      "date": "2026-09-02",
+      "companies": [
+        "moonshot"
+      ],
+      "tags": [
+        "IPO",
+        "资本动态",
+        "港交所",
+        "融资"
+      ],
+      "sources": [
+        {
+          "name": "证券之星",
+          "url": "https://wap.stockstar.com/detail/RB2026090300005720"
+        },
+        {
+          "name": "AASTOCKS",
+          "url": "http://wdatahk.aastocks.com/tc/mobile/news.aspx?newsid=NOW.1542670&newstype=61&newssource=AAFN"
+        }
+      ]
+    },
+    {
+      "id": "news-122",
+      "title": "大厂贷款投AI：阿里800亿配售、字节200亿银团贷款",
+      "summary": "阿里、腾讯、字节等大厂AI资本开支逼近甚至超过经营现金流，纷纷借助外部融资：阿里配售新股募资约800亿港元投AI，腾讯发行46.6亿美元债券，字节筹划约200亿美元银团贷款，AI投入加速重资产化。",
+      "category": "capital",
+      "date": "2026-09-02",
+      "companies": [
+        "alibaba",
+        "bytedance",
+        "tencent"
+      ],
+      "tags": [
+        "融资",
+        "算力",
+        "资本开支",
+        "资本动态"
+      ],
+      "sources": [
+        {
+          "name": "21世纪经济报道",
+          "url": "https://m.21jingji.com/article/20260902/herald/bd86ca1d732c6314dc9a87f2baf42bdb.html"
+        },
+        {
+          "name": "界面新闻",
+          "url": "https://www.jiemian.com/article/14976353.html"
+        }
+      ]
+    },
+    {
+      "id": "news-113",
+      "title": "Anthropic发布Claude Fable 5.1与Mythos 5.1旗舰模型",
+      "summary": "Anthropic发布旗舰模型Claude Fable 5.1及限定版Mythos 5.1，定位最强编程与知识工作模型，八项公开基准第一，缓存读取价格下调75%，典型负载成本降约25%，支持100万token上下文，为2万亿美元IPO前夕关键发布。",
+      "category": "model-breakthrough",
+      "date": "2026-09-01",
+      "companies": [
+        "anthropic"
+      ],
+      "tags": [
+        "新模型发布",
+        "模型突破",
+        "价格下调",
+        "IPO"
+      ],
+      "sources": [
+        {
+          "name": "36氪",
+          "url": "https://eu.36kr.com/zh/p/3965946765417989"
+        },
+        {
+          "name": "东方财富",
+          "url": "https://finance.eastmoney.com/a/202609023862757496.html"
+        }
+      ]
+    },
+    {
+      "id": "news-114",
+      "title": "OpenAI预告新模型Astra即将发布，主打网络安全能力",
+      "summary": "OpenAI预告新模型Astra即将发布，为首个达到'关键'网络安全能力阈值的模型，可自主发现并利用零日漏洞，ExploitBench满分；高级网络安全功能初期仅限少数测试者，后续经Daybreak Blue计划开放防御性用途。",
+      "category": "model-breakthrough",
+      "date": "2026-09-01",
+      "companies": [
+        "openai"
+      ],
+      "tags": [
+        "新模型发布",
+        "网络安全",
+        "安全能力",
+        "模型突破"
+      ],
+      "sources": [
+        {
+          "name": "Gadgets360",
+          "url": "https://www.gadgets360.com/ai/news/openai-astra-model-critical-cybersecurity-threshold-feature-cybersecurity-capabilities-11992933"
+        },
+        {
+          "name": "搜狐科技",
+          "url": "https://www.sohu.com/a/1070866117_313745"
+        }
+      ]
+    },
+    {
+      "id": "news-115",
+      "title": "腾讯混元Hy4 preview轻量版开源，1.5TB权重压至214GB",
+      "summary": "腾讯混元团队开源Hy4 preview轻量版，通过Sherry稀疏三值量化与混合精度策略将770B模型权重从约1.5TB压缩至214GB（压缩86%），性能基本持平，验证异构设备联合推理，Apache 2.0协议开源。",
+      "category": "advanced-usage",
+      "date": "2026-09-01",
+      "companies": [
+        "tencent"
+      ],
+      "tags": [
+        "开源",
+        "模型压缩",
+        "量化",
+        "推理优化"
+      ],
+      "sources": [
+        {
+          "name": "IT之家",
+          "url": "https://m.ithome.com/html/996880.htm"
+        },
+        {
+          "name": "站长之家",
+          "url": "https://www.chinaz.com/2026/0901/1774585.shtml"
+        }
+      ]
+    },
+    {
+      "id": "news-116",
+      "title": "AI 3D公司VAST半年融资约50亿，发布基座模型Tripo P2.0",
+      "summary": "AI 3D公司VAST宣布完成B轮及B+轮合计约30亿元融资，半年累计约50亿，刷新3D原生智能融资纪录；同步发布3D原生基座模型Tripo P2.0，首个解锁原生四边面拓扑，可用自然语言驱动3D建模。",
+      "category": "capital",
+      "date": "2026-09-01",
+      "companies": [
+        "VAST"
+      ],
+      "tags": [
+        "融资",
+        "3D生成",
+        "基座模型",
+        "资本动态"
+      ],
+      "sources": [
+        {
+          "name": "21世纪经济报道",
+          "url": "https://www.21jingji.com/article/20260902/herald/7118cbd24c0b2cc505f6285db28bfdcd.html"
+        },
+        {
+          "name": "搜狐",
+          "url": "https://www.sohu.com/a/1070663455_122014422"
+        }
+      ]
+    },
+    {
+      "id": "news-117",
+      "title": "影眸科技发布世界生成模型Hyper3D WorldGen",
+      "summary": "影眸科技发布世界生成模型Hyper3D WorldGen，基于SIGGRAPH 2025最佳论文CAST技术，单图即可重建可编辑、带物理属性的完整3D场景，面向具身智能仿真训练、影视制作、游戏开发与空间计算。",
+      "category": "model-breakthrough",
+      "date": "2026-09-01",
+      "companies": [
+        "影眸科技"
+      ],
+      "tags": [
+        "世界模型",
+        "3D生成",
+        "具身智能",
+        "模型发布"
+      ],
+      "sources": [
+        {
+          "name": "DoNews",
+          "url": "https://www.donews.com/news/detail/4/6693225.html"
+        },
+        {
+          "name": "新浪财经",
+          "url": "https://finance.sina.com.cn/jjxw/2026-09-01/doc-iniqipiu1568409.shtml"
+        }
+      ]
+    },
+    {
+      "id": "news-118",
+      "title": "Manus宣布恢复独立运营，Meta 20亿美元收购案撤销",
+      "summary": "AI Agent公司Manus正式恢复独立运营，Meta约20亿美元收购案被撤销；腾讯牵头联合红杉中国、真格基金以约20亿美元回购股份，腾讯成最大股东，创始团队恢复实控权，年化ARR约4亿美元。",
+      "category": "capital",
+      "date": "2026-09-01",
+      "companies": [
+        "Manus",
+        "tencent",
+        "meta"
+      ],
+      "tags": [
+        "AI Agent",
+        "收购",
+        "资本动态",
+        "独立运营"
+      ],
+      "sources": [
+        {
+          "name": "财经",
+          "url": "https://www.mycaijing.com/article/detail/579996"
+        },
+        {
+          "name": "AASTOCKS",
+          "url": "https://www.aastocks.com/tc/mobile/News.aspx?NewsID=NOW.1542550"
+        }
+      ]
+    },
+    {
+      "id": "news-119",
+      "title": "搭载豆包助手的努比亚NaviX Ultra获入网许可",
+      "summary": "努比亚NaviX Ultra获工信部入网许可，搭载字节豆包手机助手，定位全球首款AI智能体手机，计划本月上市，是大模型Agent能力落地手机终端的标志性产品。",
+      "category": "application",
+      "date": "2026-09-01",
+      "companies": [
+        "bytedance",
+        "努比亚"
+      ],
+      "tags": [
+        "AI手机",
+        "豆包",
+        "AI Agent",
+        "应用落地"
+      ],
+      "sources": [
+        {
+          "name": "每日经济新闻",
+          "url": "http://www.nbd.com.cn/rss/zaker/articles/4569451.html"
+        }
+      ]
+    },
+    {
+      "id": "news-123",
+      "title": "印度物流软件公司Shipsy推出物流智能层Shipsy Brain",
+      "summary": "物流软件公司Shipsy推出物流专用智能层Shipsy Brain，基于超50亿件货物与500亿运营事件微调开源模型，将异常订单处理时间从45分钟压缩至4分钟，物流知识测试得分92.4%远超通用大模型。",
+      "category": "supply-chain",
+      "date": "2026-09-01",
+      "companies": [
+        "Shipsy"
+      ],
+      "tags": [
+        "供应链AI",
+        "物流",
+        "AI Agent",
+        "行业落地"
+      ],
+      "sources": [
+        {
+          "name": "The Economic Times",
+          "url": "https://m.economictimes.com/ai/ai-insights/ai-focused-logistics-startup-shipsy-launches-shipsy-brain-to-power-ai-agents/amp_articleshow/133642836.cms"
+        },
+        {
+          "name": "Express Computer",
+          "url": "https://www.expresscomputer.in/amp/news/shipsy-launches-shipsy-brain-for-enterprise-logistics-ai/138265/"
+        }
+      ]
+    },
+    {
+      "id": "news-124",
+      "title": "厦门国家供应链AI应用中试基地展示规模化落地成果",
+      "summary": "国家供应链人工智能应用中试基地（厦门）展示'AI+国际物流供应链'落地成果，由国贸控股、建发、象屿三家世界500强合资运营，建成超700TB高质量数据集，港口物流等数据分析从数小时缩至几分钟。",
+      "category": "supply-chain",
+      "date": "2026-09-01",
+      "companies": [
+        "国贸控股",
+        "建发集团",
+        "象屿集团"
+      ],
+      "tags": [
+        "供应链AI",
+        "政企合作",
+        "数据要素",
+        "行业落地"
+      ],
+      "sources": [
+        {
+          "name": "厦门网",
+          "url": "https://news.xmnn.cn/xmxw/202609/t20260901_447991.html"
+        },
+        {
+          "name": "央广网",
+          "url": "https://xm.cnr.cn/jdt/20260902/t20260902_527801840.shtml"
+        }
+      ]
+    },
     {
       "id": "news-074",
       "title": "Kimi K3正式上线：定位智能体编程与知识工作",
